@@ -371,10 +371,10 @@ function init_gear_sets()
         head="Carmine Mask +1",
         ear1="Loquacious Earring",
         ear2="Etiolation Earring",
-		neck="Orunmila's Torque,"
+		neck="Orunmila's Torque",	
         body="Dread Jupon",
         hands="Leyline Gloves",
-		feet="Carmine Greaves +1"
+		feet="Carmine Greaves +1",
         ring1="Weatherspoon Ring",
         ring2="Kishar Ring",
         legs="Quiahuiz Trousers",
