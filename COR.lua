@@ -373,7 +373,7 @@ function init_gear_sets()
         ear2="Etiolation Earring",
 		neck="Orunmila's Torque,"
         body="Dread Jupon",
-        hands={ name="Leyline Gloves", augments={'Accuracy+14','Mag. Acc.+13','"Mag.Atk.Bns."+13','"Fast Cast"+2',}},
+        hands="Leyline Gloves",
 		feet="Carmine Greaves +1"
         ring1="Weatherspoon Ring",
         ring2="Kishar Ring",
