@@ -1,5 +1,5 @@
 -- Oganizer & Lockstyle Settings
-send_command('wait 5;input /lockstyleset 40')
+send_command('wait 5;input /lockstyleset 102')
 --send_command('lua l StatusHelper')
 --send_command('lua l Partybuffs')
 --[[
@@ -250,7 +250,7 @@ indicolure:set('Indi-Haste') -- Indi Spell Default     (when you first load lua 
 validateTextInformation()
 
 -- Optional. Swap to your geo macro sheet / book
-set_macros(1, 14) -- Sheet, Book
+set_macros(1, 21) -- Sheet, Book
 
 -- Setup your Gear Sets below:
 function get_sets()
@@ -269,7 +269,7 @@ function get_sets()
 
     sets.weapons.MaligPole = {
         main = "Malignance Pole",
-        sub = "Flanged Grip"
+        sub = "" --Flanged Grip
     }
 
     sets.weapons.IdrisBlurred = {
@@ -287,12 +287,12 @@ function get_sets()
     --------------------------------------
 
     Nantosuelta = {}
-    Nantosuelta.PET = { name = "Nantosuelta's Cape", augments = { 'VIT+19', 'Eva.+20 /Mag. Eva.+20', 'Pet: "Regen"+10', 'Pet: "Regen"+5', } }
+    Nantosuelta.PET = { name = "Nantosuelta's Cape", augments = { 'INT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Pet: "Regen"+10','Pet: "Regen"+5', } }
     Nantosuelta.MND = { name = "Nantosuelta's Cape", augments = { 'MND+20', 'Mag. Acc+20 /Mag. Dmg.+20', 'MND+10', '"Fast Cast"+10', } }
     Nantosuelta.NUKE = { name = "Nantosuelta's Cape", augments = { 'INT+20','Mag. Acc+20 /Mag. Dmg.+20','"Mag.Atk.Bns."+10','Spell interruption rate down-10%',}}
-    Nantosuelta.MNDWS = { name = "Nantosuelta's Cape", augments = { 'MND+20', 'Accuracy+20 Attack+20', 'Weapon skill damage +10%', } }
-    Nantosuelta.DA = { name = "Nantosuelta's Cape", augments = { 'DEX+20', 'Accuracy+20 Attack+20', '"Dbl.Atk."+10', 'Phys. dmg. taken-10%', } }
-
+    Nantosuelta.MNDWS = { name = "Nantosuelta's Cape", augments = { 'MND+20','Accuracy+20 Attack+20','MND+10','Weapon skill damage +10%','Damage taken-5%', } }
+    Nantosuelta.DA = { name = "Nantosuelta's Cape", augments = { 'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%', } }
+	Nantosuelta.HEAL = { name="Nantosuelta's Cape", augments={'INT+20','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','"Cure" potency +10%','Damage taken-5%',}}
     -- My formatting is very easy to follow. All sets that pertain to my character doing things are under 'me'.
     -- All sets that are equipped to faciliate my.pan's behaviour or abilities are under .pan', eg, Perpetuation, Blood Pacts, etc
 
@@ -311,7 +311,7 @@ function get_sets()
         range = { name = "Dunna", augments = { 'MP+20', 'Mag. Acc.+10', '"Fast Cast"+3', } },
         head = "Befouled Crown",
         body = "Azimuth Coat +3",
-        hands = "Azimuth Gloves +3",
+        hands = "Bagua Mitaines +3",
         legs = "Assid. Pants +1",
         feet = "Geo. Sandals +3",
         neck = "Sanctity Necklace",
@@ -381,7 +381,7 @@ function get_sets()
         sub = "Genmei Shield",
         ammo = "Crepuscular Pebble",
         head = "Azimuth Hood +3",
-        body = "Geomancy Tunic +3",
+        body = "Azimuth Coat +3",
         hands = "Geo. Mitaines +2",
         legs = { name = "Nyame Flanchard", augments = { 'Path: B', } },
         feet = "Bagua Sandals +3",
@@ -428,23 +428,6 @@ function get_sets()
         ammo = "Hasty Pinion +1",
         head = { name = "Nyame Helm", augments = { 'Path: B', } },
         body = { name = "Nyame Mail", augments = { 'Path: B', } },
-        hands = "Geo. Mitaines +2",
-        legs = { name = "Nyame Flanchard", augments = { 'Path: B', } },
-        feet = { name = "Nyame Sollerets", augments = { 'Path: B', } },
-        neck = "Lissome Necklace",
-        waist = "Cetl Belt",
-        left_ear = "Telos Earring",
-        right_ear = "Dedition Earring",
-        left_ring = "Chirich Ring +1",
-        right_ring = "Defending Ring",
-        back = { name = "Nantosuelta's Cape", augments = { 'INT+20', 'Mag. Acc+20 /Mag. Dmg.+20', 'INT+10', '"Mag.Atk.Bns."+10', 'Phys. dmg. taken-10%', } },
-    })
-
-    -- Luopan is out
-    sets.pan.melee = set_combine(sets.pan.idle[idleMode], {
-        ammo = "Hasty Pinion +1",
-        head = { name = "Nyame Helm", augments = { 'Path: B', } },
-        body = { name = "Nyame Mail", augments = { 'Path: B', } },
         hands = { name = "Nyame Gauntlets", augments = { 'Path: B', } },
         legs = { name = "Nyame Flanchard", augments = { 'Path: B', } },
         feet = { name = "Nyame Sollerets", augments = { 'Path: B', } },
@@ -454,7 +437,24 @@ function get_sets()
         right_ear = "Dedition Earring",
         left_ring = "Chirich Ring +1",
         right_ring = "Defending Ring",
-        back = { name = "Nantosuelta's Cape", augments = { 'INT+20', 'Mag. Acc+20 /Mag. Dmg.+20', 'INT+10', '"Mag.Atk.Bns."+10', 'Phys. dmg. taken-10%', } },
+        back =Nantosuelta.DA,
+    })
+
+    -- Luopan is out
+    sets.pan.melee = set_combine(sets.pan.idle[idleMode], {
+        ammo = "Hasty Pinion +1",
+        head = { name = "Nyame Helm", augments = { 'Path: B', } },
+        body = { name = "Nyame Mail", augments = { 'Path: B', } },
+		hands = "Geo. Mitaines +2",
+        legs = { name = "Nyame Flanchard", augments = { 'Path: B', } },
+        feet = { name = "Nyame Sollerets", augments = { 'Path: B', } },
+        neck = "Lissome Necklace",
+        waist = "Cetl Belt",
+        left_ear = "Telos Earring",
+        right_ear = "Dedition Earring",
+        left_ring = "Chirich Ring +1",
+        right_ring = "Defending Ring",
+        back = Nantosuelta.DA,
     })
 
     -- Weapon Skill sets
@@ -545,12 +545,12 @@ function get_sets()
     sets.precast.casting = {
         main="Sucellus", --5
         sub="Chanter's Shield", --3
-		range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
-        head = "Amalric Coif +1",
-        body = "Agwu's Robe",
+		range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}}, --3
+        head = "Amalric Coif +1", --11
+        body = "Agwu's Robe", --10
         hands = "Agwu's Gages",
         legs = "Geomancy Pants +2",
-        feet = { name = "Agwu's Pigaches", augments = { 'Path: A', } },
+        feet = "Regal Pumps +1",
         neck = "Orunmila's Torque",
         waist = "Embla Sash",
         left_ear = "Malignance Earring",
@@ -649,15 +649,17 @@ function get_sets()
     })
     -- For Indi Spells
     sets.midcast.indi = set_combine(sets.midcast.geo, {
+		main={ name="Gada", augments={'Indi. eff. dur. +5','Mag. Acc.+2','"Mag.Atk.Bns."+4','DMG:+7',}},
+		sub="Genmei Shield",
         head = "Azimuth Hood +3",
         neck = "Bagua Charm +2",
         hands = "Geo. Mitaines +2",
         legs = "Bagua Pants +3",
         feet = "Azimuth gaiters +3",
-        back = { name = "Lifestream Cape", augments = { 'Geomancy Skill +10', 'Indi. eff. dur. +20', 'Pet: Damage taken -2%', 'Damage taken-1%', } },
+        back = { name = "Lifestream Cape", augments = { 'Geomancy Skill +8','Indi. eff. dur. +13','Pet: Damage taken -2%',} },
     })
     sets.midcast.entrust = {
-        main={ name="Gada", augments={'Indi. eff. dur. +10','CHR+4','"Mag.Atk.Bns."+11','DMG:+9',}},
+        main={ name="Gada", augments={'Indi. eff. dur. +5','Mag. Acc.+2','"Mag.Atk.Bns."+4','DMG:+7',}},
     }
 
     sets.midcast.Obi = {
@@ -677,7 +679,7 @@ function get_sets()
         neck = "Sibyl Scarf",
         waist = { name = "Acuity Belt +1", augments = { 'Path: A', } },
         left_ear = "Malignance Earring",
-        right_ear ="Azimuth Earring +1",
+        right_ear ="Regal Earring",
         left_ring = "Freke Ring",
         right_ring = "Shiva Ring +1",
         back = Nantosuelta.NUKE,
@@ -712,13 +714,13 @@ function get_sets()
         ammo = { name = "Ghastly Tathlum +1", augments = { 'Path: A', } },
         head = "Ea Hat +1",
         body = "Azimuth Coat +3",
-        hands = "Agwu's Robe",
+        hands = "Agwu's Gages",
         legs = "Azimuth Tights +3",
         feet = "Agwu's pigaches",
         neck = "Sibyl Scarf",
         waist = { name = "Acuity Belt +1", augments = { 'Path: A', } },
         left_ear = "Malignance Earring",
-        right_ear ="Azimuth Earring +1",
+        right_ear ="Regal Earring",
         left_ring = "Freke Ring",
         right_ring = { name = "Metamor. Ring +1", augments = { 'Path: A', } },
         back = Nantosuelta.NUKE,
@@ -777,8 +779,8 @@ function get_sets()
 
     -- Enfeebling
     sets.midcast.IntEnfeebling = set_combine(sets.midcast.casting, {
-        main = { name = "Contemplator +1", augments = { 'Path: A', } },
-        sub = "Enki Strap",
+        main="Daybreak", --30
+        sub="Ammurapi Shield", --
         ammo = "Pemphredo Tathlum",
         head = "Geo. Galero +1",
         body = "Geomancy Tunic +3",
@@ -795,8 +797,8 @@ function get_sets()
     })
 
     sets.midcast.MndEnfeebling = set_combine(sets.midcast.casting, {
-        main = { name = "Contemplator +1", augments = { 'Path: A', } },
-        sub = "Enki Strap",
+        main="Daybreak", --30
+        sub="Ammurapi Shield",
         ammo = "Pemphredo Tathlum",
         head = "Geo. Galero +1",
         body = "Geomancy Tunic +3",
@@ -814,13 +816,13 @@ function get_sets()
 
     -- Enhancing
     sets.midcast.enhancing = set_combine(sets.midcast.casting, {
-        main = "Gada", --, augments={'Enh. Mag. eff. dur. +6','Mag. Acc.+13','"Mag.Atk.Bns."+6',}},
+        main = { name="Gada", augments={'Enh. Mag. eff. dur. +4','VIT+1','Mag. Acc.+17','"Mag.Atk.Bns."+16','DMG:+7',}},
         sub = "Ammurapi Shield",
-        head = { name = "Telchine Cap", augments = { '"Mag.Atk.Bns."+19', '"Fast Cast"+5', 'Enh. Mag. eff. dur. +9', } },
-        body = { name = "Telchine Chas.", augments = { '"Mag.Atk.Bns."+18', '"Fast Cast"+5', 'Enh. Mag. eff. dur. +9', } },
-        hands = { name = "Telchine Gloves", augments = { 'Mag. Acc.+19', '"Fast Cast"+5', 'Enh. Mag. eff. dur. +10', } },
-        legs = { name = "Telchine Braconi", augments = { 'Mag. Acc.+10 "Mag.Atk.Bns."+10', '"Fast Cast"+5', 'Enh. Mag. eff. dur. +9', } },
-        feet = { name = "Telchine Pigaches", augments = { 'Mag. Acc.+24', '"Fast Cast"+5', 'Enh. Mag. eff. dur. +9', } },
+        head = { name = "Telchine Cap", augments = {'Enh. Mag. eff. dur. +7', } },
+        body = { name = "Telchine Chas.", augments = { 'Enh. Mag. eff. dur. +9', } },
+        hands = { name = "Telchine Gloves", augments = { 'Enh. Mag. eff. dur. +7', } },
+        legs = { name = "Telchine Braconi", augments = { 'Enh. Mag. eff. dur. +10', } },
+        feet = { name = "Telchine Pigaches", augments = { 'Enh. Mag. eff. dur. +9', } },
         neck = "Incanter's Torque",
         waist = "Embla Sash",
         left_ear = "Andoaa Earring",
@@ -832,20 +834,20 @@ function get_sets()
 
     -- Stoneskin
     sets.midcast.stoneskin = set_combine(sets.midcast.enhancing, {
-        --neck="Nodens Gorget",
+        neck="Nodens Gorget",
         waist = "Siegel Sash",
     })
     sets.midcast.refresh = set_combine(sets.midcast.enhancing, {
-        --head="Amalric Coif +1",
-        --feet="Inspirited Boots",
+        head="Amalric Coif +1",
+        feet="Inspirited Boots",
         waist = "Gishdubar Sash",
         back = "Grapevine Cape",
     })
     sets.midcast.aquaveil = set_combine(sets.midcast.enhancing, {
         sub = "Ammurapi Shield",
-        -- head="Amalric Coif +1",
+        head="Amalric Coif +1",
         hands = "Geo. Mitaines +2", --hands="Regal Cuffs",
-        --waist="Emphatikos Rope",
+        waist = "Emphatikos Rope",
     })
 
     sets.midcast['Absorb-TP'] = {
@@ -862,7 +864,7 @@ function get_sets()
         right_ear ="Azimuth Earring +1",
         left_ring = "Stikini Ring +1",
         right_ring = "Kishar Ring",
-        back = { name = "Nantosuelta's Cape", augments = { 'MND+20', 'Mag. Acc+20 /Mag. Dmg.+20', '"Fast Cast"+10', } },
+        back = Nantosuelta.MND,
     }
 
     sets.midcast["Drain"] = set_combine(sets.midcast.IntEnfeebling, {
@@ -875,7 +877,7 @@ function get_sets()
         feet = "Agwu's pigaches",
         neck = "Erra Pendant",
         --ear1="Hirudinea Earring",
-        --ear2="Mani Earring",
+        ear2="Mani Earring",
         ring1 = "Evanescence Ring",
         ring2 = "Archon Ring",
         back = "Aurist's Cape +1",
@@ -888,21 +890,22 @@ function get_sets()
     sets.midcast.cure = {} -- Leave This Empty
     -- Cure Potency
     sets.midcast.cure.normal = set_combine(sets.midcast.casting, {
-        main = "Daybreak",
-        sub = "Genmei Shield",
-        range = { name = "Dunna", augments = { 'MP+20', 'Mag. Acc.+10', '"Fast Cast"+3', } },
-        head = { name = "Vanya Hood", augments = { 'MP+50', '"Fast Cast"+10', 'Haste+2%', } },
-        body = "Azimuth Coat +3",
-        hands = { name = "Telchine Gloves", augments = { 'Mag. Acc.+19', '"Fast Cast"+5', 'Enh. Mag. eff. dur. +10', } },
-        legs = "Azimuth Tights +3",
-        feet = "Agwu's pigaches",
-        neck = "Incanter's Torque",
-        waist = "Luminary Sash",
-        left_ear = "Mendi. Earring",
-        right_ear = "Etiolation Earring",
-        left_ring = "Lebeche Ring",
-        right_ring = "Menelaus's Ring",
-        back = "Solemnity Cape",
+       
+		 main="Daybreak", --30
+        sub="Sors Shield", --3/(-5)
+        ammo="Esper Stone +1", --(-5)
+        head="Vanya Hood", --10
+        body="Vanya Robe", --7/(-6)
+        hands="Vanya Cuffs",
+        legs="Vanya Slops",
+        feet="Vanya Clogs", --5
+        neck="Incanter's Torque",
+        ear1="Beatific Earring",
+        ear2="Meili Earring",
+        ring1={name="Stikini Ring +1", bag="wardrobe3"},
+        ring2={name="Stikini Ring +1", bag="wardrobe4"},
+        back=Nantosuelta.HEAL, --0/(-10)
+        waist="Bishop's Sash",
     })
 
     -- main="Daybreak",
@@ -946,7 +949,8 @@ function get_sets()
         right_ear = "Digni. Earring",
         left_ring = "Chirich Ring +1",
         right_ring = "Crepuscular Ring",
-        back = { name = "Nantosuelta's Cape", augments = { 'INT+20', 'Mag. Acc+20 /Mag. Dmg.+20', 'INT+10', '"Mag.Atk.Bns."+10', 'Phys. dmg. taken-10%', } },
+		back = Nantosuelta.NUKE,
+       
     }
 
     sets.midcast.Impact.Occult = {
@@ -964,7 +968,7 @@ function get_sets()
         right_ear = "Digni. Earring",
         left_ring = "Chirich Ring +1",
         right_ring = "Crepuscular Ring",
-        back = { name = "Nantosuelta's Cape", augments = { 'INT+20', 'Mag. Acc+20 /Mag. Dmg.+20', 'INT+10', '"Mag.Atk.Bns."+10', 'Phys. dmg. taken-10%', } },
+        back =Nantosuelta.NUKE,
     }
     ------------
     -- Aftercast
