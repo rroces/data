@@ -205,7 +205,9 @@ function init_gear_sets()
         ring2="Defending Ring",
         back=Camulus.STP,
         feet="Lanun Bottes +3",
+		legs="Desultor Tassets",
 		range="Compensator"
+		
     }
 
     sets.precast.CorsairRoll = set_combine(sets.roll, {
@@ -264,7 +266,7 @@ function init_gear_sets()
     sets.Sword = { 
         main={name="Rostam", bag="Wardrobe8", priority=1},
         sub={name="Nusku Shield", priority=2},
-        ranged=state.GunSelector.current
+        --ranged=state.GunSelector.current
     }
     -- sets.Sword.engaged = set_combine(sets.Melee, sets.Sword, {
     --     ear2="Cessance Earring",
@@ -275,19 +277,19 @@ function init_gear_sets()
     sets.DualDagger = { 
         main={name="Rostam", bag="Wardrobe8", priority=1},
         sub={name="Kustawi +1", priority=2},
-        ranged=state.GunSelector.current
+        --ranged=state.GunSelector.current
     }
 	sets.SwordDagger = { 
         main={name="Naegling", bag="Inventory", priority=1},
         sub={name="Tauret", bag="Inventory", priority=2},
-        ranged=state.GunSelector.current
+        --ranged=state.GunSelector.current
     }
 	
 	
     sets.DualSword = { 
         main={name="Naegling", bag="Inventory", priority=1},
         sub={name="Blurred Knife +1", bag="Inventory", priority=2},
-        ranged=state.GunSelector.current
+        --ranged=state.GunSelector.current
     }
     -- sets.DualSword.engaged = set_combine(sets.Melee, sets.DualSword)
     -- sets.DualSword.engaged.PDT = set_combine(sets.DualSword.engaged, sets.Nyame)
@@ -296,7 +298,7 @@ function init_gear_sets()
         --main={name="Rostam", bag="Wardrobe 4", priority=2},
         main={name="Rostam", bag="Inventory", priority=1},
         sub={name="Tauret", bag="Inventory", priority=2},
-        ranged=state.GunSelector.current
+        --ranged=state.GunSelector.current
     }
     -- sets.Magic.engaged = sets.Magic
     -- sets.Magic.engaged.PDT = sets.Magic
@@ -327,13 +329,13 @@ function init_gear_sets()
     sets.Single = {
         main={name="Rostam", bag="Wardrobe 4", priority=1},
         sub={name="Nusku Shield", priority=2},
-        ranged=state.GunSelector.current
+        --ranged=state.GunSelector.current
     }
     -- sets.Single.engaged = sets.Single
     -- sets.Single.engaged.PDT = sets.Single
     -- this allows you to equip any weapon in main + sub without this code forcing other weapons
     sets.Default = {
-        ranged=state.GunSelector.current
+        --ranged=state.GunSelector.current
     } -- do nothing. useful for equipping whateveer you want
     -- sets.Default.engaged = sets.Default
     -- sets.Default.engaged.PDT = sets.Default
@@ -368,7 +370,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     sets.precast.FC = {
         --ammo="Impatiens",
-        head="Carmine Mask +1",
+        head="Carmine Mask +1", --12
         ear1="Loquacious Earring",
         ear2="Etiolation Earring",
 		neck="Orunmila's Torque",	
