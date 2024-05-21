@@ -93,11 +93,11 @@ function user_setup()
     state.MagicalDefenseMode:options('MDT')
 
     
-	gear.RAbullet = "Devastating Bullet"
+	gear.RAbullet = "Chrono Bullet"
     gear.Accbullet = "Devastating Bullet"
     gear.WSbullet = "Chrono Bullet"
     gear.MAbullet = "Living Bullet"
-    gear.QDbullet = "Animikii Bullet" 
+    gear.QDbullet = "Hauksbok Bullet" 
     options.ammo_warning_limit = 15
 	 
 	--gear.RAbullet = "Eminent Bullet"
