@@ -357,7 +357,7 @@ function init_gear_sets()
         ear2="Armageddon",
         hands="Compensator",
         ammo="Nusku Shield",
-        back="Linkpearl",
+        back="",
         waist="Rostam",
         ring1="Naegling", 
         ring2="Ataktos",
@@ -426,13 +426,13 @@ function init_gear_sets()
 	sets.precast.WS['Terminus'] = set_combine(sets.precast.WS, {
         head="Nyame helm",
         neck={ name="Comm. Charm +2", augments={'Path: A',}},
-        body="Nyame Mail",
-        hands="Nyame Gauntlets",
-        ear1="Ishvara Earring",
+        body="Ikenga's Vest",
+        hands="Chasseur's Gants +3",
+        ear1="Odr Earring",
         ear2="Moonshade Earring",
         ring1="Cornelia's Ring",
-        ring2="Epaminondas's Ring",
-        waist="Sailfi Belt +1",
+        ring2="Regal Ring",
+        waist="Kentarch Belt +1",
         feet="Lanun Bottes +3",
 	    legs="Nyame Flanchard",
 		back={ name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
@@ -693,7 +693,7 @@ function init_gear_sets()
     })
     sets.midcast.RA.TripleShot.Mid = set_combine(sets.midcast.RA.Mid, {
         head="Oshosi Mask",
-        body="Oshosi Vest",
+        body="Oshosi Vest +1",
         hands="Lanun Gants +3",
         ring1="Regal Ring",
         legs="Oshosi Trousers",
@@ -702,7 +702,7 @@ function init_gear_sets()
     sets.midcast.RA.TripleShot.Acc = set_combine(sets.midcast.RA.Acc, {
         ammo=gear.Accbullet,
         head="Malignance Chapeau",
-        body="Oshosi Vest",
+        body="Oshosi Vest +1",
         hands="Lanun Gants +3",
         ring1="Regal Ring",
         feet="Malignance Boots"
