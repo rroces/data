@@ -390,7 +390,7 @@ function init_gear_sets()
         feet="Brioso Slippers +3",
         neck="Mnbw. Whistle +1",
         ear1="Regal Earring",
-        ear2="Fili Earring +1",
+        ear2="Fili Earring +2",
         ring1="Metamor. Ring +1",
         ring2={name="Stikini Ring +1", bag="wardrobe6"},
         waist="Acuity Belt +1",
@@ -492,7 +492,7 @@ function init_gear_sets()
         feet="Brioso Slippers +3",
         neck="Mnbw. Whistle +1",
         ear1="Regal Earring",
-        ear2="Fili Earring +1",
+        ear2="Fili Earring +2",
         ring1="Kishar Ring",
         ring2="Metamor. Ring +1",
         waist="Acuity Belt +1",
@@ -513,7 +513,7 @@ function init_gear_sets()
         legs="Nyame Flanchard", --8/8
         feet="Fili Cothurnes +3", --7/7,
         neck="Warder's Charm +1",
-        ear2="Fili Earring +1", --4/4
+        ear2="Fili Earring +2", --4/4
         ring2="Defending Ring", --10/10
         back="Moonlight Cape", --6/6
         waist="Plat. Mog. Belt", --3/3
@@ -526,7 +526,7 @@ function init_gear_sets()
         legs="Nyame Flanchard", --8/8
         feet="Nyame Sollerets", --7/7,
         neck="Warder's Charm +1",
-        ear2="Fili Earring +1", --4/4
+        ear2="Fili Earring +2", --4/4
         ring2="Defending Ring", --10/10
         back="Moonlight Cape", --6/6
         waist="Plat. Mog. Belt", --3/3
@@ -543,7 +543,7 @@ function init_gear_sets()
         feet="Fili Cothurnes +3",
         neck="Bard's Charm +2",
         ear1="Enchntr. Earring +1",
-        ear2="Fili Earring +1",
+        ear2="Fili Earring +2",
         back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},
         waist="Acuity Belt +1",
         })
