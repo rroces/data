@@ -192,7 +192,7 @@ function init_gear_sets()
 	--HercLegs.TH = { name="Herculean Trousers", augments={'Phys. dmg. taken -1%','VIT+10','"Treasure Hunter"+2','Accuracy+10 Attack+10','Mag. Acc.+19 "Mag.Atk.Bns."+19',}} 
    
     AdhemarLegs = {}
-    AdhemarLegs.Snap = { name="Adhemar Kecks +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}}
+    AdhemarLegs.Snap = { name="Adhemar Kecks +1", augments={'AGI+12','"Rapid Shot"+13','Enmity-6',}}
     AdhemarLegs.TP = { name="Adhemar Kecks +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}}
 
     sets.roll = { 
@@ -390,9 +390,9 @@ function init_gear_sets()
         neck="Commodore Charm +2", -- 4
         hands="Lanun Gants +3", -- 13
         back=Camulus.Snap, -- 10 
-        body="Oshosi Vest", -- 12
+        body="Oshosi Vest +1", -- 14
         ring1="Crepuscular Ring", -- 3
-        waist="Yemaya Belt", -- 0 / 5 rapid
+        waist="Impulse Belt", -- 0 / 5 rapid
         legs=AdhemarLegs.Snap, -- 9  / 10 rapid
         feet="Meghanada Jambeaux +2" -- 10 
     }
@@ -490,7 +490,7 @@ function init_gear_sets()
         ear1="Ishvara Earring",
         ear2="Moonshade Earring",
         body="Laksamana's Frac +3",
-        ring1="Regal Ring",
+        ring1="Epaminondas's Ring",
         ring2="Dingir Ring",
         waist="Fotia Belt",
         feet="Lanun Bottes +3",
@@ -514,7 +514,7 @@ function init_gear_sets()
         ear1="Friomisi Earring",
         ear2="Crematio Earring",
         body="Lanun Frac +3",
-        hands="Carmine Finger Gauntlets +1",
+        hands="Nyame Gauntlets",
         ring1="Epaminondas's Ring",
         ring2="Dingir Ring",
         back=Camulus.MAB,
@@ -535,7 +535,7 @@ function init_gear_sets()
         ear1="Friomisi Earring",
         ear2="Moonshade Earring",
         body="Lanun Frac +3",
-        hands="Carmine Finger Gauntlets +1",
+        hands="Nyame Gauntlets",
         ring1="Archon Ring",
         ring2="Dingir Ring",
         back=Camulus.MAB,
@@ -545,7 +545,7 @@ function init_gear_sets()
     }
     sets.precast.WS['Leaden Salute'].Mid = set_combine(sets.precast.WS['Leaden Salute'], { 
         body="Lanun Frac +3",
-        hands="Carmine Finger Gauntlets +1",
+        hands="Nyame Gauntlets",
         feet="Lanun Bottes +3"
     })
     sets.precast.WS['Leaden Salute'].Acc = set_combine(sets.precast.WS['Leaden Salute'], { 
