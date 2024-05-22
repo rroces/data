@@ -372,7 +372,7 @@ function init_gear_sets()
         --ammo="Impatiens",
         head="Carmine Mask +1", --12
         ear1="Loquacious Earring",
-        ear2="Etiolation Earring",
+        ear2="Enchntr. Earring +1",
 		neck="Orunmila's Torque",	
         body="Dread Jupon",
         hands="Leyline Gloves",
@@ -435,7 +435,9 @@ function init_gear_sets()
         waist="Kentarch Belt +1",
         feet="Lanun Bottes +3",
 	    legs="Nyame Flanchard",
-		back={ name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
+		ammo="Bayeux Bullet",
+		back=Camulus.WSD
+		
     })
     sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {
         head="Nyame helm",
@@ -472,14 +474,16 @@ function init_gear_sets()
     sets.precast.WS['Exenterator'] = set_combine(sets.precast.WS, {legs="Samnuha Tights"})
 
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {
-        head="Adhemar Bonnet +1",
-        body="Adhemar Jacket +1",
+        head="Nyame Helm",
+        body="Nyame Mail",
+        hands="Nyame Gauntlets", 
+        legs="Nyame Flanchard",
+        feet="Nyame Sollerets",
         neck="Fotia Gorget",
         ear1="Telos Earring",
         ear2="Moonshade Earring",
-        hands="Meghanada Gloves +2",
         ring1="Regal Ring",
-        ring2="Ilabrat Ring",
+        ring2="Rufescent Ring",
         waist="Fotia Belt",
     })
 
@@ -559,6 +563,7 @@ function init_gear_sets()
     })
     sets.precast.WS['Aeolian Edge'] = set_combine(sets.precast.WS['Wildfire'], {
         ear2="Moonshade Earring",
+		waist="Orpheus's Sash",
 		
     })
     
@@ -594,13 +599,13 @@ function init_gear_sets()
 
     sets.midcast.CorsairShot = {
         ammo=gear.QDbullet,
-        head="Laksamana's Tricorne +3",
+        head="Nyame Helm", --Ikenga's Hat
         neck="Commodore Charm +2",
         ear1="Friomisi Earring",
         ear2="Crematio Earring",
         body="Lanun Frac +3",
         hands="Carmine Finger Gauntlets +1",
-        ring1="Regal Ring", 
+        ring1="Fenrir Ring +1", 
         ring2="Dingir Ring",
         back=Camulus.MAB,
         waist="Skrymir Cord +1",
@@ -621,18 +626,18 @@ function init_gear_sets()
     -- Ranged gear
     sets.midcast.RA = {
         ammo=gear.RAbullet,--gear.RAbullet
-        neck="Commodore Charm +2",
+        neck="Iskur Gorget",
         ear1="Telos Earring",
         ear2="Crep. Earring",
         ring1="Crepuscular Ring",
         ring2="Ilabrat Ring",
         back=Camulus.STP,
         waist="Yemaya Belt",
-		head="Chasseur's Tricorne +3",
-		body="Chasseur's Frac +3",
-		hands="Chasseur's Gants +3",
+		head="Ikenga's Hat",
+		body="Ikenga's Vest",
+		hands="Ikenga's Gloves",
 		legs="Chas. Culottes +3",
-		feet="Chass. Bottes +3"
+		feet="Ikenga's Clogs"
         
     }
 		sets.midcast.DARK={
@@ -670,7 +675,7 @@ function init_gear_sets()
     sets.midcast.RA.Acc = set_combine(sets.midcast.RA.Mid, {
         --ring1="Hajduk Ring",
         ammo=gear.Accbullet,
-        neck="Commodore Charm +2",
+        neck="Iskur Gorget",
         ear1="Telos Earring",
         ear2="Crep. Earring",
         ring1="Crepuscular Ring",
