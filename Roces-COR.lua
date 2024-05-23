@@ -654,13 +654,17 @@ function init_gear_sets()
 		hands="Chasseur's Gants +3",
 		legs="Chas. Culottes +3",
 		feet="Chass. Bottes +3"
-        
+       
     }
     sets.midcast.RA.AME = set_combine(sets.midcast.RA, {
         head="Meghanada Visor +2",
         body="Nisroch Jerkin",
         hands="Chasseur's Gants +3",
         waist="K. Kachina Belt +1",
+		legs="Darraigner's Brais",
+		ear1="Chas. Earring +1",
+        ear2=" Odr Earring",
+		
     })
     sets.midcast.RA.Mid = set_combine(sets.midcast.RA, {
         ear2="Crepuscular Earring",
@@ -1168,6 +1172,35 @@ function job_buff_change(buff, gain)
             end
         end
     end
+	if buff:startswith('Aftermath') then
+        if player.equipment.range == 'Earp' then
+            classes.CustomRangedGroups:clear()
+
+            if (buff == "Aftermath: Lv.3" and gain) or buffactive['Aftermath: Lv.3'] then
+                classes.CustomRangedGroups:append('AME')
+                add_to_chat(8, '-------------Earp AM3 UP-------------')
+            end
+            if (buff == "Aftermath: Lv.2" and gain) or buffactive['Aftermath: Lv.2'] then
+                classes.CustomRangedGroups:append('AME')
+                add_to_chat(8, '-------------Earp AM2 UP-------------')
+            end
+            if (buff == "Aftermath: Lv.1" and gain) or buffactive['Aftermath: Lv.1'] then
+                classes.CustomRangedGroups:append('AME')
+                add_to_chat(8, '-------------Earp AM1 UP-------------')
+            end
+
+            if not midaction() then
+                handle_equipping_gear(player.status)
+            end
+        else
+            classes.CustomRangedGroups:clear()
+
+            if not midaction() then
+                handle_equipping_gear(player.status)
+            end
+        end
+    end
+	
 end
 
 -------------------------------------------------------------------------------------------------------------------
