@@ -419,7 +419,7 @@ function init_gear_sets()
         ring1="Regal Ring",
         ring2="Ilabrat Ring",
         back=Camulus.WSD,
-        waist="Kwahu Kachina Belt",
+        waist="K. Kachina Belt +1",
         legs="Meghanada Chausses +2",
         feet="Lanun Bottes +3"
     }
@@ -659,8 +659,8 @@ function init_gear_sets()
     sets.midcast.RA.AME = set_combine(sets.midcast.RA, {
         head="Meghanada Visor +2",
         body="Nisroch Jerkin",
-        hands="Mummu Wrists +2",
-        waist="Kwahu Kachina Belt",
+        hands="Chasseur's Gants +3",
+        waist="K. Kachina Belt +1",
     })
     sets.midcast.RA.Mid = set_combine(sets.midcast.RA, {
         ear2="Crepuscular Earring",
@@ -669,7 +669,7 @@ function init_gear_sets()
     sets.midcast.RA.Mid.AME = set_combine(sets.midcast.RA.Mid, {
         head="Meghanada Visor +2",
         body="Nisroch Jerkin",
-        waist="Kwahu Kachina Belt",
+        waist="K. Kachina Belt +1",
     })
 
     sets.midcast.RA.Acc = set_combine(sets.midcast.RA.Mid, {
@@ -690,7 +690,7 @@ function init_gear_sets()
     })
     sets.midcast.RA.Acc.AME = set_combine(sets.midcast.RA.Acc, {
         head="Meghanada Visor +2",
-        waist="Kwahu Kachina Belt",
+        waist="K. Kachina Belt +1",
     })
 
     sets.midcast.RA.TripleShot = set_combine(sets.midcast.RA, {
@@ -1192,7 +1192,7 @@ function get_custom_ranged_groups()
         end
     end
 
-    if player.equipment.range == 'Armageddon' then
+    if player.equipment.range == 'Armageddon'  then
         if buffactive['Aftermath: Lv.1'] or buffactive['Aftermath: Lv.2'] or buffactive['Aftermath Lv.3'] then
             classes.CustomRangedGroups:append('AME')
         end
