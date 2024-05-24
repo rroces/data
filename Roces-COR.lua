@@ -663,7 +663,7 @@ function init_gear_sets()
         waist="K. Kachina Belt +1",
 		legs="Darraigner's Brais",
 		ear1="Chas. Earring +1",
-        ear2=" Odr Earring",
+        ear2="Odr Earring",
 		
     })
     sets.midcast.RA.Mid = set_combine(sets.midcast.RA, {
@@ -678,7 +678,7 @@ function init_gear_sets()
 
     sets.midcast.RA.Acc = set_combine(sets.midcast.RA.Mid, {
         --ring1="Hajduk Ring",
-        ammo=gear.Accbullet,
+		ammo=gear.Accbullet,
         neck="Iskur Gorget",
         ear1="Telos Earring",
         ear2="Crep. Earring",
@@ -724,7 +724,6 @@ function init_gear_sets()
 
     -- Idle sets
     sets.idle = {
-        ammo=gear.RAbullet,
         --range="Fomalhaut",
         head="Nyame Helm",
         neck="Commodore Charm +2",
@@ -885,7 +884,20 @@ function init_gear_sets()
         feet="Nyame Sollerets"
     })
 
-    sets.engaged.Acc = sets.engaged -- just for shooting
+    sets.engaged.Acc = {	
+	head="Chasseur's Tricorne +3",
+		body="Chasseur's Frac +3",
+		hands="Chasseur's Gants +3",
+		legs="Chas. Culottes +3",
+		feet="Chass. Bottes +3",
+		neck="Lissome Necklace",
+		ear2="Mache Earring +1",
+		ear1="Odr Earring",
+		ring1="Chirich Ring +1",
+		ring2="Chirich Ring +1",
+		waist="Kentarch Belt +1",
+		back=Camulus.DA
+	}	
     sets.engaged.Acc.PDT = set_combine(sets.engaged.Acc, sets.defense.PDT)
 
     sets.engaged.Melee.Acc = set_combine(sets.engaged.Melee.Mid, {
@@ -896,13 +908,29 @@ function init_gear_sets()
 		feet="Chass. Bottes +3",
 		neck="Lissome Necklace",
 		ear2="Mache Earring +1",
+		ring1="Patricius Ring",
 		back=Camulus.DA
     })
     sets.engaged.Melee.Acc.Haste_30 = set_combine(sets.engaged.Melee.Acc, {
         waist="Shetal Stone",
+		head="Chasseur's Tricorne +3",
+		body="Chasseur's Frac +3",
+		hands="Chasseur's Gants +3",
+		legs="Chas. Culottes +3",
+		feet="Chass. Bottes +3",
+		neck="Lissome Necklace",
+		ear2="Mache Earring +1",
+		back=Camulus.DA
     })
     sets.engaged.Melee.Acc.MaxHaste = set_combine(sets.engaged.Melee.Acc, {
-        feet="",
+        head="Chasseur's Tricorne +3",
+		body="Chasseur's Frac +3",
+		hands="Chasseur's Gants +3",
+		legs="Chas. Culottes +3",
+		feet="Chass. Bottes +3",
+		neck="Lissome Necklace",
+		ear2="Mache Earring +1",
+		back=Camulus.DA
     })
     sets.engaged.Melee.Acc.PDT = set_combine(sets.engaged.Melee.Acc, sets.Nyame)
     sets.engaged.Melee.Acc.PDT.Haste_30 = set_combine(sets.engaged.Melee.Acc.Haste_30, sets.Nyame)
