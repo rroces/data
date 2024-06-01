@@ -95,7 +95,7 @@ function user_setup()
     
 	gear.RAbullet = "Chrono Bullet"
     gear.Accbullet = "Devastating Bullet"
-    gear.WSbullet = "Chrono Bullet"
+    gear.WSbullet = "Bayeux Bullet"
     gear.MAbullet = "Living Bullet"
     gear.QDbullet = "Hauksbok Bullet" 
     options.ammo_warning_limit = 15
@@ -435,11 +435,11 @@ function init_gear_sets()
         waist="Kentarch Belt +1",
         feet="Lanun Bottes +3",
 	    legs="Nyame Flanchard",
-		ammo="Bayeux Bullet",
 		back=Camulus.WSD
 		
     })
     sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {
+		ammo=gear.WSbullet,
         head="Nyame helm",
         neck="Rep. Plat. Medal",
         body="Nyame Mail",
@@ -452,7 +452,6 @@ function init_gear_sets()
         feet="Nyame Sollerets",
 	    legs="Nyame Flanchard",
 		back={ name="Camulus's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
-		ammo="Bayeux Bullet"
 		
     })
 
@@ -583,7 +582,7 @@ function init_gear_sets()
 		ammo="Devastating Bullet",
         neck="Commodore Charm +2",
         ear1="Gwati Earring",
-        ear2="Enchntr. Earring +1",
+        ear2="Chas. Earring +1",
         ring1="Stikini Ring +1",
         ring2="Stikini Ring +1",
         back=Camulus.STP,
