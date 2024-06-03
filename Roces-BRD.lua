@@ -756,6 +756,10 @@ function job_precast(spell, action, spellMap, eventArgs)
                 return
             end
         end]]
+		if spell.name == 'Aria of Pasion' then
+            equip({range="Loughnashade"})
+        end
+		
         if spell.name == 'Honor March' then
             equip({range="Marsyas"})
         end
@@ -812,6 +816,10 @@ function job_midcast(spell, action, spellMap, eventArgs)
         if generalClass and sets.midcast[generalClass] then
             equip(sets.midcast[generalClass])
         end
+		if spell.name == 'Aria of Pasion' then
+            equip({range="Loughnashade"})
+        end
+		
         if spell.name == 'Honor March' then
             equip({range="Marsyas"})
         end
