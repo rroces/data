@@ -466,12 +466,12 @@ function init_gear_sets()
 
 	sets.precast.JA['Call Beast'] = {
 		hands={ name="Ankusa Gloves +3", augments={'Enhances "Beast Affinity" effect',}},
-		feet={ name="Gleti's Boots", augments={'Path: A',}},
+		feet="Gleti's Boots",
 		right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Pet: "Dbl. Atk."+7',}},}
 	
 	sets.precast.JA['Beastial Loyalty'] = {
 		hands={ name="Ankusa Gloves +3", augments={'Enhances "Beast Affinity" effect',}},
-		feet={ name="Gleti's Boots", augments={'Path: A',}},
+		feet="Gleti's Boots",
 		right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Pet: "Dbl. Atk."+7',}},}	
 
 	sets.precast.JA['Charm'] = {
@@ -611,10 +611,10 @@ function init_gear_sets()
 	sets.precast.WS['Decimation'] = {
 	    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		head={ name="Nyame Helm", augments={'Path: B',}},
-		body={ name="Gleti's Cuirass", augments={'Path: A',}},
-		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
-		feet="Nukumi Ocreae +2",
+		body="Gleti's Cuirass",
+		hands="Gleti's Gauntlets",
+		legs="Gleti's Breeches",
+		feet="Nukumi Ocreae +3",
 		neck="Rep. Plat. Medal",
 		waist="Fotia Belt",
 		left_ear="Sroda Earring",
@@ -626,10 +626,10 @@ function init_gear_sets()
 	sets.precast.WS['Decimation'].ATKCAP = {
 	    ammo="Crepuscular Pebble",
 		head={ name="Nyame Helm", augments={'Path: B',}},
-		body={ name="Gleti's Cuirass", augments={'Path: A',}},
-		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
-		feet="Nukumi Ocreae +2", 
+		body="Gleti's Cuirass",
+		hands="Gleti's Gauntlets",
+		legs="Gleti's Breeches",
+		feet="Nukumi Ocreae +3", 
 		neck={ name="Bst. Collar +2", augments={'Path: A',}},
 		waist="Fotia Belt",
 		left_ear="Sroda Earring",
@@ -644,7 +644,7 @@ function init_gear_sets()
 	sets.precast.WS['Calamity'] = {
 		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		head={ name="Ankusa Helm +3", augments={'Enhances "Killer Instinct" effect',}},
-		body="Nukumi Gausape +2",
+		body="Nukumi Gausape +3",
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -659,10 +659,10 @@ function init_gear_sets()
 	sets.precast.WS['Calamity'].ATKCAP = {
 		ammo="Crepuscular Pebble",
 		head={ name="Ankusa Helm +3", augments={'Enhances "Killer Instinct" effect',}},
-		body="Nukumi Gausape +2",
+		body="Nukumi Gausape +3",
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
-		feet="Nukumi Ocreae +2", 
+		feet="Nukumi Ocreae +3", 
 		neck={ name="Bst. Collar +2", augments={'Path: A',}},
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -677,10 +677,10 @@ function init_gear_sets()
 	sets.precast.WS['Rampage'] = {
 	    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		head={ name="Nyame Helm", augments={'Path: B',}},
-		body={ name="Gleti's Cuirass", augments={'Path: A',}},
-		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
-		feet={ name="Gleti's Boots", augments={'Path: A',}},
+		body="Gleti's Cuirass",
+		hands="Gleti's Gauntlets",
+		legs="Gleti's Breeches",
+		feet="Gleti's Boots",
 		neck="Fotia Gorget",
 		waist="Fotia Belt",
 		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -711,7 +711,7 @@ function init_gear_sets()
 	sets.precast.WS['Savage Blade'] = {
 		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		head={ name="Ankusa Helm +3", augments={'Enhances "Killer Instinct" effect',}},
-		body="Nukumi Gausape +2",
+		body="Nukumi Gausape +3",
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -726,10 +726,10 @@ function init_gear_sets()
 	sets.precast.WS['Savage Blade'].ATKCAP = {
 		ammo="Crepuscular Pebble",
 		head={ name="Ankusa Helm +3", augments={'Enhances "Killer Instinct" effect',}},
-		body="Nukumi Gausape +2",
+		body="Nukumi Gausape +3",
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
-		feet="Nukumi Ocreae +2", 
+		feet="Nukumi Ocreae +3", 
 		neck={ name="Bst. Collar +2", augments={'Path: A',}},
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
@@ -800,7 +800,7 @@ function init_gear_sets()
 		body={ name="Nyame Mail", augments={'Path: B',}},
 		hands="Nukumi Manoplas +3",
 		legs="Tot. Trousers +2",
-		feet={ name="Gleti's Boots", augments={'Path: A',}},
+		feet="Gleti's Boots",
 		neck={ name="Bst. Collar +2", augments={'Path: A',}},
 		waist="Incarnation Sash",
 		left_ear="Sroda Earring",
@@ -817,7 +817,7 @@ function init_gear_sets()
 		body={ name="An. Jackcoat +3", augments={'Enhances "Feral Howl" effect',}},
 		hands="Nukumi Manoplas +3",
 		legs={ name="Emicho Hose +1", augments={'Pet: Accuracy+20','Pet: Attack+20','Pet: "Dbl. Atk."+4',}},
-		feet={ name="Gleti's Boots", augments={'Path: A',}},
+		feet="Gleti's Boots",
 		neck={ name="Bst. Collar +2", augments={'Path: A',}},
 		waist="Incarnation Sash",
 		left_ear="Sroda Earring",
@@ -833,8 +833,8 @@ function init_gear_sets()
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body={ name="Nyame Mail", augments={'Path: B',}},
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
-		feet={ name="Gleti's Boots", augments={'Path: A',}},
+		legs="Gleti's Breeches",
+		feet="Gleti's Boots",
 		neck={ name="Bst. Collar +2", augments={'Path: A',}},
 		waist="Incarnation Sash",
 		left_ear="Enmerkar Earring",
@@ -850,8 +850,8 @@ function init_gear_sets()
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body="Udug Jacket",
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
-		feet={ name="Gleti's Boots", augments={'Path: A',}},
+		legs="Gleti's Breeches",
+		feet="Gleti's Boots",
 		neck="Adad Amulet",
 		waist="Incarnation Sash",
 		left_ear="Enmerkar Earring",
@@ -887,7 +887,7 @@ function init_gear_sets()
 		ammo="Staunch Tathlum +1",
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body="Totemic Jackcoat +2",
-		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+		hands="Gleti's Gauntlets",
 		legs="Tali'ah Sera. +2",
 		feet={ name="Ankusa Gaiters +3", augments={'Enhances "Beast Healer" effect',}},
 		neck={ name="Loricate Torque +1", augments={'Path: A',}},
@@ -904,7 +904,7 @@ function init_gear_sets()
 		-- range="Killer Shortbow",
 		-- head={ name="Ankusa Helm +3", augments={'Enhances "Killer Instinct" effect',}},}
 		-- body="Totemic Jackcoat +2",
-		-- --hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+		-- --hands="Gleti's Gauntlets",
 		-- legs="Totemic Trousers +3",
 		-- feet={ name="Ankusa Gaiters +3", augments={'Enhances "Beast Healer" effect',}},
 		-- neck={ name="Loricate Torque +1", augments={'Path: A',}},
@@ -923,7 +923,7 @@ function init_gear_sets()
 		body={ name="An. Jackcoat +3", augments={'Enhances "Feral Howl" effect',}},
 		hands={ name="Emi. Gauntlets +1", augments={'Pet: Accuracy+20','Pet: Attack+20','Pet: "Dbl. Atk."+4',}},
 		legs={ name="Ankusa Trousers +3", augments={'Enhances "Familiar" effect',}},
-		feet={ name="Gleti's Boots", augments={'Path: A',}},
+		feet="Gleti's Boots",
 		neck={ name="Bst. Collar +2", augments={'Path: A',}},
 		waist="Incarnation Sash",
 		left_ear="Sroda Earring",
@@ -944,8 +944,8 @@ function init_gear_sets()
 		head="Crepuscular Helm",
 		body="Tali'ah Manteel +2",
 		hands={ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
-		feet="Nukumi Ocreae +2",
+		legs="Gleti's Breeches",
+		feet="Nukumi Ocreae +3",
 		neck="Anu Torque",
 		waist="Windbuffet Belt +1",
 		left_ear="Suppanomimi",
@@ -959,8 +959,8 @@ function init_gear_sets()
 		head="Crepuscular Helm",
 		body="Crepuscular Mail",
 		hands={ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
-		feet="Nukumi Ocreae +2",
+		legs="Gleti's Breeches",
+		feet="Nukumi Ocreae +3",
 		neck="Anu Torque",
 		waist="Windbuffet Belt +1",
 		left_ear="Suppanomimi",
@@ -994,7 +994,7 @@ function init_gear_sets()
 		head="Crepuscular Helm",
 		body="Tali'ah Manteel +2",
 		hands={ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},										--6%
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
+		legs="Gleti's Breeches",
 		feet={ name="Taeon Boots", augments={'Accuracy+25','"Dual Wield"+5','STR+5 DEX+5',}},													--9%
 		neck="Anu Torque",
 		waist="Reiki Yotai",																													--7%
@@ -1010,7 +1010,7 @@ function init_gear_sets()
 		head="Crepuscular Helm",
 		body="Tali'ah Manteel +2",
 		hands={ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},										--6%
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
+		legs="Gleti's Breeches",
 		feet={ name="Taeon Boots", augments={'Accuracy+25','"Dual Wield"+5','STR+5 DEX+5',}},													--9%
 		neck="Anu Torque",
 		waist="Reiki Yotai",																													--7%
@@ -1027,7 +1027,7 @@ function init_gear_sets()
 		head="Crepuscular Helm",
 		body="Tali'ah Manteel +2",
 		hands={ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},										--6%
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
+		legs="Gleti's Breeches",
 		feet={ name="Taeon Boots", augments={'Accuracy+25','"Dual Wield"+5','STR+5 DEX+5',}},													--9%
 		neck="Anu Torque",
 		waist="Reiki Yotai",																													--7%
@@ -1043,7 +1043,7 @@ function init_gear_sets()
 		head="Crepuscular Helm",
 		body="Tali'ah Manteel +2",
 		hands={ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},										--6%
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
+		legs="Gleti's Breeches",
 		feet={ name="Taeon Boots", augments={'Accuracy+25','"Dual Wield"+5','STR+5 DEX+5',}},													--9%
 		neck="Anu Torque",
 		waist="Reiki Yotai",																													--7%
@@ -1060,7 +1060,7 @@ function init_gear_sets()
 		head="Crepuscular Helm",
 		body="Tali'ah Manteel +2",
 		hands={ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},										--6%
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
+		legs="Gleti's Breeches",
 		feet={ name="Taeon Boots", augments={'Accuracy+25','"Dual Wield"+5','STR+5 DEX+5',}},													--9%
 		neck="Anu Torque",
 		waist="Reiki Yotai",																													--7%
@@ -1076,7 +1076,7 @@ function init_gear_sets()
 		head="Crepuscular Helm",
 		body="Tali'ah Manteel +2",
 		hands={ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},										--6%
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
+		legs="Gleti's Breeches",
 		feet={ name="Taeon Boots", augments={'Accuracy+25','"Dual Wield"+5','STR+5 DEX+5',}},													--9%
 		neck="Anu Torque",
 		waist="Reiki Yotai",																													--7%
@@ -1093,7 +1093,7 @@ function init_gear_sets()
 		head="Crepuscular Helm",
 		body="Tali'ah Manteel +2",
 		hands={ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},										--6%
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
+		legs="Gleti's Breeches",
 		feet={ name="Taeon Boots", augments={'Accuracy+25','"Dual Wield"+5','STR+5 DEX+5',}},													--9%
 		neck="Anu Torque",
 		waist="Reiki Yotai",																													--7%
@@ -1109,7 +1109,7 @@ function init_gear_sets()
 		head="Crepuscular Helm",
 		body="Tali'ah Manteel +2",
 		hands={ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},										--6%
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
+		legs="Gleti's Breeches",
 		feet={ name="Taeon Boots", augments={'Accuracy+25','"Dual Wield"+5','STR+5 DEX+5',}},													--9%
 		neck="Anu Torque",
 		waist="Reiki Yotai",																													--7%
@@ -1127,8 +1127,8 @@ function init_gear_sets()
 		head="Crepuscular Helm",
 		body="Tali'ah Manteel +2",
 		hands={ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},										--6%
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
-		feet="Nukumi Ocreae +2",
+		legs="Gleti's Breeches",
+		feet="Nukumi Ocreae +3",
 		neck="Anu Torque",
 		waist="Reiki Yotai",																													--7%
 		left_ear="Suppanomimi",																													--5%
@@ -1143,8 +1143,8 @@ function init_gear_sets()
 		head="Crepuscular Helm",
 		body="Tali'ah Manteel +2",
 		hands={ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},										--6%
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
-		feet="Nukumi Ocreae +2",
+		legs="Gleti's Breeches",
+		feet="Nukumi Ocreae +3",
 		neck="Anu Torque",
 		waist="Reiki Yotai",																													--7%
 		left_ear="Suppanomimi",																													--5%
@@ -1161,8 +1161,8 @@ function init_gear_sets()
 		head="Crepuscular Helm",
 		body="Tali'ah Manteel +2",
 		hands={ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},										--6%
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
-		feet="Nukumi Ocreae +2",
+		legs="Gleti's Breeches",
+		feet="Nukumi Ocreae +3",
 		neck="Anu Torque",
 		waist="Windbuffet Belt +1",
 		left_ear="Suppanomimi",																													--5%
@@ -1177,8 +1177,8 @@ function init_gear_sets()
 		head="Crepuscular Helm",
 		body="Tali'ah Manteel +2",
 		hands={ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},										--6%
-		legs={ name="Gleti's Breeches", augments={'Path: A',}},
-		feet="Nukumi Ocreae +2",
+		legs="Gleti's Breeches",
+		feet="Nukumi Ocreae +3",
 		neck="Anu Torque",
 		waist="Windbuffet Belt +1",
 		left_ear="Suppanomimi",																													--5%
