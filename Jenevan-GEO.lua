@@ -479,7 +479,7 @@ function init_gear_sets()
         neck="Bathy Choker +1",
         ear1="Lugalbanda Earring",
         ear2="Odnowa Earring +1",
-        ring1={name="Stikini Ring +1", bag="wardrobe3"},
+        ring1="Shneddick Ring",
         ring2={name="Stikini Ring +1", bag="wardrobe4"},
         back=gear.GEO_Idle_Cape,
         waist="Plat. Mog. Belt",

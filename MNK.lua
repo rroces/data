@@ -3,6 +3,9 @@ function get_sets()
 	send_command("bind f10 gs c toggle Idle set")
 	send_command("bind ^f9 gs c equip TP set")
 	send_command("bind ^f10 gs c equip DT set")
+
+send_command('wait 6;input /lockstyleset 104')
+send_command('input /macro book 17')
 	
 	function file_unload()
 		send_command("unbind ^f9")
@@ -27,6 +30,7 @@ function get_sets()
 
 	sets.Idle.index = {"Standard", "DT"}
 	Idle_ind = 1
+	
 
 	sets.Idle.Standard = {
 		ammo ="Aurgelmir Orb",

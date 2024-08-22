@@ -606,7 +606,7 @@ function get_sets()
         head = "Bagua Galero +3",
     }
     sets.precast["Cardinal Chant"] = {
-        head = "Geomancy Galero +1",
+        head = "Geomancy Galero +3",
     }
     sets.precast["Full Circle"] = {
         head = "Azimuth Hood +3",
@@ -782,7 +782,7 @@ function get_sets()
         main="Daybreak", --30
         sub="Ammurapi Shield", --
         ammo = "Pemphredo Tathlum",
-        head = "Geo. Galero +1",
+        head = "Geo. Galero +3",
         body = "Geomancy Tunic +3",
         hands = "Geo. Mitaines +3",
         legs = "Geomancy Pants +3",
@@ -800,7 +800,7 @@ function get_sets()
         main="Daybreak", --30
         sub="Ammurapi Shield",
         ammo = "Pemphredo Tathlum",
-        head = "Geo. Galero +1",
+        head = "Geo. Galero +3",
         body = "Geomancy Tunic +3",
         hands = "Geo. Mitaines +3",
         legs = "Geomancy Pants +3",

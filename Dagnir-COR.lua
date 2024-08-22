@@ -93,11 +93,11 @@ function user_setup()
     state.MagicalDefenseMode:options('MDT')
 
     
-	gear.RAbullet = "Chrono Bullet"
-    gear.Accbullet = "Devastating Bullet"
-    gear.WSbullet = "Chrono Bullet"
-    gear.MAbullet = "Living Bullet"
-    gear.QDbullet = "Living Bullet" --Hauksbok Bullet
+	gear.RAbullet = "Eminent Bullet"
+    gear.Accbullet = "Eminent Bullet"
+    gear.WSbullet = "Eminent Bullet"
+    gear.MAbullet = "Eminent Bullet"
+    gear.QDbullet = "Eminent Bullet" --Hauksbok Bullet
     options.ammo_warning_limit = 15
 	 
 	--gear.RAbullet = "Eminent Bullet"
@@ -377,7 +377,7 @@ function init_gear_sets()
         body="Dread Jupon",
         hands="Leyline Gloves",
 		feet="Carmine Greaves +1",
-        ring1="Weatherspoon Ring +1",
+        ring1="Weatherspoon Ring",
         ring2="Kishar Ring",
         legs="Quiahuiz Trousers",
     }
@@ -572,7 +572,7 @@ function init_gear_sets()
         --hands="Malignance Gloves",
         --body="Malignance Tabard",
         --back=Camulus.STP,
-        --ring1="Weatherspoon Ring +1",
+        --ring1="Weatherspoon Ring",
         --ring2="Kishar Ring",
         --legs="Malignance Tights",
         --feet="Malignance Boots"

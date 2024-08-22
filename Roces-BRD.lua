@@ -215,7 +215,7 @@ function init_gear_sets()
         neck="Orunmila's Torque", --5
         ear1="Loquac. Earring", --2
         ear2="Etiolation Earring", --1
-        ring1="Weather. Ring", --5
+        ring1="Weather. Ring +1", --5
         ring2="Kishar Ring", --4
         back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}, --10
         waist="Embla Sash", --5
@@ -258,9 +258,9 @@ function init_gear_sets()
 
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
-        range=gear.Linos_WS,
+        range={ name="Linos", augments={'Accuracy+15','Weapon skill damage +3%','STR+6 VIT+6',}},
         head="Nyame Helm",
-        body="Bihu Jstcorps. +3",
+        body="Nyame Mail",
         hands="Nyame Gauntlets",
         legs="Nyame Flanchard",
         feet="Nyame Sollerets",
@@ -275,7 +275,7 @@ function init_gear_sets()
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
     sets.precast.WS['Evisceration'] = set_combine(sets.precast.WS, {
-        range=gear.Linos_TP,
+        range={ name="Linos", augments={'Accuracy+13','"Dbl.Atk."+2','Quadruple Attack +3',}},
         head="Blistering Sallet +1",
         hands="Nyame Gauntlets",
         legs="Zoar Subligar +1",
@@ -287,7 +287,7 @@ function init_gear_sets()
         })
 
     sets.precast.WS['Exenterator'] = set_combine(sets.precast.WS, {
-        range=gear.Linos_TP,
+        range={ name="Linos", augments={'Accuracy+13','"Dbl.Atk."+2','Quadruple Attack +3',}},
         ear1="Brutal Earring",
         ring1="Shukuyu Ring",
         back=gear.BRD_WS2_Cape,
@@ -318,8 +318,9 @@ function init_gear_sets()
         })
 
     sets.precast.WS['Savage Blade'] = set_combine(sets.precast.WS, {
-        neck="Rep. Plat. Medal",
-        ear1="Ishvara Earring",
+        neck="Bard's Charm +2",
+		ear1="Moonshade Earring",
+        ear2="Fili Earring +2",
         waist="Sailfi Belt +1",
         back=gear.BRD_WS2_Cape,
         })
@@ -339,7 +340,7 @@ function init_gear_sets()
         --legs="Querkening Brais" --15
         neck="Loricate Torque +1", --5
         ear1="Halasz Earring", --5
-        ear2="Magnetic Earring", --8
+        ear2="", --8
         ring2="Evanescence Ring", --5
         waist="Rumination Sash", --10
         }
@@ -351,13 +352,14 @@ function init_gear_sets()
     sets.midcast.Carol = {hands="Mousai Gages +1"}
     sets.midcast.Etude = {head="Mousai Turban +1"}
     sets.midcast.HonorMarch = {range="Marsyas", hands="Fili Manchettes +3"}
+	sets.midcast['Aria of Passion'] = {range="Loughnashade", hands="Fili manchettes +3", legs ="Inyanga Shalwar +2"}
     sets.midcast.Lullaby = {body="Fili Hongreline +3", hands="Brioso Cuffs +3"}
     sets.midcast.Madrigal = {head="Fili Calot +3", feet="Fili Cothurnes +3"}
     sets.midcast.Mambo = {feet="Mou. Crackows +1"}
     sets.midcast.March = {hands="Fili Manchettes +3"}
     sets.midcast.Minne = {legs="Mou. Seraweels +1"}
     sets.midcast.Minuet = {body="Fili Hongreline +3"}
-    sets.midcast.Paeon = {head="Brioso Roundlet +2"}
+    sets.midcast.Paeon = {head="Brioso Roundlet +3"}
     sets.midcast.Prelude = {feet="Fili Cothurnes +3"}
     sets.midcast.Threnody = {body="Mou. Manteel +1"}
     sets.midcast['Adventurer\'s Dirge'] = {range="Marsyas", hands="Bihu Cuffs +3"}
@@ -378,7 +380,7 @@ function init_gear_sets()
         neck="Mnbw. Whistle +1",
         ear1="Odnowa Earring +1",
         ear2="Etiolation Earring",
-        ring1="Moonlight Ring",
+        ring1="", -- Moonlight Ring
         ring2="Defending Ring",
         waist="Plat. Mog. Belt",
         back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},
@@ -389,7 +391,7 @@ function init_gear_sets()
         main="Carnwenhan",
         sub="Ammurapi Shield",
         range="Gjallarhorn",
-        head="Brioso Roundlet +2",
+        head="Brioso Roundlet +3",
         body="Brioso Justau. +3",
         hands="Brioso Cuffs +3",
         legs="Inyanga Shalwar +2",
@@ -404,7 +406,7 @@ function init_gear_sets()
         }
 
     -- For song defbuffs (accuracy primary, duration secondary)
-    sets.midcast.SongEnfeebleAcc = set_combine(sets.midcast.SongEnfeeble, {legs="Brioso Cannions +2"})
+    sets.midcast.SongEnfeebleAcc = set_combine(sets.midcast.SongEnfeeble, {legs="Brioso Cannions +3"})
 
     -- For Horde Lullaby maxiumum AOE range.
     sets.midcast.SongStringSkill = {
@@ -494,7 +496,7 @@ function init_gear_sets()
         head=empty;
         body="Cohort Cloak +1",
         hands="Brioso Cuffs +3",
-        legs="Brioso Cannions +2",
+        legs="Brioso Cannions +3",
         feet="Brioso Slippers +3",
         neck="Mnbw. Whistle +1",
         ear1="Regal Earring",
@@ -576,17 +578,17 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
 
     sets.engaged = {
-        range=gear.Linos_TP,
+        range={ name="Linos", augments={'Accuracy+13','"Dbl.Atk."+2','Quadruple Attack +3',}},
         head="Aya. Zucchetto +2", --Aya. Zucchetto +2
         body="Ashera Harness",
         hands="Bunzi's Gloves",
-        legs="Zoar Subligar +1",
+        legs="Nyame Flanchard",
         feet="Nyame Sollerets",
         neck="Bard's Charm +2",
         ear1="Cessance Earring",
         ear2="Telos Earring",
-        ring1={name="Chirich Ring +1", bag="wardrobe5"},
-        ring2={name="Chirich Ring +1", bag="wardrobe6"},
+        left_ring={name="Chirich Ring +1", bag="wardrobe8"},
+        right_ring={name="Chirich Ring +1", bag="wardrobe6"},
         back=gear.BRD_STP_Cape,
         waist="Windbuffet Belt +1",
         }
@@ -603,17 +605,17 @@ function init_gear_sets()
 
     -- No Magic Haste (74% DW to cap)
     sets.engaged.DW = {
-        range=gear.Linos_TP,
+        range={ name="Linos", augments={'Accuracy+13','"Dbl.Atk."+2','Quadruple Attack +3',}},
         head="Aya. Zucchetto +2",
-        body="Ayanmo Corazza +2",
+        body="Ashera Harness",
         hands="Gazu Bracelets +1",
-        legs="Zoar Subligar +1",
-        feet=gear.Chironic_QA_feet,
+        legs="Nyame Flanchard",
+        feet="Nyame Sollerets",
         neck="Bard's Charm +2",
         ear1="Eabani Earring", --4
         ear2="Suppanomimi", --5
-        ring1={name="Chirich Ring +1", bag="wardrobe5"},
-        ring2={name="Chirich Ring +1", bag="wardrobe6"},
+        left_ring={name="Chirich Ring +1", bag="wardrobe8"},
+        right_ring={name="Chirich Ring +1", bag="wardrobe6"},
         back=gear.BRD_DW_Cape, --10
         waist="Reiki Yotai", --7
         } -- 26%
@@ -637,17 +639,17 @@ function init_gear_sets()
 
     -- 45% Magic Haste (36% DW to cap)
     sets.engaged.DW.MaxHaste = {
-        range=gear.Linos_TP,
+        range={ name="Linos", augments={'Accuracy+13','"Dbl.Atk."+2','Quadruple Attack +3',}},
         head="Aya. Zucchetto +2",
-        body="Ayanmo Corazza +2",
+        body="Ashera Harness",
         hands="Gazu Bracelets +1",
-        legs="Zoar Subligar +1",
-        feet=gear.Chironic_QA_feet,
+        legs="Nyame Flanchard",
+        feet="Nyame Sollerets",
         neck="Bard's Charm +2",
         ear1="Eabani Earring", --4
         ear2="Telos Earring",
-        ring1={name="Chirich Ring +1", bag="wardrobe5"},
-        ring2={name="Chirich Ring +1", bag="wardrobe6"},
+        left_ring={name="Chirich Ring +1", bag="wardrobe8"},
+        right_ring={name="Chirich Ring +1", bag="wardrobe6"},
         back=gear.BRD_STP_Cape,
         waist="Reiki Yotai", --7
         }
@@ -667,11 +669,11 @@ function init_gear_sets()
         head="Aya. Zucchetto +2",
         body="Ashera Harness",
         hands=gear.Telchine_STP_hands,
-        legs="Aya. Cosciales +2",
-        feet="",
+        legs="Nyame Sollerets",
+        feet="Nyame Sollerets",
         neck="Bard's Charm +2",
-        ring1={name="Chirich Ring +1", bag="wardrobe5"},
-        ring2={name="Chirich Ring +1", bag="wardrobe6"},
+        left_ring={name="Chirich Ring +1", bag="wardrobe8"},
+        right_ring={name="Chirich Ring +1", bag="wardrobe6"},
         back=gear.BRD_STP_Cape,
         }
 
@@ -685,7 +687,7 @@ function init_gear_sets()
         hands="Nyame Gauntlets",
         legs="Nyame Flanchard",
         feet="Nyame Sollerets",
-        ring1="Moonlight Ring", --5/5
+        ring1=" --", --5/5 --Moonlight Ring
         }
 
     sets.engaged.DT = set_combine(sets.engaged, sets.engaged.Hybrid)
@@ -727,10 +729,10 @@ function init_gear_sets()
     -- sets.CP = {back="Mecisto. Mantle"}
     --sets.Reive = {neck="Ygnas's Resolve +1"}
 
-    sets.Carnwenhan = {main="Carnwenhan", sub="Gleti's Knife"}
-    sets.Twashtar = {main="Twashtar", sub="Gleti's Knife"}
-    sets.Tauret = {main="Tauret", sub="Gleti's Knife"}
-    sets.Naegling = {main="Naegling", sub="Gleti's Knife"}
+    sets.Carnwenhan = {main="Carnwenhan", sub="Fusetto +2"}
+    sets.Twashtar = {main="Twashtar", sub="Fusetto +2"}
+    sets.Tauret = {main="Tauret", sub="Fusetto +2"}
+    sets.Naegling = {main="Naegling", sub="Fusetto +2"}
 
     sets.DefaultShield = {sub="Genmei Shield"}
 
@@ -756,7 +758,7 @@ function job_precast(spell, action, spellMap, eventArgs)
                 return
             end
         end]]
-		if spell.name == 'Aria of Pasion' then
+		if spell.name == 'Aria of Passion' then
             equip({range="Loughnashade"})
         end
 		
@@ -816,9 +818,9 @@ function job_midcast(spell, action, spellMap, eventArgs)
         if generalClass and sets.midcast[generalClass] then
             equip(sets.midcast[generalClass])
         end
-		if spell.name == 'Aria of Pasion' then
+		if spell.name == 'Aria of Passion' then
             equip({range="Loughnashade"})
-        end
+		end
 		
         if spell.name == 'Honor March' then
             equip({range="Marsyas"})
@@ -1213,7 +1215,7 @@ windower.register_event('zone change',
 
 -- Select default macro book on initial load or subjob change.
 function select_default_macro_book()
-    set_macro_page(1, 14)
+    set_macro_page(1, 22)
 end
 
 function set_lockstyle()

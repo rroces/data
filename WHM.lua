@@ -205,16 +205,16 @@ function init_gear_sets()
         main="C. Palug Hammer", --7
         sub="Chanter's Shield", --3
         ammo="Impatiens", --(2)
-        head="Vanya Hood", --6
+        head="Ebers Cap +2", --6
         body="Inyanga Jubbah +2", --14
-        hands="Gende. Gages +1", --7
+        hands="Gendewitha Gages", --7
         legs="Aya. Cosciales +2", --8
         feet="Regal Pumps +1", --6
         neck="Clr. Torque +2", --10
         ear1="Malignance Earring", --4
         ear2="Enchntr. Earring +1", --2
         ring1="Lebeche Ring", --(2)
-        ring2="Weather. Ring +1", --6(4)
+        ring2="Kishar Ring", --6(4)
         back="Perimede Cape", --(4)
         waist="Embla Sash", --5
         }
@@ -228,7 +228,7 @@ function init_gear_sets()
         head="Piety Cap +3", --15
         feet="Kaykaus Boots +1", --7
         ring1="Lebeche Ring", --(2)
-        ring2="Weather. Ring +1", --6(4)
+        ring2="Kishar Ring", --6(4)
         back="Perimede Cape", --(4)
 		legs="Ebers Pant. +3",
 		body="Ebers Bliaut +3",

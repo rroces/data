@@ -1,0 +1,17 @@
+sets.exported={
+    main="Daybreak",
+    sub="Genmei Shield",
+    range={ name="Dunna", augments={'MP+20','Mag. Acc.+10','"Fast Cast"+3',}},
+    head="Azimuth Hood +2",
+    body="Azimuth Coat +2",
+    hands="Nyame Gauntlets",
+    legs="Nyame Flanchard",
+    feet="Nyame Sollerets",
+    neck="Bathy Choker +1",
+    waist="Acuity Belt +1",
+    left_ear="Malignance Earring",
+    right_ear="Odnowa Earring +1",
+    left_ring="Stikini Ring +1",
+    right_ring="Shneddick Ring",
+    back="Aurist's Cape +1",
+}
