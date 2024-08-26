@@ -161,7 +161,7 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
     sets.precast.JA.Bolster = {body="Bagua Tunic +3"}
     sets.precast.JA['Full Circle'] = {head="Azimuth Hood +2"}
-    sets.precast.JA['Life Cycle'] = {head="Bagua Galero +3", body="Geomancy Tunic +3", back=gear.GEO_Idle_Cape,}
+    sets.precast.JA['Life Cycle'] = {head="Bagua Galero +3", body="Geomancy Tunic +2", back=gear.GEO_Idle_Cape,}
 
 
     -- Fast cast sets for spells
@@ -172,11 +172,13 @@ function init_gear_sets()
         main="Sucellus", --5
         sub="Chanter's Shield", --3
         head="Amalric Coif +1", --11
-        body="Agwu's Robe", --8
+        body="Shango Robe", --8
         hands="Agwu's Gages", --6
-        legs="Geomancy Pants +2", --15
-        ring1="Weather. Ring", --6(4)
+        legs="Geo. Pants +1", --15
+        ring1="Rahab Ring", --6(4)
         ring2="Kishar Ring", --10
+		ear1="Loquac. Earring",
+		ear2="Malignance Earring",
         back=gear.GEO_FC_Cape, --10
         waist="Shinjutsu-no-Obi +1", --5
         }
@@ -227,7 +229,7 @@ function init_gear_sets()
         body="Azimuth Coat +2",
         hands="Jhakri Cuffs +2",
         legs="Azimuth Tights +2",
-        feet="Azimuth Gaiters +2",
+        feet="Azimuth Gaiters +3",
         neck="Saevus Pendant +1",
         ear1="Malignance Earring",
         ear2="Regal Earring",
@@ -265,7 +267,7 @@ function init_gear_sets()
     sets.midcast.Geomancy.Indi = set_combine(sets.midcast.Geomancy, {
         head="Vanya Hood",
         legs="Bagua Pants +3",
-        feet="Azimuth Gaiters +2",
+        feet="Azimuth Gaiters +3",
         back="Lifestream Cape",
         })
 
@@ -305,7 +307,7 @@ function init_gear_sets()
         sub="Ammurapi Shield",
         ammo="Pemphredo Tathlum",
         head="Befouled Crown",
-        body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +9',}},
+        body={ name="Telchine Chas.", augments={'Enh. Mag. eff. dur. +10',}},
         hands="Telchine Gloves",
         legs={ name="Telchine Braconi", augments={'Enh. Mag. eff. dur. +8',}},
         feet="Telchine Pigaches",
@@ -361,8 +363,8 @@ function init_gear_sets()
         sub="Ammurapi Shield",
         ammo="Hydrocera",
         head="Geo. Galero +1",
-        body="Geomancy Tunic +3",
-        hands="Azimuth Gloves +3",
+        body="Geomancy Tunic +2",
+        hands="Azimuth Gloves +1",
         legs="Geomancy Pants +2",
         feet="Geo. Sandals +3",
         neck="Bagua Charm +2",
@@ -379,7 +381,7 @@ function init_gear_sets()
         waist="Acuity Belt +1",
         }) -- INT/Magic accuracy
 
-    sets.midcast.LockedEnfeebles = {body="Geomancy Tunic +3"}
+    sets.midcast.LockedEnfeebles = {body="Geomancy Tunic +2"}
 
     sets.midcast.Dispelga = set_combine(sets.midcast.IntEnfeebles, {main="Daybreak", sub="Ammurapi Shield"})
 
@@ -388,10 +390,10 @@ function init_gear_sets()
         sub="Ammurapi Shield",
         ammo="Pemphredo Tathlum",
         head="Geo. Galero +1",
-        body="Geomancy Tunic +3",
-        hands="Geo. Mitaines +2",
+        body="Geomancy Tunic +2",
+        hands="Geo. Mitaines +3",
         legs="Azimuth Tights +2",
-        feet="Azimuth Gaiters +2",
+        feet="Azimuth Gaiters +3",
         neck="Erra Pendant",
         ear1="Malignance Earring",
         ear2="Regal Earring",
@@ -425,9 +427,9 @@ function init_gear_sets()
         ammo="Ghastly Tathlum +1",
         head="Azimuth Hood +2",
         body="Azimuth Coat +2",
-        hands="Azimuth Gloves +3",
+        hands="Azimuth Gloves +1",
         legs="Azimuth Tights +2",
-        feet="Azimuth Gaiters +2",
+        feet="Azimuth Gaiters +3",
         neck="Sibyl Scarf",
         ear1="Malignance Earring",
         ear2="Regal Earring",
@@ -456,7 +458,7 @@ function init_gear_sets()
     sets.midcast.Impact = set_combine(sets.midcast.IntEnfeebles, {
         head=empty,
         body="Twilight Cloak",
-        hands="Geo. Mitaines +2",
+        hands="Geo. Mitaines +3",
         --ring2="Archon Ring",
         })
 
@@ -491,9 +493,9 @@ function init_gear_sets()
 
     sets.idle.DT = set_combine(sets.idle, {
         head="Azimuth Hood +2", --12/12
-        hands="Azimuth Gloves +3", --12/12
+        hands="Azimuth Gloves +1", --12/12
         legs="Azimuth Tights +2",
-        feet="Azimuth Gaiters +2", --11/11
+        feet="Azimuth Gaiters +3", --11/11
         neck="Loricate Torque +1", --6/6
         ear2="Odnowa Earring +1", --3/3
         back=gear.GEO_Idle_Cape, --5/5
@@ -506,9 +508,9 @@ function init_gear_sets()
         sub="Genmei Shield", --10/0/0/0
         main="Idris", --0/0/25/0
         head="Azimuth Hood +2", --12/12/0/5
-        body={ name="Telchine Chas.", augments={'Pet: DEF+13',}}, --0/0/0/3
-        hands="Geo. Mitaines +2", --3/0/13/0
-        legs={ name="Telchine Braconi", augments={'Pet: Mag. Evasion+14',}}, --0/0/0/3
+        body="", --0/0/0/3
+        hands="Geo. Mitaines +3", --3/0/13/0
+        legs="", --0/0/0/3
         feet="Bagua Sandals +3", --0/0/0/5
         neck="Bagua Charm +2",
         ear1="Lugalbanda Earring",
@@ -519,7 +521,7 @@ function init_gear_sets()
         })
 
     sets.idle.DT.Pet = set_combine(sets.idle.Pet, {
-        hands="Azimuth Gloves +3", --12/12
+        hands="Azimuth Gloves +1", --12/12
         back=gear.GEO_Idle_Cape, --5/5
         waist="Plat. Mog. Belt" --3/3
         })
@@ -538,7 +540,7 @@ function init_gear_sets()
         ranged="Dunna",
         head="Azimuth Hood +2",
         body="Azimuth Coat +2",
-        hands="Azimuth Gloves +3",
+        hands="Azimuth Gloves +1",
         legs="Azimuth Tights +2",
         feet="Geo. Sandals +3",
         neck="Bagua Charm +2",

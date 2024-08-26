@@ -395,10 +395,10 @@ function init_gear_sets()
     sets.midcast['Enhancing Magic'] = {
         main="Gada",
         sub="Ammurapi Shield",
-        head=gear.Telchine_ENH_head,
-        body=gear.Telchine_ENH_body,
+        head="Telchine Cap",
+        body="Telchine Chas.",
         hands="Dynasty Mitts",
-        legs=gear.Telchine_ENH_legs,
+        legs="Telchine Braconi",
         feet="Theo. Duckbills +3",
         neck="Incanter's Torque",
         ear1="Mimir Earring",
@@ -412,10 +412,10 @@ function init_gear_sets()
     sets.midcast.EnhancingDuration = {
         main="Gada",
         sub="Ammurapi Shield",
-        head=gear.Telchine_ENH_head,
-        body=gear.Telchine_ENH_body,
-        hands=gear.Telchine_ENH_hands,
-        legs=gear.Telchine_ENH_legs,
+        head="Telchine Cap",
+        body="Telchine Chas.",
+        hands="Telchine Gloves",
+        legs="Telchine Braconi",
         feet="Theo. Duckbills +3",
         waist="Embla Sash",
         }
@@ -425,13 +425,13 @@ function init_gear_sets()
         sub="Ammurapi Shield",
         head="Inyanga Tiara +2",
         body="Piety Bliaut +3",
-        hands=gear.Telchine_ENH_hands,
-        legs=gear.Telchine_ENH_legs,
-        feet={ name="Telchine Pigaches", augments={'Enh. Mag. eff. dur. +9',}},
+        hands="Telchine Gloves",
+        legs="Telchine Braconi",
+        feet="Theo. Duckbills +3",
         })
 
     sets.midcast.RegenDuration = set_combine(sets.midcast.EnhancingDuration, {
-        body=gear.Telchine_ENH_body,
+        body="Telchine Chas.",
         hands="Ebers Mitts +3",
         legs="Th. Pant. +3",
         feet="Theo. Duckbills +3"

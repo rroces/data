@@ -510,7 +510,7 @@ function init_gear_sets()
         body="Nyame Mail",
         hands="Nyame Gauntlets",
         legs="Nyame Flanchard",
-        legs="Nyame Sollerets",
+        feet="Nyame Sollerets",
         neck="Bathy Choker +1",
         ear1="Eabani Earring",
         ear2="Sanare Earring",
@@ -526,7 +526,7 @@ function init_gear_sets()
         body="Nyame Mail",
         hands="Nyame Gauntlets",
         legs="Nyame Flanchard",
-        legs="Nyame Sollerets",
+        feet="Nyame Sollerets",
         neck="Loricate Torque +1", --6/6
         ear1="Odnowa Earring +1", --3/5
         ear2="Etiolation Earring", --0/3
@@ -586,12 +586,12 @@ function init_gear_sets()
     -- EG: sets.engaged.Dagger.Accuracy.Evasion
 
     sets.engaged = {
-        range=gear.Linos_TP,
-        head="Volte Tiara",
-        body="Ayanmo Corazza +2",
-        hands="Raetic Bangles +1",
-        legs="Zoar Subligar +1",
-        feet=gear.Chironic_QA_feet,
+        range="Gjallarhorn",
+        head="Nyame Helm",
+        body="Nyame Mail",
+        hands="Nyame Gauntlets",
+        legs="Nyame Flanchard",
+        feet="Nyame Sollerets",
         neck="Bard's Charm +2",
         ear1="Cessance Earring",
         ear2="Telos Earring",
