@@ -160,7 +160,7 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
     sets.precast.JA.Bolster = {body="Bagua Tunic +3"}
-    sets.precast.JA['Full Circle'] = {head="Azimuth Hood +2"}
+    sets.precast.JA['Full Circle'] = {head="Azimuth Hood +3"}
     sets.precast.JA['Life Cycle'] = {head="Bagua Galero +3", body="Geomancy Tunic +2", back=gear.GEO_Idle_Cape,}
 
 
@@ -225,7 +225,7 @@ function init_gear_sets()
     sets.precast.WS['Exudation'] = sets.precast.WS['Hexastrike']
 
     sets.precast.WS['Flash Nova'] = {
-        head="Azimuth Hood +2",
+        head="Azimuth Hood +3",
         body="Azimuth Coat +2",
         hands="Jhakri Cuffs +2",
         legs="Azimuth Tights +2",
@@ -425,7 +425,7 @@ function init_gear_sets()
         main="Idris",
         sub="Ammurapi Shield",
         ammo="Ghastly Tathlum +1",
-        head="Azimuth Hood +2",
+        head="Azimuth Hood +3",
         body="Azimuth Coat +2",
         hands="Azimuth Gloves +1",
         legs="Azimuth Tights +2",
@@ -492,7 +492,7 @@ function init_gear_sets()
         })
 
     sets.idle.DT = set_combine(sets.idle, {
-        head="Azimuth Hood +2", --12/12
+        head="Azimuth Hood +3", --12/12
         hands="Azimuth Gloves +1", --12/12
         legs="Azimuth Tights +2",
         feet="Azimuth Gaiters +3", --11/11
@@ -507,7 +507,7 @@ function init_gear_sets()
         -- Pet: -DT (37.5% to cap) / Pet: Regen
         sub="Genmei Shield", --10/0/0/0
         main="Idris", --0/0/25/0
-        head="Azimuth Hood +2", --12/12/0/5
+        head="Azimuth Hood +3", --12/12/0/5
         body="", --0/0/0/3
         hands="Geo. Mitaines +3", --3/0/13/0
         legs="", --0/0/0/3
@@ -538,7 +538,7 @@ function init_gear_sets()
         main="Idris",
         sub="Ammurapi Shield",
         ranged="Dunna",
-        head="Azimuth Hood +2",
+        head="Azimuth Hood +3",
         body="Azimuth Coat +2",
         hands="Azimuth Gloves +1",
         legs="Azimuth Tights +2",
