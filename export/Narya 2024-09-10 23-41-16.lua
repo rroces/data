@@ -1,0 +1,15 @@
+sets.exported={
+    main="Carnwenhan",
+    sub="Genmei Shield",
+    range="Gjallarhorn",
+    head="Fili Calot +2",
+    body="Fili Hongreline +2",
+    hands="Fili Manchettes +2",
+    legs="Inyanga Shalwar +2",
+    feet="Fili Cothurnes +3",
+    neck={ name="Bard's Charm +1", augments={'Path: A',}},
+    waist={ name="Acuity Belt +1", augments={'Path: A',}},
+    right_ear="Etiolation Earring",
+    right_ring="Defending Ring",
+    back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
+}

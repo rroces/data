@@ -729,10 +729,10 @@ function init_gear_sets()
     -- sets.CP = {back="Mecisto. Mantle"}
     --sets.Reive = {neck="Ygnas's Resolve +1"}
 
-    sets.Carnwenhan = {main="Carnwenhan", sub="Fusetto +2"}
-    sets.Twashtar = {main="Twashtar", sub="Fusetto +2"}
-    sets.Tauret = {main="Tauret", sub="Fusetto +2"}
-    sets.Naegling = {main="Naegling", sub="Fusetto +2"}
+    sets.Carnwenhan = {main="Carnwenhan", sub="Ternion Dagger +1"}
+    sets.Twashtar = {main="Twashtar", sub="Ternion Dagger +1"}
+    sets.Tauret = {main="Tauret", sub="Ternion Dagger +1"}
+    sets.Naegling = {main="Naegling", sub="Ternion Dagger +1"}
 
     sets.DefaultShield = {sub="Genmei Shield"}
 

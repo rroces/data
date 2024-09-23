@@ -1,0 +1,17 @@
+sets.exported={
+    main="Carnwenhan",
+    sub={ name="Fusetto +2", augments={'TP Bonus +1000',}},
+    range="Gjallarhorn",
+    head="Fili Calot +2",
+    body="Fili Hongreline +2",
+    hands="Fili Manchettes +2",
+    legs="Fili Rhingrave +2",
+    feet="Brioso Slippers +3",
+    neck="Mnbw. Whistle +1",
+    waist="Embla Sash",
+    left_ear="Cessance Earring",
+    right_ear="Etiolation Earring",
+    left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+    right_ring="Defending Ring",
+    back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
+}

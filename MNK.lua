@@ -453,7 +453,7 @@ function status_change(new, old)
 		if buffactive["Impetus"] then
 			equip({Body = "Bhikku Cyclas +3"})
 		elseif buffactive["Footwork"] then
-			equip({Body = "Bhikku Gaiters +3"})
+			equip({Feet = "Bhikku Gaiters +3"})
 		end
 		
 	else

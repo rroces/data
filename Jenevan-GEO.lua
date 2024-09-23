@@ -226,7 +226,7 @@ function init_gear_sets()
 
     sets.precast.WS['Flash Nova'] = {
         head="Azimuth Hood +3",
-        body="Azimuth Coat +2",
+        body="Azimuth Coat +3",
         hands="Jhakri Cuffs +2",
         legs="Azimuth Tights +2",
         feet="Azimuth Gaiters +3",
@@ -426,7 +426,7 @@ function init_gear_sets()
         sub="Ammurapi Shield",
         ammo="Ghastly Tathlum +1",
         head="Azimuth Hood +3",
-        body="Azimuth Coat +2",
+        body="Azimuth Coat +3",
         hands="Azimuth Gloves +1",
         legs="Azimuth Tights +2",
         feet="Azimuth Gaiters +3",
@@ -474,7 +474,7 @@ function init_gear_sets()
         sub="Genmei Shield",
         ranged="Dunna",
         head="Volte Beret",
-        body="Azimuth Coat +2",
+        body="Azimuth Coat +3",
         hands="Bagua Mitaines +3",
         legs="Assid. pants +1", --Volte Brais
         feet="Geo. Sandals +3", --Volte Gaiters
@@ -539,7 +539,7 @@ function init_gear_sets()
         sub="Ammurapi Shield",
         ranged="Dunna",
         head="Azimuth Hood +3",
-        body="Azimuth Coat +2",
+        body="Azimuth Coat +3",
         hands="Azimuth Gloves +1",
         legs="Azimuth Tights +2",
         feet="Geo. Sandals +3",
@@ -595,7 +595,7 @@ function init_gear_sets()
         main="Bunzi's Rod", --10
         sub="Ammurapi Shield",
         head="Ea Hat +1", --7/(7)
-        body="Azimuth Coat +2", --(5)
+        body="Azimuth Coat +3", --(5)
         hands="Amalric Gages +1", --0/(6)
         legs="Azimuth Tights +2", --15
         neck="Mizu. Kubikazari", --10

@@ -207,17 +207,17 @@ function init_gear_sets()
     -- Fast cast sets for spells
     sets.precast.FC = {
         main="Kali", --7
-        head="Nahtirah Hat", --6 Volte Beret
+        head="Bunzi's Hat", --6 Volte Beret
         body="Inyanga Jubbah +2", --14
         hands="Leyline Gloves", --7
-        legs="Kaykaus Tights +1", --8 volte
-        feet="Fili Cothurnes +3", --6
-        neck="Orunmila's Torque", --5
+        legs="Aya. Cosciales +2", --8 volte
+        feet="Fili Cothurnes + 3", --6
+        neck="Voltsurge Torque", --5
         ear1="Loquac. Earring", --2
         ear2="Etiolation Earring", --1
         ring1="Weather. Ring +1", --5
         ring2="Kishar Ring", --4
-        back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}}, --10
+        back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}}, --10
         waist="Embla Sash", --5
         }
 
@@ -383,7 +383,7 @@ function init_gear_sets()
         ring1="", -- Moonlight Ring
         ring2="Defending Ring",
         waist="Plat. Mog. Belt",
-        back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},
+        back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
         }
 
     -- For song defbuffs (duration primary, accuracy secondary)
@@ -402,7 +402,7 @@ function init_gear_sets()
         ring1="Metamor. Ring +1",
         ring2={name="Stikini Ring +1", bag="wardrobe6"},
         waist="Acuity Belt +1",
-        back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},
+        back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
         }
 
     -- For song defbuffs (accuracy primary, duration secondary)
@@ -452,7 +452,7 @@ function init_gear_sets()
         ear2="Meili Earring",
         ring1="Menelaus's Ring",
         ring2="Haoma's Ring",
-        back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},
+        back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
         waist="Bishop's Sash",
         }
 
@@ -552,7 +552,7 @@ function init_gear_sets()
         neck="Bard's Charm +1",
         ear1="Enchntr. Earring +1",
         ear2="Fili Earring +2",
-        back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}},
+        back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','"Fast Cast"+10',}},
         waist="Acuity Belt +1",
         })
 
@@ -580,7 +580,7 @@ function init_gear_sets()
     sets.engaged = {
         range={ name="Linos", augments={'Accuracy+13','"Dbl.Atk."+2','Quadruple Attack +3',}},
         head="Aya. Zucchetto +2", --Aya. Zucchetto +2
-        body="Ashera Harness",
+        body="Ayanmo Corazza +2",
         hands="Bunzi's Gloves",
         legs="Nyame Flanchard",
         feet="Nyame Sollerets",
@@ -607,7 +607,7 @@ function init_gear_sets()
     sets.engaged.DW = {
         range={ name="Linos", augments={'Accuracy+13','"Dbl.Atk."+2','Quadruple Attack +3',}},
         head="Aya. Zucchetto +2",
-        body="Ashera Harness",
+        body="Ayanmo Corazza +2",
         hands="Gazu Bracelets +1",
         legs="Nyame Flanchard",
         feet="Nyame Sollerets",
@@ -641,7 +641,7 @@ function init_gear_sets()
     sets.engaged.DW.MaxHaste = {
         range={ name="Linos", augments={'Accuracy+13','"Dbl.Atk."+2','Quadruple Attack +3',}},
         head="Aya. Zucchetto +2",
-        body="Ashera Harness",
+        body="Ayanmo Corazza +2",
         hands="Gazu Bracelets +1",
         legs="Nyame Flanchard",
         feet="Nyame Sollerets",
@@ -667,7 +667,7 @@ function init_gear_sets()
 
     sets.engaged.Aftermath = {
         head="Aya. Zucchetto +2",
-        body="Ashera Harness",
+        body="Ayanmo Corazza +2",
         hands=gear.Telchine_STP_hands,
         legs="Nyame Sollerets",
         feet="Nyame Sollerets",
