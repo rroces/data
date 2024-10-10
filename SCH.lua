@@ -333,7 +333,7 @@ function get_sets()
     body="arbatel gown +3", --"annointed Kalasiris",
     hands={ name="Nyame Gauntlets", augments={'Path: B',}},
     legs="assid. Pants +1",
-    feet="Amalric Nails +1",
+    feet="Herald's Gaiters",
     neck="Loricate Torque +1",
     waist="Embla Sash",
     left_ear="Etiolation Earring",
@@ -468,7 +468,7 @@ function get_sets()
     ammo="Homiliary",
     head="Amalric Coif +1",
     body= "Zendik Robe", --{ name="Agwu's Robe", augments={'Path: A',}},
-    hands="Acad. Bracers +3",
+    hands="Acad. Bracers +2",
     legs="Agwu's Slops",
     feet="Amalric Nails +1",
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
@@ -520,9 +520,9 @@ function get_sets()
 	main={ name="Musa", augments={'Path: C',}},
     sub="Enki Strap",
     ammo="Homiliary",
-    head="Pedagogy Mortarboard +3", --"Acad. Mortar. +3",
+    head="Pedagogy Mortarboard +3", --"Acad. Mortar. +2",
     body= "Zendik Robe", --{ name="Agwu's Robe", augments={'Path: A',}},
-    hands="Acad. Bracers +3",
+    hands="Acad. Bracers +2",
     legs="Agwu's Slops",
     feet="Amalric Nails +1",
     neck={ name="Loricate Torque +1", augments={'Path: A',}},
@@ -572,7 +572,7 @@ function get_sets()
 
     sets.precast["Tabula Rasa"] = {legs="Pedagogy Pants +3"}
     sets.precast["Enlightenment"] = {body="Peda. Gown +3"}	 
-    sets.precast["Sublimation"] = {head="Acad. Mortar. +3", body="Peda. Gown +3"}	 
+    sets.precast["Sublimation"] = {head="Acad. Mortar. +2", body="Peda. Gown +3"}	 
 
 	
 	----------
@@ -619,7 +619,7 @@ function get_sets()
 	feet= 		 "Arbatel loafers +3", --"Agwu's Pigaches",
 	neck=		 "Argute Stole +2",
 	left_ear=    "Malignance Earring",
-    right_ear=   "Arbatel Earring +1",
+    right_ear=   "Arbatel Earring +2",
 	right_ring=  "Mujin Band", --"Metamor. Ring +1", --"Mujin Band",
 	left_ring=   "Freke Ring",
 	ammo=		 "Ghastly Tathlum +1",
@@ -736,7 +736,7 @@ function get_sets()
     head={ name="Agwu's Cap", augments={'Path: A',}},
     body={ name="Agwu's Robe", augments={'Path: A',}},
     hands={ name="Agwu's Gages", augments={'Path: A',}},
-    legs={ name="Agwu's Slops", augments={'Path: A',}},
+    legs="Agwu's Slops",
     feet="Arbatel Loafers +3",
     neck={ name="Argute Stole +2", augments={'Path: A',}},
     waist="Orpheus's Sash", --"Skrymir Cord",
@@ -768,7 +768,7 @@ function get_sets()
     -- back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Mag.Atk.Bns."+10',}},
     -- }
 
-	sets.midcast["Sublimation"] = {head="Acad. Mortar. +3", body="Peda. Gown +3",waist="embla sash"}
+	sets.midcast["Sublimation"] = {head="Acad. Mortar. +2", body="Peda. Gown +3",waist="embla sash"}
     
     sets.midcast.nuking.normal = {
 		main="Bunzi's Rod",
@@ -861,7 +861,7 @@ function get_sets()
      head={ name="Agwu's Cap", augments={'Path: A',}},
      body={ name="Agwu's Robe", augments={'Path: A',}},
      hands={ name="Agwu's Gages", augments={'Path: A',}},
-     legs={ name="Agwu's Slops", augments={'Path: A',}},
+     legs="Agwu's Slops",
      feet="Arbatel Loafers +3",  feet="Arbatel loafers +3",  --feet="agwu's pigaches", --feet={ name="Amalric Nails +1", augments={'Mag. Acc.+20','"Mag.Atk.Bns."+20','"Conserve MP"+7',}},
     neck="Mizu. Kubikazari",
     waist="Acuity belt +1", --"Orpheus's Sash",
@@ -880,12 +880,12 @@ function get_sets()
     head=		{ name="Agwu's Cap", augments={'Path: A',}},
     body=		{ name="Agwu's Robe", augments={'Path: A',}},
     hands=		{ name="Agwu's Gages", augments={'Path: A',}},
-    legs=		{ name="Agwu's Slops", augments={'Path: A',}},
+    legs=		"Agwu's Slops",
     feet=		"Arbatel Loafers +3",  feet="Arbatel loafers +3",  --feet="agwu's pigaches", --feet={ name="Amalric Nails +1", augments={'Mag. Acc.+20','"Mag.Atk.Bns."+20','"Conserve MP"+7',}},
     neck=		"Mizu. Kubikazari",
     waist=		"Acuity belt +1", --"Orpheus's Sash",
     left_ear=   "Malignance earring",
-    right_ear=  "Arbatel Earring +1",
+    right_ear=  "Arbatel Earring +2",
     left_ring=  "Freke Ring",
     right_ring= "Metamor. Ring +1",
     back=		{ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Mag.Atk.Bns."+10',}},
@@ -963,7 +963,7 @@ function get_sets()
 	feet="Arbatel loafers +3", --"Agwu's Pigaches",
 	waist="Acuity belt +1",
     left_ear=   "Malignance earring",
-    right_ear=  "Arbatel Earring +1",
+    right_ear=  "Arbatel Earring +2",
 	right_ring="Metamor. Ring +1", --"Mujin Band",
 	left_ring="Freke Ring",
 	back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Mag.Atk.Bns."+10',}},
@@ -1012,11 +1012,11 @@ function get_sets()
 	main={ name="Bunzi's Rod", augments={'Path: A',}},
     sub="Ammurapi Shield",
     ammo="Pemphredo Tathlum",
-    head="Acad. Mortar. +3",
-    body="Acad. Gown +3",
+    head="Acad. Mortar. +2",
+    body="Acad. Gown +2",
     hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
     legs="Arbatel Pants +3",
-    feet="Acad. Loafers +3",
+    feet="Acad. Loafers +2",
     neck={ name="Argute Stole +2", augments={'Path: A',}},
     waist={ name="Obstin. Sash", augments={'Path: A',}},
     left_ear="Malignance Earring",
@@ -1030,11 +1030,11 @@ function get_sets()
 	main={ name="Bunzi's Rod", augments={'Path: A',}},
     sub="Ammurapi Shield",
     ammo="Pemphredo Tathlum",
-    head="Acad. Mortar. +3",
+    head="Acad. Mortar. +2",
     body="Cohort Cloak +1",
     hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
     legs="Arbatel Pants +3",
-    feet="Acad. Loafers +3",
+    feet="Acad. Loafers +2",
     neck={ name="Argute Stole +2", augments={'Path: A',}},
     waist={ name="Obstin. Sash", augments={'Path: A',}},
     left_ear="Malignance Earring",
@@ -1103,8 +1103,8 @@ function get_sets()
 	
 		sets.midcast['Dia'] = set_combine(sets.midcast.nuking.normal, {
     ammo="Per. Lucky Egg",
-    head="Volte Cap",
-    body="Volte Jupon",
+    head="", --Volte Cap
+    body="", --Volte Jupon
     feet="Amalric Nails +1",
     waist="Chaac Belt",
     })
