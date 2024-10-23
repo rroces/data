@@ -642,12 +642,12 @@ function init_gear_sets()
         ear1="Sherida Earring",
         ear2="Skulk. Earring +2",
         body="Pillager's Vest +3",
-        hands="Adhemar Wristbands +1",
+        --hands="Adhemar Wristbands +1", quitar solo era pa hybrid en noche
         ring1="Hetairoi Ring",
         ring2="Gere Ring",
         back=Toutatis.STP,
         waist="Windbuffet Belt +1",
-        legs="Pillager's Culottes +3",
+        --legs="Pillager's Culottes +3", quitar solo era pa hybrid en noche
         feet="Plunderer's Poulaines +3"
     })
     sets.engaged.Mid.MaxHaste = set_combine(sets.engaged.MaxHaste, { 
@@ -660,12 +660,12 @@ function init_gear_sets()
     sets.engaged.Acc.MaxHaste = set_combine(sets.engaged.MaxHaste.Mid, {
         head="Pillager's bonnet +3",
         neck="Assassin's Gorget +2",
-        hands="Adhemar Wristbands +1",
+        --hands="Adhemar Wristbands +1",
         ear1="Telos Earring",
         ear2="Odr Earring",
         waist="Olseni Belt",
         back=Toutatis.STP,
-        legs="Pillager's Culottes +3",
+        --legs="Pillager's Culottes +3",
         -- feet="Mummu Gamashes +2"
     })
     sets.engaged.EVA.MaxHaste = set_combine(sets.engaged.MaxHaste, {

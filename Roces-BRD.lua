@@ -297,8 +297,23 @@ function init_gear_sets()
         neck="Bard's Charm +2",
         ear1="Regal Earring",
         waist="Sailfi Belt +1",
+		right_ear={ name="Fili Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','Damage taken-7%','MND+13 CHR+13',}},
         })
-
+--sets.precast.WS['Mordant Rime'] = set_combine(sets.precast.WS, {
+  --      neck="Bard's Charm +2",
+    --    ear1="Regal Earring",
+      --  waist="Sailfi Belt +1",    head="Bihu Roundlet +3",
+        --body="Bihu Jstcorps. +3",
+       -- hands="Bihu Cuffs +3",
+        --legs="Bihu Cannions +3",
+        --feet="Bihu Slippers +3",
+        --ear1="Regal Earring",
+        --right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
+        --waist="Kentarch Belt +1",
+		--ear1="Moonshade Earring",
+		--right_ear={ name="Fili Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+19','Mag. Acc.+19','Damage taken-7%','MND+13 CHR+13',}},
+        --})
+		
     sets.precast.WS['Rudra\'s Storm'] = set_combine(sets.precast.WS, {
         feet="Nyame Sollerets",
         neck="Bard's Charm +2",
