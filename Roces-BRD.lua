@@ -126,7 +126,7 @@ function user_setup()
     include('Global-COR-Binds.lua') -- OK to remove this line
 
     -- Adjust this if using the Terpander (new +song instrument)
-    info.ExtraSongInstrument = 'Daurdabla'
+    info.ExtraSongInstrument = 'Loughnashade'
 
     -- How many extra songs we can keep from Daurdabla/Terpander
     info.ExtraSongs = 2
@@ -373,7 +373,7 @@ function init_gear_sets()
     sets.midcast.Mambo = {feet="Mou. Crackows +1"}
     sets.midcast.March = {hands="Fili Manchettes +3"}
     sets.midcast.Minne = {legs="Mou. Seraweels +1"}
-    sets.midcast.Minuet = {body="Fili Hongreline +3"}
+    sets.midcast.Minuet = {neck="Moonbow Whistle"} --Fili Hongreline +3
     sets.midcast.Paeon = {head="Brioso Roundlet +3"}
     sets.midcast.Prelude = {feet="Fili Cothurnes +3"}
     sets.midcast.Threnody = {body="Mou. Manteel +1"}
@@ -386,7 +386,7 @@ function init_gear_sets()
     -- For song buffs (duration and AF3 set bonus)
     sets.midcast.SongEnhancing = {
         main="Carnwenhan",
-        range="Gjallarhorn",
+        range="Loughnashade", --Gjallarhorn
         head="Fili Calot +3",
         body="Fili Hongreline +3",
         hands="Fili Manchettes +3",
@@ -405,7 +405,7 @@ function init_gear_sets()
     sets.midcast.SongEnfeeble = {
         main="Carnwenhan",
         sub="Ammurapi Shield",
-        range="Gjallarhorn",
+        range="Loughnashade", --Gjallarhorn
         head="Brioso Roundlet +3",
         body="Brioso Justau. +3",
         hands="Brioso Cuffs +3",
@@ -529,7 +529,7 @@ function init_gear_sets()
     ------------------------------------------------------------------------------------------------
 
     sets.idle = {
-        range="Gjallarhorn",
+        range="Loughnashade",
         head="Nyame Helm", --7/7
         body="Nyame Mail", --9/9
         hands="Nyame Gauntlets", --7/7
@@ -558,7 +558,7 @@ function init_gear_sets()
     sets.idle.MEva = sets.idle.DT
 
     sets.idle.Town = set_combine(sets.idle, {
-        range="Gjallarhorn",
+        range="Loughnashade",
         head="Mousai Turban +1",
         body="Mou. Manteel +1",
 		hands="Mousai Gages +1",
@@ -598,7 +598,7 @@ function init_gear_sets()
         body="Ashera Harness",
         hands="Bunzi's Gloves",
         legs="Nyame Flanchard",
-        feet="Nyame Sollerets",
+        feet="Volte Spats",
         neck="Bard's Charm +2",
         ear1="Cessance Earring",
         ear2="Telos Earring",
@@ -625,7 +625,7 @@ function init_gear_sets()
         body="Ashera Harness",
         hands="Gazu Bracelets +1",
         legs="Nyame Flanchard",
-        feet="Nyame Sollerets",
+        feet="Volte Spats",
         neck="Bard's Charm +2",
         ear1="Eabani Earring", --4
         ear2="Suppanomimi", --5
@@ -744,10 +744,10 @@ function init_gear_sets()
     -- sets.CP = {back="Mecisto. Mantle"}
     --sets.Reive = {neck="Ygnas's Resolve +1"}
 
-    sets.Carnwenhan = {main="Carnwenhan", sub="Ternion Dagger +1"}
-    sets.Twashtar = {main="Twashtar", sub="Ternion Dagger +1"}
-    sets.Tauret = {main="Tauret", sub="Ternion Dagger +1"}
-    sets.Naegling = {main="Naegling", sub="Ternion Dagger +1"}
+    sets.Carnwenhan = {main="Carnwenhan", sub="Crepuscular Knife"}
+    sets.Twashtar = {main="Twashtar", sub="Crepuscular Knife"}
+    sets.Tauret = {main="Tauret", sub="Crepuscular Knife"}
+    sets.Naegling = {main="Naegling", sub="Crepuscular Knife"}
 
     sets.DefaultShield = {sub="Genmei Shield"}
 

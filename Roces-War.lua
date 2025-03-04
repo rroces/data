@@ -122,8 +122,8 @@ end
 function init_gear_sets()
  
  
-    sets.precast.JA['Mighty Strikes'] = {hands="Agoge Mufflers +2"}
-    sets.precast.JA['Defender'] = {hands="Agoge Mufflers +2"}
+    sets.precast.JA['Mighty Strikes'] = {hands="Agoge Mufflers +3"}
+    sets.precast.JA['Defender'] = {hands="Agoge Mufflers +3"}
     sets.precast.JA['Blood Rage'] = {body="Boii Lorica +3"}
     sets.precast.JA['Warcry'] = {head="Agoge Mask +3"}
     sets.precast.JA['Berserk'] = {body="Pumm. Lorica +3", feet="Agoge Calligae +3"}
@@ -211,7 +211,7 @@ function init_gear_sets()
     sets.precast.WS["Ukko's Fury"] = {
         ammo="Yetshila +1",
         head="Boii Mask +3",
-        body="Sakpata's Breastplate",
+        body="Hjarrandi Breast.",
         hands="Sakpata's Gauntlets",
         legs="Boii Cuisses +3",
         feet="Boii Calligae +3",
@@ -219,7 +219,7 @@ function init_gear_sets()
         waist="Sailfi Belt +1",
         left_ear="Schere Earring",
         right_ear="Boii Earring +1",
-        left_ring="Lehko Habhoka's Ring",
+        left_ring="Cornelia's Ring",
         right_ring="Niqmaddu Ring",
         back=gear.CicholWSD
     }
@@ -305,7 +305,7 @@ function init_gear_sets()
         waist="Fotia Belt",
         left_ear="Schere Earring",
         right_ear="Moonshade Earring",
-        left_ring="Lehko Habhoka's Ring",
+        left_ring="Cornelia's Ring",
         right_ring="Niqmaddu Ring",
         back=gear.CicholWDA
     }
@@ -368,13 +368,13 @@ function init_gear_sets()
         ammo="Yetshila +1", 
         head="Blistering Sallet +1", 
         feet="Boii Calligae +3",
-        left_ring="Lehko Habhoka's Ring",
+        left_ring="Cornelia's Ring",
     })
     sets.precast.WS['Stardiver'] = set_combine(sets.precast.WS, {
         ammo="Yetshila +1", 
         head="Blistering Sallet +1", 
         feet="Boii Calligae +3",
-        left_ring="Lehko Habhoka's Ring",
+        left_ring="Cornelia's Ring",
     })
     sets.precast.WS['Leg Sweep'] = sets.precast.WS['Full Break']
     sets.precast.WS['Sonic Thrust'] = sets.precast.WS["King's Justice"]
@@ -468,16 +468,16 @@ function init_gear_sets()
     --TP sets
     sets.engaged = {
         ammo="Coiste Bodhar",
-        head="Sakpata's Helm",
-        body="Sakpata's Plate",
+        head="Boii Mask +3", --Sakpata's Helm
+        body="Boii Lorica +3", --Sakpata's Plate
         hands="Sakpata's Gauntlets",
         legs="Boii Cuisses +3",
-        feet="Pumm. Calligae +3",
+        feet="Sakpata's Leggings", --Pumm. Calligae +3
         neck="Warrior's Bead Necklace +2",
         waist="Ioskeha Belt +1",
         left_ear="Schere Earring",
         right_ear="Boii Earring +1",
-        left_ring="Lehko Habhoka's Ring",
+        left_ring="Petrov Ring",
         right_ring="Niqmaddu Ring",
         back=gear.CicholSTP,
     }
@@ -553,7 +553,7 @@ function init_gear_sets()
         waist="Ioskeha Belt +1",
         left_ear="Schere Earring",
         right_ear="Boii Earring +1",
-        left_ring="Lehko Habhoka's Ring",
+        left_ring="Cornelia's Ring",
         right_ring=gear.ChirichR,
         back=gear.CicholSTP,
     }
@@ -591,19 +591,19 @@ function init_gear_sets()
     })
      
     sets.engaged.Set2.AM3 = {
-        ammo="Yetshila +1",
-        head="Sakpata's Helm",
-        body="Sakpata's Plate",
+         ammo="Coiste Bodhar",
+        head="Boii Mask +3", --Sakpata's Helm
+        body="Boii Lorica +3", --Sakpata's Plate
         hands="Sakpata's Gauntlets",
         legs="Boii Cuisses +3",
-        feet="Boii Calligae +3",
+        feet="Sakpata's Leggings", --Pumm. Calligae +3
         neck="Warrior's Bead Necklace +2",
         waist="Ioskeha Belt +1",
         left_ear="Schere Earring",
         right_ear="Boii Earring +1",
-        left_ring="Lehko Habhoka's Ring",
+        left_ring="Petrov Ring",
         right_ring="Niqmaddu Ring",
-        back=gear.CicholTP,
+        back=gear.CicholSTP,	
     }
      
     sets.engaged.Set2.AM3.Sam = set_combine(sets.engaged.Set2.AM3, {})
@@ -646,7 +646,7 @@ function init_gear_sets()
         waist="Ioskeha Belt +1",
         left_ear="Dedition Earring",
         right_ear="Telos Earring",
-        left_ring="Lehko Habhoka's Ring",
+        left_ring="Cornelia's Ring",
         right_ring=gear.ChirichR,
         back=gear.CicholSTP,
     }
@@ -668,7 +668,7 @@ function init_gear_sets()
         waist="Ioskeha Belt +1",
         left_ear="Suppanomimi",
         right_ear="Boii Earring +1",
-        left_ring="Lehko Habhoka's Ring",
+        left_ring="Cornelia's Ring",
         right_ring="Niqmaddu Ring",
         back=gear.CicholSTP,
     })
@@ -695,7 +695,7 @@ function init_gear_sets()
         waist="Ioskeha Belt +1",
         left_ear="Schere Earring",
         right_ear="Boii Earring +1",
-        left_ring="Lehko Habhoka's Ring",
+        left_ring="Cornelia's Ring",
         right_ring="Niqmaddu Ring",
         back=gear.CicholSTP,
     })

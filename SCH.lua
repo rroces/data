@@ -70,7 +70,7 @@
 -------------------------------------------------------------  
 
 send_command('lua l sch-hud')
-send_command('wait 5;input /lockstyleset 21') --40
+send_command('wait 5;input /lockstyleset 43') --40
 res = require('resources')
 texts = require('texts')
 include('Modes.lua')
@@ -302,7 +302,7 @@ refreshType = idleModes[1]      -- leave this as is
 
 
 -- Optional. Swap to your sch macro sheet / book
-set_macros(10,16) -- Sheet, Book
+set_macros(1,15) -- Sheet, Book
 --set_lockstyleset (46)
 
 -------------------------------------------------------------                                        
@@ -520,7 +520,7 @@ function get_sets()
 	main={ name="Musa", augments={'Path: C',}},
     sub="Enki Strap",
     ammo="Homiliary",
-    head="Pedagogy Mortarboard +3", --"Acad. Mortar. +2",
+    head="Acad. Mortar. +3", --"Acad. Mortar. +3",
     body= "Zendik Robe", --{ name="Agwu's Robe", augments={'Path: A',}},
     hands="Acad. Bracers +3",
     legs="Agwu's Slops",
@@ -572,7 +572,7 @@ function get_sets()
 
     sets.precast["Tabula Rasa"] = {legs="Pedagogy Pants +3"}
     sets.precast["Enlightenment"] = {body="Peda. Gown +3"}	 
-    sets.precast["Sublimation"] = {head="Acad. Mortar. +2", body="Peda. Gown +3"}	 
+    sets.precast["Sublimation"] = {head="Acad. Mortar. +3", body="Peda. Gown +3"}	 
 
 	
 	----------
@@ -723,7 +723,7 @@ function get_sets()
     --waist="Hachirin-no-Obi",
     waist="Acuity belt +1",
 	left_ear="Malignance Earring",
-    right_ear="Regal Earring",
+    right_ear="Arbatel Earring +2",
     left_ring= "stikini ring +1", --left_ring="Archon Ring",
     right_ring="Freke Ring",
 	back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Mag.Atk.Bns."+10',}},}
@@ -768,7 +768,7 @@ function get_sets()
     -- back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Mag.Atk.Bns."+10',}},
     -- }
 
-	sets.midcast["Sublimation"] = {head="Acad. Mortar. +2", body="Peda. Gown +3",waist="embla sash"}
+	sets.midcast["Sublimation"] = {head="Acad. Mortar. +3", body="Peda. Gown +3",waist="embla sash"}
     
     sets.midcast.nuking.normal = {
 		main="Bunzi's Rod",
@@ -781,8 +781,8 @@ function get_sets()
     feet="Arbatel loafers +3",  --feet="agwu's pigaches", --feet={ name="Amalric Nails +1", augments={'Mag. Acc.+20','"Mag.Atk.Bns."+20','"Conserve MP"+7',}},
     neck="Mizu. Kubikazari",
     waist="Acuity belt +1", --"Orpheus's Sash",
-    left_ear="Regal Earring",
-    right_ear="Malignance Earring",
+    left_ear="Malignance Earring",
+    right_ear="Arbatel Earring +2",
     left_ring="Freke Ring",
     right_ring="Metamor. Ring +1",
     back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Mag.Atk.Bns."+10',}},
@@ -826,8 +826,8 @@ function get_sets()
 	legs= "Agwu's Slops", -- 
 	feet= "Arbatel loafers +3", --"Agwu's Pigaches", --
 	waist="Acuity belt +1",
-	left_ear="Regal Earring",
-    right_ear="Malignance Earring",
+	left_ear="Malignance Earring",
+    right_ear="Arbatel Earring +2",
 	right_ring="Mujin Band", --"Metamor. Ring +1", --
 	left_ring="Freke Ring",
 	back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Mag.Atk.Bns."+10',}},
@@ -916,11 +916,12 @@ function get_sets()
     -- Pieces to swap from freen nuke to Magic Burst
    -- sets.midcast.MB.normal = set_combine(sets.midcast.nuking.normal, {
 	sets.midcast.MB.normal = {
-	main= "Mpaca's staff",
-	sub="Enki strap",
+	main="Bunzi's Rod",
+    sub="Ammurapi Shield",--main= "Mpaca's staff",
+	--sub="Enki strap",
 	head="agwu's cap",
-	left_ear="Regal Earring",
-    right_ear="Malignance Earring",
+	left_ear="Malignance Earring",
+    right_ear="Arbatel Earring +2",
 	neck="Argute Stole +2",
 	right_ring="Metamor. Ring +1", --"Mujin Band",
 	left_ring="Freke Ring",
@@ -1012,11 +1013,11 @@ function get_sets()
 	main={ name="Bunzi's Rod", augments={'Path: A',}},
     sub="Ammurapi Shield",
     ammo="Pemphredo Tathlum",
-    head="Acad. Mortar. +2",
+    head="Acad. Mortar. +3",
     body="Acad. Gown +3",
     hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
     legs="Arbatel Pants +3",
-    feet="Acad. Loafers +2",
+    feet="Acad. Loafers +3",
     neck={ name="Argute Stole +2", augments={'Path: A',}},
     waist={ name="Obstin. Sash", augments={'Path: A',}},
     left_ear="Malignance Earring",
@@ -1030,11 +1031,11 @@ function get_sets()
 	main={ name="Bunzi's Rod", augments={'Path: A',}},
     sub="Ammurapi Shield",
     ammo="Pemphredo Tathlum",
-    head="Acad. Mortar. +2",
+    head="Acad. Mortar. +3",
     body="Cohort Cloak +1",
     hands={ name="Kaykaus Cuffs +1", augments={'MP+80','MND+12','Mag. Acc.+20',}},
     legs="Arbatel Pants +3",
-    feet="Acad. Loafers +2",
+    feet="Acad. Loafers +3",
     neck={ name="Argute Stole +2", augments={'Path: A',}},
     waist={ name="Obstin. Sash", augments={'Path: A',}},
     left_ear="Malignance Earring",
@@ -1053,12 +1054,12 @@ function get_sets()
     ammo="Pemphredo Tathlum",
     head="telchine cap", --"Arbatel Bonnet +3",
     body= "Pedagogy gown +3",--"Telchine Chas.", --augments={'Enh. Mag. eff. dur. +10',}},
-    hands="Arbatel Bracers +3",
+    hands="Telchine Gloves", --Arbatel Bracers +3
     legs="Telchine Braconi", --augments={'Enh. Mag. eff. dur. +10',}},
     feet="Telchine Pigaches", --augments={'Enh. Mag. eff. dur. +10',}},
     neck="Incanter's Torque",
     waist="Embla Sash",
-    left_ear= "magnetic earring", --"Andoaa Earring",
+    left_ear= "", --"Andoaa Earring",
     right_ear="Mimir Earring",
     left_ring={name="Stikini Ring +1", bag="wardrobe1"},
     right_ring={name="Stikini Ring +1", bag="wardrobe2"},
@@ -1141,7 +1142,7 @@ function get_sets()
     neck="Incanter's Torque",
     waist="Austerity Belt +1",
     left_ear="Mendi. Earring",
-    right_ear="Magnetic Earring",
+    right_ear="",
     left_ring="evanescence ring", --"Lebeche Ring",
     right_ring="Stikini Ring +1",
     back={ name="Lugh's Cape", augments={'INT+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Mag.Atk.Bns."+10',}}, --"tempered cape",--"Solemnity Cape",
@@ -1169,7 +1170,7 @@ function get_sets()
     feet="Telchine Pigaches", --augments={'Enh. Mag. eff. dur. +10',}},
     neck="Incanter's Torque",
     waist="Embla Sash",
-    left_ear="Magnetic Earring",
+    left_ear="",
     right_ear="Lugalbanda Earring",
     left_ring="Defending Ring",
     right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},

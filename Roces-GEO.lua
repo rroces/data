@@ -309,7 +309,7 @@ function get_sets()
         main = "Idris",
         sub = "Genmei Shield",
         range = { name = "Dunna", augments = { 'MP+20', 'Mag. Acc.+10', '"Fast Cast"+3', } },
-        head = "Befouled Crown",
+        head = "Null Masque",
         body = "Azimuth Coat +3",
         hands = "Bagua Mitaines +3",
         legs = "Assid. Pants +1",

@@ -467,12 +467,12 @@ function init_gear_sets()
 	sets.precast.JA['Call Beast'] = {
 		hands="Ankusa Gloves +1",
 		feet="Gleti's Boots",
-		right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Pet: "Dbl. Atk."+7',}},}
+		right_ear="Nukumi Earring +1", }
 	
 	sets.precast.JA['Beastial Loyalty'] = {
 		hands="Ankusa Gloves +1",
 		feet="Gleti's Boots",
-		right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Pet: "Dbl. Atk."+7',}},}	
+		right_ear="Nukumi Earring +1",	}
 
 	sets.precast.JA['Charm'] = {
 	    main="Agwu's Axe",
@@ -804,7 +804,7 @@ function init_gear_sets()
 		neck={ name="Bst. Collar +2", augments={'Path: A',}},
 		waist="Incarnation Sash",
 		left_ear="Sroda Earring",
-		right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Pet: "Dbl. Atk."+7',}},
+		right_ear="Nukumi Earring +1",
 		left_ring="Tali'ah Ring",
 		right_ring="C. Palug Ring",
 		back={ name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}},}
@@ -821,7 +821,7 @@ function init_gear_sets()
 		neck={ name="Bst. Collar +2", augments={'Path: A',}},
 		waist="Incarnation Sash",
 		left_ear="Sroda Earring",
-		right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Pet: "Dbl. Atk."+7',}},
+		right_ear="Nukumi Earring +1",
 		left_ring="Tali'ah Ring",
 		right_ring="C. Palug Ring",
 		back={ name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Pet: Accuracy+10 Pet: Rng. Acc.+10','Pet: Haste+10','Pet: Damage taken -5%',}},}
@@ -838,7 +838,7 @@ function init_gear_sets()
 		neck={ name="Bst. Collar +2", augments={'Path: A',}},
 		waist="Incarnation Sash",
 		left_ear="Enmerkar Earring",
-		right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Pet: "Dbl. Atk."+7',}},
+		right_ear="Nukumi Earring +1",
 		left_ring="Tali'ah Ring",
 		right_ring="C. Palug Ring",
 		back={ name="Artio's Mantle", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Accuracy+20 Attack+20','Pet: Mag. Acc.+10','Pet: "Regen"+10','Pet: Damage taken -5%',}},}
@@ -855,7 +855,7 @@ function init_gear_sets()
 		neck="Adad Amulet",
 		waist="Incarnation Sash",
 		left_ear="Enmerkar Earring",
-		right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Pet: "Dbl. Atk."+7',}},
+		right_ear="Nukumi Earring +1",
 		left_ring="Tali'ah Ring",
 		right_ring="Defending Ring",
 		back={ name="Artio's Mantle", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Accuracy+20 Attack+20','Pet: Mag. Acc.+10','Pet: "Regen"+10','Pet: Damage taken -5%',}},}
@@ -893,7 +893,7 @@ function init_gear_sets()
 		neck={ name="Loricate Torque +1", augments={'Path: A',}},
 		waist="Isa Belt",
 		left_ear="Enmerkar Earring",
-		right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Pet: "Dbl. Atk."+7',}},
+		right_ear="Nukumi Earring +1",
 		left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
 		right_ring="Defending Ring",
 		back={ name="Artio's Mantle", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Accuracy+20 Attack+20','Pet: Mag. Acc.+10','Pet: "Regen"+10','Pet: Damage taken -5%',}},}
@@ -910,7 +910,7 @@ function init_gear_sets()
 		-- neck={ name="Loricate Torque +1", augments={'Path: A',}},
 		-- waist="Isa Belt",
 		-- left_ear="Enmerkar Earring",
-		-- right_ear={ name="Nukumi Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Pet: "Dbl. Atk."+7',}},
+		-- right_ear={ name="Nukumi Earring +1",, augments={'System: 1 ID: 1676 Val: 0','Accuracy+14','Mag. Acc.+14','Pet: "Dbl. Atk."+7',}},
 		-- left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
 		-- right_ring="Defending Ring",
 		-- back={ name="Artio's Mantle", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Accuracy+20 Attack+20','Pet: Mag. Acc.+10','Pet: "Regen"+10','Pet: Damage taken -5%',}},}
@@ -941,9 +941,9 @@ function init_gear_sets()
 
     sets.engaged = {
 		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-		head="Crepuscular Helm",
+		head="Malignance Chapeau",--"Crepuscular Helm",
 		body="Tali'ah Manteel +2",
-		hands={ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},
+		hands="Gleti's Gauntlets",--{ name="Emi. Gauntlets +1", augments={'Accuracy+25','"Dual Wield"+6','Pet: Accuracy+25',}},
 		legs="Gleti's Breeches",
 		feet="Nukumi Ocreae +3",
 		neck="Anu Torque",
@@ -952,7 +952,7 @@ function init_gear_sets()
 		right_ear="Dedition Earring",
 		left_ring="Gere Ring",
 		right_ring="Epona's Ring",
-		back={ name="Artio's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Phys. dmg. taken-10%',}},}
+		back="Null Shawl" }
 
     sets.engaged.Acc = {
 		ammo={ name="Coiste Bodhar", augments={'Path: A',}},

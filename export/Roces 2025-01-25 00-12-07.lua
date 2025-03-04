@@ -1,0 +1,15 @@
+sets.exported={
+    ammo="Yamarang",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck={ name="Ninja Nodowa +2", augments={'Path: A',}},
+    waist="Reiki Yotai",
+    left_ear="Eabani Earring",
+    right_ear="Suppanomimi",
+    left_ring="Gere Ring",
+    right_ring="Epona's Ring",
+    back="Null Shawl",
+}

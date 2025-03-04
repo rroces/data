@@ -1,0 +1,15 @@
+sets.exported={
+    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    head={ name="Sakpata's Helm", augments={'Path: A',}},
+    body={ name="Sakpata's Plate", augments={'Path: A',}},
+    hands={ name="Sakpata's Gauntlets", augments={'Path: A',}},
+    legs="Boii Cuisses +3",
+    feet={ name="Sakpata's Leggings", augments={'Path: A',}},
+    neck="Ygnas's Resolve +1",
+    waist="Ioskeha Belt +1",
+    left_ear={ name="Schere Earring", augments={'Path: A',}},
+    right_ear={ name="Boii Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Crit.hit rate+5',}},
+    left_ring="Petrov Ring",
+    right_ring="Niqmaddu Ring",
+    back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
+}

@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Tizona", augments={'Path: A',}},
+    sub={ name="Thibron", augments={'TP Bonus +1000',}},
+    ammo="Coiste Bodhar",
+    head="Malignance Chapeau",
+    body="Malignance Tabard",
+    hands="Malignance Gloves",
+    legs="Malignance Tights",
+    feet="Malignance Boots",
+    neck={ name="Mirage Stole +2", augments={'Path: A',}},
+    waist="Reiki Yotai",
+    left_ear="Eabani Earring",
+    right_ear="Ishvara Earring",
+    left_ring="Defending Ring",
+    right_ring="Stikini Ring +1",
+    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+5','"Store TP"+10','Damage taken-5%',}},
+}

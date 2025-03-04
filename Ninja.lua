@@ -4,7 +4,7 @@
 --  Please refer to my video on my NextGames YouTube channel for how to properly utilize this LUA.  
 send_command('wait 2; input /lockstyleset 2')
 -- This is what sets the initial set that you normally want to be in by default.
-tp_mode = 'dw0'
+tp_mode = 'dw40'
 mb_mode = 'mbnin'
 
 -- This is what sets up the Ninja Information Section.
@@ -65,7 +65,7 @@ function get_sets()
 		legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+20','"Fast Cast"+6','STR+5',}},
 		feet={ name="Herculean Boots", augments={'Mag. Acc.+24','"Fast Cast"+4','INT+3',}},
 		neck="Orunmila's Torque",
-		waist="Oneiros Belt",
+		waist="Goading Belt",
 		left_ear="Loquac. Earring",
 		right_ear="Enchntr. Earring +1",
 		left_ring="Prolix Ring",
@@ -79,9 +79,9 @@ function get_sets()
 		body={ name="Mochi. Chainmail +3", augments={'Enhances "Sange" effect',}},
 		hands={ name="Leyline Gloves", augments={'Accuracy+14','Mag. Acc.+13','"Mag.Atk.Bns."+13','"Fast Cast"+2',}},
 		legs={ name="Herculean Trousers", augments={'"Mag.Atk.Bns."+20','"Fast Cast"+6','STR+5',}},
-    	feet="Hattori Kyahan +2",
+    	feet="Hattori Kyahan +3",
 		neck="Orunmila's Torque",
-		waist="Oneiros Belt",
+		waist="Goading Belt",
 		left_ear="Loquac. Earring",
 		right_ear="Enchntr. Earring +1",
 		left_ring="Prolix Ring",
@@ -98,8 +98,8 @@ function get_sets()
 		hands="Kurys Gloves",
 		legs={ name="Zoar Subligar +1", augments={'Path: A',}},
 		feet={ name="Mochi. Kyahan +3", augments={'Enh. Ninj. Mag. Acc/Cast Time Red.',}},
-		neck="Moonlight Necklace",
-		waist="Trance Belt",
+		neck="Warder's Charm +1",
+		waist="Goading Belt",
 		left_ear="Trux Earring",
 		right_ear="Cryptic Earring",
 		left_ring="Supershear Ring",
@@ -143,7 +143,7 @@ function get_sets()
 		ammo={ name="Ghastly Tathlum +1", augments={'Path: A',}},
 		head={ name="Mochi. Hatsuburi +3", augments={'Enhances "Yonin" and "Innin" effect',}},
 		body="Gyve Doublet",
-		hands="Hattori Tekko +2",
+		hands="Hattori Tekko +3",
 		legs="Gyve Trousers",
 		feet={ name="Mochi. Kyahan +3", augments={'Enh. Ninj. Mag. Acc/Cast Time Red.',}},
 		neck="Baetyl Pendant",
@@ -376,7 +376,7 @@ function get_sets()
 	sets.aftercast = {}
 	sets.aftercast.dw40 = {
 		ammo="Date Shuriken",
-		head={ name="Ryuo Somen +1", augments={'HP+65','"Store TP"+5','"Subtle Blow"+8',}},
+		head="Malignance Chapeau",
 		body="Malignance Tabard",
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
@@ -386,8 +386,8 @@ function get_sets()
 		left_ear="Eabani Earring",
 		right_ear="Suppanomimi",
 		left_ring="Gere Ring",
-		right_ring="Haverton Ring +1",
-		back={ name="Andartia's Mantle", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','"Dual Wield"+10','Evasion+15',}},
+		right_ring="Epona's Ring",
+		back="Null Shawl",
 	}
 	
 	sets.aftercast.dw20 = {
@@ -402,7 +402,7 @@ function get_sets()
 		left_ear="Eabani Earring",
 		right_ear="Suppanomimi",
 		left_ring="Gere Ring",
-		right_ring="Haverton Ring +1",
+		right_ring="Epona's Ring",
 		back={ name="Andartia's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
 	}
 

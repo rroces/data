@@ -244,7 +244,7 @@ function init_gear_sets()
     sets.Melee = {
         --main={name="Rostam", bag="Wardrobe 4", priority=2},
         main={name="Rostam", bag="Inventory", priority=1},
-        sub={name="Crepuscular Knife", bag="Inventory", priority=2},
+        sub={name="Blurred Knife +1", bag="Inventory", priority=2},
         
     }
     -- sets.Melee.engaged = set_combine(sets.Melee, {
@@ -288,7 +288,7 @@ function init_gear_sets()
 	
     sets.DualSword = { 
         main={name="Naegling", bag="Inventory", priority=1},
-        sub={name="Crepuscular Knife", bag="Inventory", priority=2},
+        sub={name="Blurred Knife +1", bag="Inventory", priority=2},
         --ranged=state.GunSelector.current
     }
     -- sets.DualSword.engaged = set_combine(sets.Melee, sets.DualSword)
@@ -511,7 +511,7 @@ function init_gear_sets()
     })
 
     sets.precast.WS['Wildfire'] = {
-        ammo=gear.MAbullet,
+       -- ammo=gear.MAbullet,
         head="Nyame Helm",
         neck="Commodore Charm +2",
         ear1="Friomisi Earring",
@@ -532,7 +532,7 @@ function init_gear_sets()
     })
 
     sets.precast.WS['Leaden Salute'] = { 
-        ammo=gear.MAbullet,
+        --ammo=gear.MAbullet,
         head="Pixie Hairpin +1", 
         neck="Commodore Charm +2",
         ear1="Friomisi Earring",
@@ -580,13 +580,13 @@ function init_gear_sets()
     -- Midcast Sets Sortie
 	sets.midcast.FastRecast = {
 		ammo="Devastating Bullet",
-        neck="Null Loop",
+        neck="Commodore Charm +2",
         ear1="Gwati Earring",
         ear2="Chas. Earring +1",
         ring1="Stikini Ring +1",
         ring2="Stikini Ring +1",
-        back="Null Shawl",
-        waist="Null Belt",
+        back=Camulus.STP,
+        waist="Yemaya Belt",
 		head="Chasseur's Tricorne +3",
 		body="Chasseur's Frac +3",
 		hands="Chasseur's Gants +3",
@@ -677,7 +677,7 @@ function init_gear_sets()
 
     sets.midcast.RA.Acc = set_combine(sets.midcast.RA.Mid, {
         --ring1="Hajduk Ring",
-		ammo=gear.Accbullet,
+		ammo=gear.RAbullet,--gear.RAbullet
         neck="Iskur Gorget",
         ear1="Telos Earring",
         ear2="Crep. Earring",
@@ -685,11 +685,11 @@ function init_gear_sets()
         ring2="Ilabrat Ring",
         back=Camulus.STP,
         waist="Yemaya Belt",
-		head="Chasseur's Tricorne +3",
-		body="Chasseur's Frac +3",
-		hands="Chasseur's Gants +3",
+		head="Ikenga's Hat",
+		body="Ikenga's Vest",
+		hands="Ikenga's Gloves",
 		legs="Chas. Culottes +3",
-		feet="Chass. Bottes +3"
+		feet="Ikenga's Clogs"
     })
     sets.midcast.RA.Acc.AME = set_combine(sets.midcast.RA.Acc, {
         head="Meghanada Visor +2",
@@ -724,8 +724,8 @@ function init_gear_sets()
     -- Idle sets
     sets.idle = {
         --range="Fomalhaut",
-        head="Null Masque",
-        neck="Rep. Plat. Medal",
+        head="Nyame Helm",
+        neck="Commodore Charm +2",
         ear1="Genmei Earring",
         ear2="Etiolation Earring",
         --body="Mekosuchinae Harness",
@@ -739,8 +739,8 @@ function init_gear_sets()
         feet="Nyame Sollerets"
     }
     sets.idle.Regen = set_combine(sets.idle, {
-        head="Null Masque",
-        neck="Rep. Plat. Medal",
+        head="Meghanada Visor +2",
+        neck="Sanctity Necklace",
         ear1="Infused Earring",
         neck="Commodore Charm +2",
         body="Adamantite Armor",
@@ -750,7 +750,7 @@ function init_gear_sets()
     })
 
     sets.idle.Town = {
-        ammo=gear.MAbullet,
+        --ammo=gear.MAbullet,
         head="Lanun Tricorne +3",
         neck="Commodore Charm +2",
         ear1="Telos Earring",

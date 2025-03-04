@@ -314,6 +314,7 @@ function init_gear_sets()
         --neck="Colossus's Torque", 
         --body="Anhur Robe",
         --hands="Ayao's Gloves"
+		feet="Telchine Pichages"
     --------------------------------------
     -- Idle/resting/defense/etc sets
     --------------------------------------
@@ -354,7 +355,7 @@ function init_gear_sets()
 
     -- .Pet sets are for when Luopan is present.
     sets.idle.Pet = set_combine(sets.idle, {
-        main="Sucellus",
+        main="Idris",
         head="Azimuth Hood +3",
         neck="Twilight Torque",
         body="Shamash Robe",
@@ -413,7 +414,8 @@ function init_gear_sets()
     -- Defense sets
 
     sets.defense.PDT = {
-        range="Dunna",
+        main="Idris",
+		range="Dunna",
         neck="Twilight Torque",
         body="Shamash Robe",
         hands="Geomancy Mitaines +1",

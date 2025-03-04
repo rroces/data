@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Tizona", augments={'Path: A',}},
+    sub={ name="Thibron", augments={'TP Bonus +1000',}},
+    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    head={ name="Gleti's Mask", augments={'Path: A',}},
+    body="Gleti's Cuirass",
+    hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+    legs={ name="Gleti's Breeches", augments={'Path: A',}},
+    feet="Gleti's Boots",
+    neck={ name="Mirage Stole +2", augments={'Path: A',}},
+    waist="Reiki Yotai",
+    left_ear="Eabani Earring",
+    right_ear="Telos Earring",
+    left_ring="Epona's Ring",
+    right_ring="Ilabrat Ring",
+    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+}

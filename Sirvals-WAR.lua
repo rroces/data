@@ -89,7 +89,7 @@ function get_sets()
 		right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
 		left_ring="Moonlight Ring",
 		right_ring="Moonlight Ring",
-		back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+		back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}},
     }
 
 	sets.Idle.DT = {}
@@ -127,7 +127,7 @@ function get_sets()
 		right_ear="Telos Earring",
 		left_ring="Niqmaddu Ring",
 		right_ring="Moonlight Ring",
-		back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+		back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10',}},
 	}
 
 	sets.OffenseMode.TP = {}

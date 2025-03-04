@@ -1,0 +1,15 @@
+sets.exported={
+    ammo="Coiste Bodhar",
+    head="Hashishin Kavuk +3",
+    body="Nyame Mail",
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs="Nyame Flanchard",
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck={ name="Mirage Stole +2", augments={'Path: A',}},
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+    right_ear="Ishvara Earring",
+    left_ring="Ilabrat Ring",
+    right_ring="Cornelia's Ring",
+    back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
+}

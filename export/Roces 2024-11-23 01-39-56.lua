@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Tizona", augments={'Path: A',}},
+    sub={ name="Thibron", augments={'TP Bonus +1000',}},
+    ammo="Staunch Tathlum +1",
+    head="Malignance Chapeau",
+    body="Hashishin Mintan +3",
+    hands="Hashi. Bazu. +3",
+    legs="Hashishin Tayt +3",
+    feet="Hashi. Basmak +3",
+    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    waist="Carrier's Sash",
+    left_ear="Etiolation Earring",
+    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+    right_ring="Stikini Ring +1",
+    back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+}
