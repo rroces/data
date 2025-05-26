@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Trishula", augments={'Path: A',}},
+    sub="Utu Grip",
+    ammo="Staunch Tathlum +1",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Leyline Gloves", augments={'Accuracy+14','Mag. Acc.+13','"Mag.Atk.Bns."+13','"Fast Cast"+2',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    waist="Carrier's Sash",
+    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    right_ear="Eabani Earring",
+    left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+    right_ring="Defending Ring",
+    back={ name="Mecisto. Mantle", augments={'Cap. Point+46%','MND+1','Rng.Atk.+1','DEF+10',}},
+}

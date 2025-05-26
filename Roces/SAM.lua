@@ -91,7 +91,7 @@ function init_gear_sets()
     sets.precast.JA['Trance'] = {head=""}
 	sets.precast.JA['Meditate']= {head="Wakido Kabuto +3",hands="Sakonji Kote +3"}
     sets.precast.Waltz = {ammo="Yamarang",
-        head="",
+        head="Anwig Salade",
         neck="",
         lear="",
         body="",

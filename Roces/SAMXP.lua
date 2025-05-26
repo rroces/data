@@ -84,14 +84,14 @@ function init_gear_sets()
     ---------------------------------------- Precast Sets ------------------------------------------
     ------------------------------------------------------------------------------------------------
  
-    sets.Enmity = {head="Highwing Helm",neck="",hands="Kurys Gloves",ear2="Friomisi Earring",ring1="Petrov Ring",body="",legs="Samnuha Tights",feet=""}
+    sets.Enmity = {head="Highwing Helm",neck="",hands="Kurys Gloves",ear2="Friomisi Earring",ring1="Petrov Ring",body="",legs="Samnuha Tights",feet="Ahosi Leggings"}
  
     sets.precast.JA['Provoke'] = sets.Enmity
     sets.precast.JA['No Foot Rise'] = {body=""}
     sets.precast.JA['Trance'] = {head=""}
-	sets.precast.JA['Meditate']= {head="Wakido Kabuto +3",hands="Sakonji Kote +3"}
+	sets.precast.JA['Meditate']= {head="wakido kabuto +2",hands="Sakonji Kote +3"}
     sets.precast.Waltz = {ammo="Yamarang",
-        head="",
+        head="Anwig Salade",
         neck="",
         lear="",
         body="",
@@ -113,7 +113,7 @@ function init_gear_sets()
     ------------------------------------------------------------------------------------------------
  
     sets.precast.WS['Tachi: Fudo'] = {
-		ammo="Knobkierrie",
+		ammo="",
 		head="Mpaca's Cap",
 		body={ name="Sakonji Domaru +3", augments={'Enhances "Overwhelm" effect',}},
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -193,7 +193,7 @@ sets.precast.WS['Tachi: Shoha'] = {
 }
 
 sets.precast.WS['Tachi: Jinpu'] = {
-		ammo="Knobkierrie",
+		range="Halakaala",
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body={ name="Nyame Mail", augments={'Path: B',}},
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -271,7 +271,7 @@ sets.precast.WS['Tachi: Jinpu'] = {
     ------------------------------------------------------------------------------------------------
  
     sets.idle.DT = {
-		ammo="Staunch Tathlum +1",
+		range="Halakaala",
 		head="Nyame Helm",
 		body="Nyame Mail",
 		hands="Nyame Gauntlets",
@@ -287,7 +287,7 @@ sets.precast.WS['Tachi: Jinpu'] = {
         }
 		
 	sets.idle.Regen = {
-		ammo="Staunch Tathlum +1",
+		range="Halakaala",
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body="Sacro Breastplate",
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -304,7 +304,7 @@ sets.precast.WS['Tachi: Jinpu'] = {
 		
  
     sets.idle.Town = {
-		ammo="Staunch Tathlum +1",
+		range="Halakaala",
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body="Sacro Breastplate",
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -451,10 +451,10 @@ sets.precast.WS['Tachi: Jinpu'] = {
 }
 	 sets.engaged.Hybrid = {
 		sub="Utu Grip",
-		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-		head="Kasuga Kabuto +3",
+		range="Halakaala",
+		head="Kasuga Kabuto +2",
 		body="Kasuga Domaru +3",
-		hands="Tatena. Gote +1",--Wakido Kote +3
+		hands="Tatena. Gote +1",
 		legs="Kasuga Haidate +3",
 		feet="Ryuo Sune-Ate +1",
 		neck={ name="Sam. Nodowa +2", augments={'Path: A',}},

@@ -72,7 +72,7 @@ function get_sets()
 		right_ear="Etiolation Earring",
 		left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
 		right_ring="Moonlight Ring",
-		back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+		back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+3','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 
 	sets.Idle.DT = set_combine(sets.Idle, {
@@ -107,13 +107,14 @@ function get_sets()
 		hands="Sakpata's Gauntlets",
 		legs="Sakpata's Cuisses",
 		feet="Flam. Gambieras +2",
-		neck={ name="Vim Torque +1", augments={'Path: A',}},
+		neck="Abyssal Beads +2",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-		left_ear="Crep. Earring",
-		right_ear="Telos Earring",
+		left_ear="Cessance Earring",
+		right_ear="Heath. Earring +2",
 		left_ring="Niqmaddu Ring",
 		right_ring="Moonlight Ring",
-		back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+		back="Null Shawl",
+		
 	}
 
 	sets.OffenseMode.DT = set_combine(sets.OffenseMode.TP, {
@@ -143,13 +144,13 @@ function get_sets()
 	sets.Precast.FastCast = {
 		ammo="Sapience Orb", --2
 		head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}}, --14
-		body={ name="Taeon Tabard", augments={'"Fast Cast"+5','HP+44',}}, --9
-		hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}}, --8
+		body="Sacro Breastplate", --10
+		hands="Leyline Gloves", --8
 		legs={ name="Carmine Cuisses +1", augments={'HP+80','STR+12','INT+12',}},
 		feet={ name="Carmine Greaves +1", augments={'HP+80','MP+80','Phys. dmg. taken -4',}}, --8
-		neck="Voltsurge Torque", --4
+		neck="Orunmila's Torque", --4
 		left_ear="Etiolation Earring", --1
-		left_ring="Weather. Ring", --5
+		left_ring="Weather. Ring +1", --5
 	}
 		
 	sets.Enmity = {}
@@ -201,16 +202,16 @@ function get_sets()
 
 	--WS Sets
 	sets.WS = {
-		ammo="Knobkierrie",
-		head="Flam. Zucchetto +2",
-		body="Sakpata's Plate",
-		hands="Sakpata's Gauntlets",
-		legs="Sakpata's Cuisses",
-		feet="Sulev. Leggings +2",
+		ammo="	",
+		head="Nyame Helm",
+		body="Nyame Mail",
+		hands="Nyame Gauntlets",
+		legs="Nyame Flanchard",
+		feet="Nyame Sollerets",
 		neck="Fotia Gorget",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Ishvara Earring",
-		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		right_ear="Heath. Earring +2",
 		left_ring="Niqmaddu Ring",
 		right_ring="Regal Ring",
 		back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},

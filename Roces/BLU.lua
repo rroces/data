@@ -64,19 +64,17 @@ function get_sets()
 		sub="Zantetsuken",
 		--sub={ name="Machaera +2", augments={'TP Bonus +1000',}},
 	}
-	
+
 	sets.Weapons['Black Halo'] = {
-	    main="Apkallu Scepter",
-		sub="Tengu War Fan",
-		--main="Maxentius",
-		--sub="Bunzi's Rod",
+	    main="Maxentius",
+		sub="Bunzi's Rod",
 	}
 
 	sets.Weapons['Cleave'] = {
 		main={ name="Nibiru Cudgel", augments={'MP+50','INT+10','"Mag.Atk.Bns."+15',}},
 		sub={ name="Nibiru Cudgel", augments={'MP+50','INT+10','"Mag.Atk.Bns."+15',}},
 	}
-	
+
 	sets.Weapons.Shield = {
 		sub="Genmei Shield",
 	}

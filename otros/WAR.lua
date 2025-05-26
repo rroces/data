@@ -62,7 +62,7 @@ function get_sets()
 		sub="Naegling",
 	}
 	sets.Weapons['Ukonvasara'] = {
-		main={ name="Chango", augments={'Path: A',}},
+		main="Ukonvasara",
 		sub="Utu Grip",
 	}
 	-- This stops GS from chaning weapons (Abyssea Proc etc)
@@ -117,7 +117,7 @@ function get_sets()
 	sets.OffenseMode = {
 		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
 		head="Flam. Zucchetto +2",
-		body="Dagon Breast.",
+		body="Boii Lorica +3",
 		hands="Sakpata's Gauntlets",
 		legs="Pumm. Cuisses +3",
 		feet="Pumm. Calligae +3",
@@ -127,7 +127,7 @@ function get_sets()
 		right_ear="Telos Earring",
 		left_ring="Niqmaddu Ring",
 		right_ring="Moonlight Ring",
-		back={ name="Cichol's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+		back="Null Shawl",
 	}
 
 	sets.OffenseMode.TP = {}
@@ -186,8 +186,8 @@ function get_sets()
 		ammo="Sapience Orb", --2
 		head="Sakpata's Helm", --8
 		body="Sacro Breastplate", --10
-		hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}}, --8
-		neck="Voltsurge Torque", -- 4
+		hands={ name="Leyline Gloves", augments={'Accuracy+14','Mag. Acc.+13','"Mag.Atk.Bns."+13','"Fast Cast"+2',}}, --8
+		neck="Orunmila's Torque", -- 4
 		left_ear="Etiolation Earring", --1
 		right_ear="Loquac. Earring", -- 3
 		left_ring="Prolix Ring", -- 2
@@ -228,7 +228,7 @@ function get_sets()
 	    ammo="Staunch Tathlum +1", --11
 		--feet={ name="Odyssean Greaves", augments={'Attack+1','"Fast Cast"+6',}}, --20
 		neck="Moonlight Necklace", --15
-		left_ear="Magnetic Earring", --8
+		left_ear="", --8
 		waist="Audumbla Sash", --10
 	}
 
@@ -272,23 +272,23 @@ function get_sets()
 
 	-- Job Abilities
 	sets.JA = {}
-	sets.JA["Mighty Strikes"] = {}
+	sets.JA["Mighty Strikes"] = {hands="Agoge Mufflers +3"}
 	sets.JA["Berserk"] = {body="Pumm. Lorica +3"}
 	sets.JA["Warcry"] = {head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}}}
-	sets.JA["Defender"] = {}
-	sets.JA["Aggressor"] = {}
+	sets.JA["Defender"] = {hands="Agoge Mufflers +3"}
+	sets.JA["Aggressor"] = {body="Agoge Lorica +3"}
 	sets.JA["Provoke"] = sets.Precast.Enmity
 	sets.JA["Tomahawk"] = {ammo="Thr. Tomahawk",} -- Need to add feet
-	sets.JA["Retaliation"] = {}
-	sets.JA["Restraint"] = {}
-	sets.JA["Blood Rage"] = {}
+	sets.JA["Retaliation"] = {feet="Boii Calligae +3"}
+	sets.JA["Restraint"] = {hands="Boii Mufflers +3"}
+	sets.JA["Blood Rage"] = {body="Boii Lorica +3"}
 	sets.JA["Brazen Rush"] = {}
 
 	--Default WS set base
 	sets.WS = {
 		ammo="Knobkierrie",
 		head={ name="Agoge Mask +3", augments={'Enhances "Savagery" effect',}},
-		body="Nyame Mail", --Pumm. Lorica +3
+		body="Nyame Mail", --Pumm. Lorica +2
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -296,7 +296,7 @@ function get_sets()
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Thrud Earring",
 		right_ear="Boii Earring +1",
-		left_ring="Karieyh Ring +1",
+		left_ring="Epaminondas's Ring",
 		right_ring="Cornelia's Ring",
 		back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+8','Weapon skill damage +10%',}}
 	}

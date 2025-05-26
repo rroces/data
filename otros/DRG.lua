@@ -151,14 +151,14 @@ function get_sets()
 	sets.Precast.FastCast = {
 		ammo="Sapience Orb", --2
 		head={ name="Carmine Mask +1", augments={'Accuracy+20','Mag. Acc.+12','"Fast Cast"+4',}}, --14
-		body={ name="Taeon Tabard", augments={'"Fast Cast"+5','HP+44',}}, --9
-		hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}}, --8
+		body="Sacro Breastplate", --9
+		hands={ name="Leyline Gloves", augments={'Accuracy+14','Mag. Acc.+13','"Mag.Atk.Bns."+13','"Fast Cast"+2',}}, --8
 		legs={ name="Carmine Cuisses +1", augments={'HP+80','STR+12','INT+12',}},
 		feet={ name="Carmine Greaves +1", augments={'HP+80','MP+80','Phys. dmg. taken -4',}}, --8
-		neck="Voltsurge Torque", --4
+		neck="Orunmila's Torque", --4
 		left_ear="Etiolation Earring", --1
 		right_ear="Tuisto Earring",
-		left_ring="Weather. Ring", --5
+		left_ring="Weather. Ring +1", --5
 		right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
 	}
 		
@@ -256,7 +256,7 @@ function get_sets()
 		neck={ name="Dgn. Collar +2", augments={'Path: A',}},
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Sherida Earring",
-		right_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		right_ear={ name="Moonshade Earring", augments={'Attack +4','TP Bonus +250',}},
 		left_ring="Niqmaddu Ring",
 		right_ring="Epaminondas's Ring",
 		back={ name="Brigantia's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Magic dmg. taken-10%',}},

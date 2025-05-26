@@ -94,11 +94,11 @@ function user_setup()
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal', 'DT', 'MEva')
 	
-	gear.BRD_DW_Cape = {name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%',}} --**
-    gear.BRD_Song_Cape = {name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%',}} --*
-    gear.BRD_STP_Cape = {name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage Taken -5%',}} --**
-    gear.BRD_WS1_Cape = {name="Intarabus's Cape", augments={'CHR+20','Accuracy+20 Attack+20','CHR+10','Weapon skill damage +10%','Phys. dmg. taken-10%',}} --**
-    gear.BRD_WS2_Cape = {name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%',}} --*
+	gear.BRD_DW_Cape = {name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dual Wield"+10','Phys. dmg. taken-10%'}} --**
+    gear.BRD_Song_Cape = {name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','Mag. Acc.+10','"Fast Cast"+10','Damage taken-5%'}} --*^^
+    gear.BRD_STP_Cape = {name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Store TP"+10','Damage Taken -5%'}} --**^
+    gear.BRD_WS1_Cape = {name="Intarabus's Cape", augments={'CHR+20','Accuracy+20 Attack+20','CHR+10','Weapon skill damage +10%','Phys. dmg. taken-10%'}} --**^
+    gear.BRD_WS2_Cape = {name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%'}} --* ^
 
     state.LullabyMode = M{['description']='Lullaby Instrument', 'Harp', 'Horn'}
 
@@ -373,7 +373,7 @@ function init_gear_sets()
     sets.midcast.Mambo = {feet="Mou. Crackows +1"}
     sets.midcast.March = {hands="Fili Manchettes +3"}
     sets.midcast.Minne = {legs="Mou. Seraweels +1"}
-    sets.midcast.Minuet = {neck="Moonbow Whistle +1"} --Fili Hongreline +3
+    sets.midcast.Minuet = {neck="Moonbow Whistle +1", feet="Fili Cothurnes +3"} --Fili Hongreline +3
     sets.midcast.Paeon = {head="Brioso Roundlet +3"}
     sets.midcast.Prelude = {feet="Fili Cothurnes +3"}
     sets.midcast.Threnody = {body="Mou. Manteel +1"}
@@ -452,7 +452,7 @@ function init_gear_sets()
         }
 
     sets.midcast.Curaga = set_combine(sets.midcast.Cure, {
-        neck="Nuna Gorget +1",
+        neck="Nodens Gorget",
         ring1={name="Stikini Ring +1", bag="wardrobe5"},
         ring2="Metamor. Ring +1",
         waist="Luminary Sash",
@@ -702,7 +702,7 @@ function init_gear_sets()
         hands="Nyame Gauntlets",
         legs="Nyame Flanchard",
         feet="Nyame Sollerets",
-        ring1=" --", --5/5 --Moonlight Ring
+        ring1="Moonlight Ring", --5/5 --Moonlight Ring
         }
 
     sets.engaged.DT = set_combine(sets.engaged, sets.engaged.Hybrid)

@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Epeolatry", augments={'Path: A',}},
+    sub="Utu Grip",
+    ammo="Homiliary",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body="Erilaz Surcoat +3",
+    hands="Erilaz Gauntlets +3",
+    legs="Eri. Leg Guards +3",
+    feet={ name="Herculean Boots", augments={'Accuracy+7 Attack+7','"Triple Atk."+3','DEX+3',}},
+    neck={ name="Futhark Torque +2", augments={'Path: A',}},
+    waist="Carrier's Sash",
+    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    right_ear="Sanare Earring",
+    left_ring="Stikini Ring +1",
+    right_ring="Stikini Ring +1",
+    back="Null Shawl",
+}

@@ -37,7 +37,7 @@ BlueSkill = S{'Occultation','Erratic Flutter','Nature\'s Meditation','Cocoon','B
 BlueTank = S{}
 
 --Weapons specific to Blue Mage
-state.WeaponMode:options('Almace','Naegling','Black Halo','Cleave')
+state.WeaponMode:options('Tizona','Almace','Naegling','Black Halo','Cleave')
 state.WeaponMode:set('Black Halo')
 
 --Enable JobMode for UI
@@ -53,30 +53,31 @@ function get_sets()
 
 	-- Weapon setup
 	sets.Weapons = {}
-
+	
+	sets.Weapons['Tizona'] = {
+		main="Tizona",
+		sub="Thibron",
+	}
 	sets.Weapons['Almace'] = {
 		main="Almace",
 		sub="Zantetsuken",
 	}
-
-	sets.Weapons['Naegling'] = {
+		sets.Weapons['Naegling'] = {
 		main="Naegling",
 		sub="Zantetsuken",
 		--sub={ name="Machaera +2", augments={'TP Bonus +1000',}},
 	}
-	
+
 	sets.Weapons['Black Halo'] = {
-	    main="Apkallu Scepter",
-		sub="Tengu War Fan",
-		--main="Maxentius",
-		--sub="Bunzi's Rod",
+	    main="Maxentius",
+		sub="Bunzi's Rod",
 	}
 
 	sets.Weapons['Cleave'] = {
 		main={ name="Nibiru Cudgel", augments={'MP+50','INT+10','"Mag.Atk.Bns."+15',}},
 		sub={ name="Nibiru Cudgel", augments={'MP+50','INT+10','"Mag.Atk.Bns."+15',}},
 	}
-	
+
 	sets.Weapons.Shield = {
 		sub="Genmei Shield",
 	}
@@ -123,8 +124,9 @@ function get_sets()
 		left_ear="Crep. Earring",
 		right_ear="Telos Earring",
 		left_ring="Epona's Ring",
-		right_ring={ name="Chirich Ring +1", bag="wardrobe2",},
-		back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
+		right_ring="Ilabrat Ring", -- { name="Chirich Ring +1", bag="wardrobe2",},
+		back={ name="Rosmerta's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+5','"Store TP"+10','Damage taken-5%',}},
+		neck="Mirage Stole +2"
 	}
 
 	sets.OffenseMode.DT = set_combine ( sets.OffenseMode.TP, {
@@ -318,6 +320,22 @@ function get_sets()
 		left_ring="Epaminondas's Ring",
 		right_ring="Cornelia's Ring",
 		back={ name="Rosmerta's Cape", augments={'MND+20','Accuracy+20 Attack+20','MND+10','Weapon skill damage +10%','Damage taken-5%',}},
+	}
+	
+	sets.WS['Expiacion'] = {
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Hashishin Kavuk +3",
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck={ name="Mirage Stole +2", augments={'Path: A',}},
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear={ name="Moonshade Earring", augments={'Accuracy+4','TP Bonus +250',}},
+		right_ear="Ishvara Earring",
+		left_ring="Ilabrat Ring",
+		right_ring="Cornelia's Ring",
+		back={ name="Rosmerta's Cape", augments={'STR+20','Accuracy+20 Attack+20','Weapon skill damage +10%',}},
 	}
 
 	--This set is used when OffenseMode is ACC and a WS is used (Augments the WS base set)

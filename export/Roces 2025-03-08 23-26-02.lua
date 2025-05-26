@@ -1,0 +1,16 @@
+sets.exported={
+    main="Naegling",
+    ammo="Homiliary",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body="Erilaz Surcoat +3",
+    hands="Erilaz Gauntlets +3",
+    legs="Eri. Leg Guards +3",
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck="Incanter's Torque",
+    waist="Carrier's Sash",
+    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    right_ear="Sanare Earring",
+    left_ring="Stikini Ring +1",
+    right_ring="Stikini Ring +1",
+    back="Null Shawl",
+}

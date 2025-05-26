@@ -470,7 +470,19 @@ function init_gear_sets()
         feet="Lanun Bottes +3"
     })
 
-    sets.precast.WS['Exenterator'] = set_combine(sets.precast.WS, {legs="Samnuha Tights"})
+    sets.precast.WS['Exenterator'] = set_combine(sets.precast.WS, {
+		neck="Lissome Necklace",
+        ear1="Telos Earring",
+        ear2="Crep. Earring",
+        ring1="Cacoethic Ring +1",
+        ring2="Ilabrat Ring",
+        back="Null Shawl",
+        waist="Null Belt",
+		head="Chasseur's Tricorne +3",
+		body="Chasseur's Frac +3",
+		hands="Chasseur's Gants +3",
+		legs="Chas. Culottes +3",
+		feet="Chass. Bottes +3"})
 
     sets.precast.WS['Requiescat'] = set_combine(sets.precast.WS, {
         head="Nyame Helm",
@@ -661,8 +673,8 @@ function init_gear_sets()
         hands="Chasseur's Gants +3",
         waist="K. Kachina Belt +1",
 		legs="Darraigner's Brais",
-		ear1="Odr Earring",
-        ear2="Chas. Earring +1",
+		ear1="Chas. Earring +1",
+        ear2="Odr Earring",
 		
     })
     sets.midcast.RA.Mid = set_combine(sets.midcast.RA, {
@@ -730,7 +742,7 @@ function init_gear_sets()
         ear2="Etiolation Earring",
         --body="Mekosuchinae Harness",
         body="Adamantite Armor",
-        hands="Regal Gloves", --Nyame Gauntlets
+        hands="Nyame Gauntlets", --Nyame Gauntlets --Regal Gloves
         ring1="Roller's Ring",
         ring2="Defending Ring",
         back=Camulus.STP,
@@ -744,7 +756,7 @@ function init_gear_sets()
         ear1="Infused Earring",
         neck="Commodore Charm +2",
         body="Adamantite Armor",
-        hands="Nyame Gauntlets", --Nyame Gauntlets --Regal Gloves
+        hands="Regal Gloves", --Nyame Gauntlets
         ring1="Meghanada Ring",
         ring2="Paguroidea Ring"
     })

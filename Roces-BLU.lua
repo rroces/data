@@ -37,7 +37,7 @@ BlueSkill = S{'Occultation','Erratic Flutter','Nature\'s Meditation','Cocoon','B
 BlueTank = S{}
 
 --Weapons specific to Blue Mage
-state.WeaponMode:options('Tizona','Almace','Naegling','Black Halo','Cleave')
+state.WeaponMode:options('Tizona','Almace','Naegling','Black Halo','Cleave','Learning')
 state.WeaponMode:set('Black Halo')
 
 --Enable JobMode for UI
@@ -77,7 +77,11 @@ function get_sets()
 		main={ name="Nibiru Cudgel", augments={'MP+50','INT+10','"Mag.Atk.Bns."+15',}},
 		sub={ name="Nibiru Cudgel", augments={'MP+50','INT+10','"Mag.Atk.Bns."+15',}},
 	}
-
+	sets.Weapons['Learning'] = {
+		main="Apkallu Scepter",
+		sub="Tengu War Fan",
+		--sub={ name="Machaera +2", augments={'TP Bonus +1000',}},
+	}
 	sets.Weapons.Shield = {
 		sub="Genmei Shield",
 	}
@@ -187,7 +191,7 @@ function get_sets()
 	sets.JA = {}
 	sets.JA["Azure Lore"] = {hands="Luh. Bazubands +3"}
 	sets.JA["Chain Affinity"] = {head="Hashishin Kavuk +3", feet="Assim. Charuqs +2"}
-	sets.JA["Burst Affinity"] = {legs="Assimilator's Shalwar +3", feet="Hashishin Basmak +3"}
+	sets.JA["Burst Affinity"] = {legs="Assimilator's Shalwar +1", feet="Hashishin Basmak +3"}
 	sets.JA["Diffusion"] = {feet="Luhlaza Charuqs +3"}
 	sets.JA["Efflux"] = {legs="Hashishin Tayt +3"}
 	sets.JA["Unbridled Learning"] = {}

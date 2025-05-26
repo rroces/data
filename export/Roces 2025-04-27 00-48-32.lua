@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Chango", augments={'Path: A',}},
+    sub="Utu Grip",
+    ammo="Staunch Tathlum +1",
+    head={ name="Sakpata's Helm", augments={'Path: A',}},
+    body={ name="Sakpata's Plate", augments={'Path: A',}},
+    hands={ name="Leyline Gloves", augments={'Accuracy+14','Mag. Acc.+13','"Mag.Atk.Bns."+13','"Fast Cast"+2',}},
+    legs={ name="Sakpata's Cuisses", augments={'Path: A',}},
+    feet={ name="Sakpata's Leggings", augments={'Path: A',}},
+    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    waist="Carrier's Sash",
+    left_ear="Eabani Earring",
+    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
+    back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
+}
