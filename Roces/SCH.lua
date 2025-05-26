@@ -816,8 +816,8 @@ function get_sets()
     }
 	
 			sets.midcast.MB.NAKED = {
-	main= "Bunzi's Rod", --"Mpaca's staff",
-	sub="ammurapi shield", --"Enki strap",
+	main="Mpaca's staff",
+	sub="Enki strap",
 	ammo="Ghastly Tathlum +1",
 	head="agwu's cap",
 	body= "arbatel gown +3", --"Agwu's Robe", --
