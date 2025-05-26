@@ -112,7 +112,7 @@ function get_sets()
 		head="Flam. Zucchetto +2",
 		body="Sakpata's Plate",
 		hands="Sakpata's Gauntlets",
-		legs="Sakpata's Cuisses",
+		legs="Ig. Flanchard +3",
 		feet="Flam. Gambieras +2",
 		neck="Abyssal Beads +2",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
