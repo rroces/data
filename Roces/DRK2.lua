@@ -191,10 +191,10 @@ function get_sets()
 	sets.JA = {}
 	sets.JA["Provoke"] = sets.Precast.Enmity
 	sets.JA["Blood Weapon"] = {}
-	sets.JA["Souleater"] = {}
+	sets.JA["Souleater"] = {legs="Fallen's Flanchard +3"}
 	sets.JA["Arcane Circle"] = {}
 	sets.JA["Weapon Bash"] = {}
-	sets.JA["Nether Void"] = {}
+	sets.JA["Nether Void"] = {legs="Heathen's flanchard +2"}
 	sets.JA["Arcane Crest"] = {}
 	sets.JA["Scarlet Delirium"] = {}
 	sets.JA["Soul Enslavement"] = {}

@@ -188,16 +188,17 @@ function get_sets()
 	
 	--Job Abilities
 	sets.JA = {}
-	sets.JA["Berserk"] = {}
-	sets.JA["Warcry"] = {}
-	sets.JA["Defender"] = {}
-	sets.JA["Aggressor"] = {}
 	sets.JA["Provoke"] = sets.Precast.Enmity
-	sets.JA["Third Eye"] = {}
-	sets.JA["Meditate"] = {}
-	sets.JA["Warding Circle"] = {}
-	sets.JA["Hasso"] = {}
-	sets.JA["Seigan"] = {}
+	sets.JA["Blood Weapon"] = {}
+	sets.JA["Souleater"] = {legs="Fallen's Flanchard +3"}
+	sets.JA["Arcane Circle"] = {}
+	sets.JA["Weapon Bash"] = {}
+	sets.JA["Nether Void"] = {legs="Heathen's flanchard +2"}
+	sets.JA["Arcane Crest"] = {}
+	sets.JA["Scarlet Delirium"] = {}
+	sets.JA["Soul Enslavement"] = {}
+	sets.JA["Consume Mana"] = {}
+	
 
 
 	--WS Sets
