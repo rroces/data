@@ -81,7 +81,7 @@ function get_sets()
 		left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
 		right_ear="Etiolation Earring",
 		left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
-		right_ring="Moonlight Ring",
+		right_ring={name="Moonlight Ring", bag="wardrobe3", priority=1},
 		back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 
@@ -118,7 +118,7 @@ function get_sets()
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Telos Earring",
 		right_ear={ name="Schere Earring", augments={'Path: A',}},
-		left_ring="Moonlight Ring",
+		left_ring={name="Moonlight Ring", bag="wardrobe3", priority=1},
 		right_ring="Niqmaddu Ring",
 		back="Null Shawl",
 	}
@@ -185,8 +185,8 @@ function get_sets()
 	sets.Midcast.Dark = set_combine(sets.Midcast.Enfeebling, {})
 	sets.Midcast.Dark.MACC = set_combine(sets.Midcast.Enfeebling.MACC, {})
 	sets.Midcast.Dark.Absorb = set_combine(sets.Midcast.Enfeebling, {})
-	sets.Midcast.Dark.Enhancing = set_combine(sets.Midcast.Enhancing, {})
-	
+	sets.Midcast.Dark.Enhancing = set_combine(sets.Midcast.Enhancing, {body="Heath. Cuirass +2",})
+	sets.Midcast['Dread Spikes'] = set_combine(sets.Midcast.Enhancing, {body="Heath. Cuirass +2",})
 	--Job Abilities
 	sets.JA = {}
 	sets.JA["Provoke"] = sets.Precast.Enmity

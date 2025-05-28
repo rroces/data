@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Musa", augments={'Path: C',}},
+    sub="Khonsu",
+    ammo="Homiliary",
+    head="Volte Beret",
+    body="Arbatel Gown +3",
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs="Assid. Pants +1",
+    feet="Herald's Gaiters",
+    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    waist="Embla Sash",
+    left_ear="Etiolation Earring",
+    right_ear="Lugalbanda Earring",
+    left_ring="Evanescence Ring",
+    right_ring="Stikini Ring +1",
+    back="Moonlight Cape",
+}

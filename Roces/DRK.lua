@@ -186,6 +186,8 @@ function get_sets()
 	
 	})
 	
+	
+	
 	--Job Abilities
 	sets.JA = {}
 	sets.JA["Provoke"] = sets.Precast.Enmity
