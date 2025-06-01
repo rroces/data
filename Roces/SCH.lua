@@ -916,9 +916,10 @@ function get_sets()
     -- Pieces to swap from freen nuke to Magic Burst
    -- sets.midcast.MB.normal = set_combine(sets.midcast.nuking.normal, {
 	sets.midcast.MB.normal = {
-	main="Bunzi's Rod",
-    sub="Ammurapi Shield",--main= "Mpaca's staff",
-	--sub="Enki strap",
+	--main="Bunzi's Rod",
+    --sub="Ammurapi Shield",
+	main= "Mpaca's staff",
+	sub="Enki strap",
 	head="agwu's cap",
 	left_ear="Malignance Earring",
     right_ear="Arbatel Earring +2",

@@ -1,11 +1,11 @@
 
---Hurin
+--Elendnur
 
 -- Load and initialize the include file.
 include('Mirdain-Include')
 
 --Set to ingame lockstyle and Macro Book/Set
-LockStylePallet = "15"
+LockStylePallet = "13"
 MacroBook = "2"
 MacroSet = "1"
 
@@ -29,7 +29,7 @@ state.OffenseMode:options('DT','TP','PDL','ACC','SB') -- ACC effects WS and TP m
 state.OffenseMode:set('DT')
 
 --Weapon Modes
-state.WeaponMode:options('Scythe','Great Sword','Sword','Club','Axe')
+state.WeaponMode:options('Scythe','Great Sword','Sword','Club')
 state.WeaponMode:set('Scythe')
 
 -- Initialize Player
@@ -51,21 +51,11 @@ function get_sets()
 
 	sets.Weapons['Sword'] = {
 		main="Naegling",
-		sub={ name="Ternion Dagger +1", augments={'Path: A',}},
+		sub="Blurred Shield +1",
 	}
 
 	sets.Weapons['Club'] = {
 		main={ name="Loxotic Mace +1", augments={'Path: A',}},
-		sub="Blurred Shield +1",
-	}
-
-	sets.Weapons['Axe'] = {
-		main="Dolichenus",
-		sub={ name="Ternion Dagger +1", augments={'Path: A',}},
-	}
-
-	sets.Weapons.Shield = 
-	{
 		sub="Blurred Shield +1",
 	}
 
@@ -81,20 +71,20 @@ function get_sets()
 		left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
 		right_ear="Etiolation Earring",
 		left_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
-		right_ring={name="Moonlight Ring", bag="wardrobe3", priority=1},
-		back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Damage taken-5%',}},
+		right_ring="Moonlight Ring",
+		back={ name="Ankou's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+3','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 
-	sets.Idle.TP = set_combine(sets.Idle, {})
-	sets.Idle.ACC = set_combine(sets.Idle, {})
-	sets.Idle.DT = set_combine(sets.Idle, {})
-	sets.Idle.PDL = set_combine(sets.Idle, {})
-	sets.Idle.SB = set_combine(sets.Idle, {})
-	sets.Idle.MEVA = set_combine(sets.Idle, {
-		neck="Warder's Charm +1",
-		waist="Carrier's Sash",
+	sets.Idle.DT = set_combine(sets.Idle, {
+
+	})
+
+	--Regain set
+	sets.Idle.TP = set_combine(sets.Idle, {
+
 	})
 	
+
 	sets.Movement = {
 		legs={ name="Carmine Cuisses +1", augments={'HP+80','STR+12','INT+12',}},
 	}
@@ -107,7 +97,10 @@ function get_sets()
 		waist="Gishdubar Sash",
 	}
 
-	sets.OffenseMode = {
+	sets.OffenseMode = {}
+
+	--Base TP set to build off
+	sets.OffenseMode.TP = {
 		ammo="Coiste Bodhar",
 		head="Flam. Zucchetto +2",
 		body="Sakpata's Plate",
@@ -116,40 +109,32 @@ function get_sets()
 		feet="Flam. Gambieras +2",
 		neck="Abyssal Beads +2",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-		left_ear="Telos Earring",
-		right_ear={ name="Schere Earring", augments={'Path: A',}},
-		left_ring={name="Moonlight Ring", bag="wardrobe3", priority=1},
-		right_ring="Niqmaddu Ring",
+		left_ear="Cessance Earring",
+		right_ear="Heath. Earring +2",
+		left_ring="Niqmaddu Ring",
+		right_ring="Moonlight Ring",
 		back="Null Shawl",
+		
 	}
 
-	--Base TP set to build off
-	sets.OffenseMode.TP = set_combine(sets.OffenseMode, {
-
-	})
-
-	sets.OffenseMode.DT = set_combine(sets.OffenseMode, {
-		head={ name="Sakpata's Helm", augments={'Path: A',}},
-		feet="Sakpata's Leggings",
+	sets.OffenseMode.DT = set_combine(sets.OffenseMode.TP, {
+	    head="Nyame Helm",
+		hands="Nyame Gauntlets",
+		legs="Nyame Flanchard",
 	})
 	
 	--Same TP set but WSD can be altered also
-	sets.OffenseMode.PDL = set_combine(sets.OffenseMode, {
+	sets.OffenseMode.PDL = set_combine(sets.OffenseMode.TP, {
 
 	})
 
-	-- This caps with Auspice from WHM
-	sets.Subtle_Blow = {
-		body="",
-		feet="Sakpata's Leggings",
-		hands="Sakpata's Gauntlets",
-		right_ear={ name="Schere Earring", augments={'Path: A',}},
-	}
+	sets.OffenseMode.SB =  set_combine(sets.OffenseMode.TP, {
 
-	sets.OffenseMode.ACC = set_combine(sets.OffenseMode,{ })
-	sets.OffenseMode.PDT = set_combine(sets.OffenseMode, { })
-	sets.OffenseMode.MEVA = set_combine(sets.OffenseMode, { })
-	sets.OffenseMode.SB =  set_combine(sets.OffenseMode.DT, sets.Subtle_Blow, {})
+	})
+	
+	sets.OffenseMode.ACC = set_combine(sets.OffenseMode.TP, {
+
+	})
 
 	sets.DualWield = {}
 
@@ -171,22 +156,38 @@ function get_sets()
 	sets.Enmity = {}
 
 	--Base set for midcast - if not defined will notify and use your idle set for surviability
-	sets.Midcast = set_combine(sets.Idle, {})
-	sets.Midcast.SIRD = set_combine(sets.Midcast, {})
-	sets.Midcast.Enhancing = set_combine(sets.Midcast, {})
+	sets.Midcast = set_combine(sets.Idle, {
+	
+	})
 
-	sets.Midcast.Enfeebling = set_combine(sets.Midcast, {})
-	sets.Midcast.Enfeebling.MACC = set_combine(sets.Midcast.Enfeebling, {})
-	sets.Midcast.Enfeebling.Potency = set_combine(sets.Midcast.Enfeebling, {})
-	sets.Midcast.Enfeebling.Duration = set_combine(sets.Midcast.Enfeebling, {})
-	sets.Midcast.Enfeebling.Drain = set_combine(sets.Midcast.Enfeebling, {})
-	sets.Midcast.Enfeebling.Aspir = set_combine(sets.Midcast.Enfeebling, {})
+	sets.Midcast.SIRD = {}
 
-	sets.Midcast.Dark = set_combine(sets.Midcast.Enfeebling, {})
-	sets.Midcast.Dark.MACC = set_combine(sets.Midcast.Enfeebling.MACC, {})
-	sets.Midcast.Dark.Absorb = set_combine(sets.Midcast.Enfeebling, {})
-	sets.Midcast.Dark.Enhancing = set_combine(sets.Midcast.Enhancing, {body="Heath. Cuirass +2",})
-	sets.Midcast['Dread Spikes'] = set_combine(sets.Midcast.Enhancing, {body="Heath. Cuirass +2",})
+	sets.Midcast.Enfeebling = set_combine(sets.Midcast, {
+	
+	})
+
+	sets.Midcast.Enfeebling.MACC = set_combine(sets.Midcast.Enfeebling, {
+	
+	})
+
+	sets.Midcast.Enfeebling.Potency = set_combine(sets.Midcast.Enfeebling, {
+	
+	})
+
+	sets.Midcast.Enfeebling.Duration = set_combine(sets.Midcast.Enfeebling, {
+	
+	})
+
+	sets.Midcast.Enfeebling.Drain = set_combine(sets.Midcast.Enfeebling, {
+	
+	})
+
+	sets.Midcast.Enfeebling.Aspir = set_combine(sets.Midcast.Enfeebling, {
+	
+	})
+	
+	
+	
 	--Job Abilities
 	sets.JA = {}
 	sets.JA["Provoke"] = sets.Precast.Enmity
@@ -199,22 +200,23 @@ function get_sets()
 	sets.JA["Scarlet Delirium"] = {}
 	sets.JA["Soul Enslavement"] = {}
 	sets.JA["Consume Mana"] = {}
+	
 
 
 	--WS Sets
 	sets.WS = {
-		ammo="Knobkierrie",
-		head={ name="Nyame Helm", augments={'Path: B',}}, -- Need Heathen
-		body={ name="Nyame Mail", augments={'Path: B',}},
-		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
-		legs={ name="Nyame Flanchard", augments={'Path: B',}},
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		ammo="	",
+		head="Nyame Helm",
+		body="Nyame Mail",
+		hands="Nyame Gauntlets",
+		legs="Nyame Flanchard",
+		feet="Nyame Sollerets",
 		neck="Fotia Gorget",
-		waist="Fotia Belt",
-		left_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+		left_ear="Ishvara Earring",
 		right_ear="Heath. Earring +2",
-		left_ring="Epaminondas's Ring",
-		right_ring="Niqmaddu Ring",
+		left_ring="Niqmaddu Ring",
+		right_ring="Regal Ring",
 		back={ name="Ankou's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 	}
 
@@ -224,6 +226,7 @@ function get_sets()
 	})
 
 	sets.WS.PDL = set_combine(sets.WS, {
+
 
 	})
 
@@ -238,85 +241,10 @@ function get_sets()
 	sets.WS.Multi_Hit = set_combine(sets.WS, {
 	
 	})
-
-	sets.WS.SB = set_combine(sets.WS, sets.Subtle_Blow, {
-	
-	})
-
-	sets.WS['Catastrophe'] = set_combine(sets.WS, { 
-		left_ear="Thrud Earring",
-		neck={ name="Abyssal Beads +2", augments={'Path: A',}},
-		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-	})
-
-	sets.WS['Origin'] = set_combine(sets.WS, { 
-		right_ear="Thrud Earring",
-		neck={ name="Abyssal Beads +2", augments={'Path: A',}},
-		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-	})
-
-	sets.WS['Entropy'] = set_combine(sets.WS, { 
-		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-		left_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
-	})
-
-	sets.WS['Quietus'] = set_combine(sets.WS, { 
-		neck={ name="Abyssal Beads +2", augments={'Path: A',}},
-		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-	})
-
-	sets.WS['Cross Reaper'] = set_combine(sets.WS, { 
-		right_ear="Thrud Earring",
-		neck={ name="Abyssal Beads +2", augments={'Path: A',}},
-		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-		left_ring="Regal Ring",
-	})
-
-	sets.WS['Insurgency'] = set_combine(sets.WS, { 
-		right_ear="Thrud Earring",
-		neck={ name="Abyssal Beads +2", augments={'Path: A',}},
-		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-		left_ring="Regal Ring",
-	})
-
-	sets.WS['Torcleaver'] = set_combine(sets.WS, { 
-		right_ear="Thrud Earring",
-		neck={ name="Abyssal Beads +2", augments={'Path: A',}},
-		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-	})
-
-	sets.WS['Fimbulvetr'] = set_combine(sets.WS, { 
-		right_ear="Thrud Earring",
-		neck={ name="Abyssal Beads +2", augments={'Path: A',}},
-		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-		left_ring="Regal Ring",
-	})
-
-	sets.WS['Scourge'] = set_combine(sets.WS, { 
-		left_ear="Thrud Earring",
-		neck={ name="Abyssal Beads +2", augments={'Path: A',}},
-		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-		left_ring="Regal Ring",
-	})
-
-	sets.WS['Resolution'] = set_combine(sets.WS, { 
-		neck={ name="Abyssal Beads +2", augments={'Path: A',}},
-		left_ring="Sroda Ring",
-	})
-
-	sets.WS['Judgment'] = set_combine(sets.WS, { 
-		right_ear="Thrud Earring",
-		neck={ name="Abyssal Beads +2", augments={'Path: A',}},
-		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-	})
-
-
+	 
 -- Used to Tag TH on a mob (TH4 is max in gear non-THF)
 	sets.TreasureHunter = {
-		ammo="Per. Lucky Egg",
-		legs="Volte Hose",
-	    feet="Volte Boots",
-	    waist="Chaac Belt",
+
 	}
 
 end
