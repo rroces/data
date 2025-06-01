@@ -1,3 +1,4 @@
+
 --Hurin
 
 -- Load and initialize the include file.
@@ -25,7 +26,7 @@ Organizer = true
 
 -- 'TP','ACC','DT' are standard Default modes.  You may add more and assign equipsets for them
 state.OffenseMode:options('DT','TP','PDL','ACC','SB') -- ACC effects WS and TP modes
-state.OffenseMode:set('TP')
+state.OffenseMode:set('DT')
 
 --Weapon Modes
 state.WeaponMode:options('Scythe','Great Sword','Sword','Club','Axe')
@@ -181,60 +182,12 @@ function get_sets()
 	sets.Midcast.Enfeebling.Duration = set_combine(sets.Midcast.Enfeebling, {})
 	sets.Midcast.Enfeebling.Drain = set_combine(sets.Midcast.Enfeebling, {})
 	sets.Midcast.Enfeebling.Aspir = set_combine(sets.Midcast.Enfeebling, {})
-	sets.Midcast.Aspir = {
-		head="Ig. Burgeonet +2",
-		body="Heath. Cuirass +3",
-		hands="Fall. Fin. Gaunt. +1",
-		legs="Heath. Flanchard +3",
-		feet="Ratri Sollerets",
-		neck="Erra Pendant",
-		left_ring="Evanescence Ring",
-		right_ring="Stikini Ring +1",
-		back="",
-		waist="Austerity Belt +1",
-	}
-	sets.Midcast.Drain = {
-		head="Ig. Burgeonet +2",
-        body="Heath. Cuirass +3",
-        hands="Fall. Fin. Gaunt. +1",
-        legs="Heath. Flanchard +3",
-        feet="Ratri Sollerets",
-        neck="Erra Pendant",
-        left_ring="Evanescence Ring",
-        right_ring="Stikini Ring +1",
-        back="",
-        waist="Austerity Belt +1",
-	}
 
 	sets.Midcast.Dark = set_combine(sets.Midcast.Enfeebling, {})
 	sets.Midcast.Dark.MACC = set_combine(sets.Midcast.Enfeebling.MACC, {})
-	sets.Midcast.Dark.Absorb = set_combine(sets.Midcast.Drain, {})
+	sets.Midcast.Dark.Absorb = set_combine(sets.Midcast.Enfeebling, {})
 	sets.Midcast.Dark.Enhancing = set_combine(sets.Midcast.Enhancing, {head="Ig. Burgeonet +2",body="Heath. Cuirass +3",hands="Fall. Fin. Gaunt. +1", legs="Heath. Flanchard +3", feet="Ratri Sollerets",right_ring="Stikini Ring +1",
 		left_ring="Evanescence Ring",neck ="Incanter's Torque"})
-	sets.Midcast.EndarkII = {
-        head="Ig. Burgeonet +2",
-        body="Heath. Cuirass +3",
-        hands="Fall. Fin. Gaunt. +1",
-        legs="Heath. Flanchard +3",
-        feet="Ratri Sollerets",
-        neck="Incanter's Torque",
-        left_ring="Evanescence Ring",
-        right_ring="Stikini Ring +1",
-        back="",
-        waist="Casso Sash",
-    }
-	sets.Midcast.Impact = {
-        head=empty, -- Impact requiere dejar la cabeza vacía
-        body="Twilight Cloak",
-        hands="Fall. Fin. Gaunt. +1",
-        legs="Heath. Flanchard +3",
-        feet="Ratri Sollerets",
-        neck="Erra Pendant",
-        left_ring="Evanescence Ring",
-        right_ring="Stikini Ring +1",
-        back="Niht Mantle",
-        waist="Austerity Belt +1",
-    }
 		--Job Abilities
 	sets.JA = {}
 	sets.JA["Provoke"] = sets.Precast.Enmity
@@ -248,7 +201,7 @@ function get_sets()
 	sets.JA["Soul Enslavement"] = {}
 	sets.JA["Consume Mana"] = {}
 	sets.JA["Diabolic Eye"] = {hands="Fall. Fin. Gaunt. +1"}
-	sets.JA["Last Resort"] = {feet="Fallen's Sollerets +3"}
+
 
 	--WS Sets
 	sets.WS = {
@@ -391,15 +344,9 @@ function precast_custom(spell)
 end
 -- Augment basic equipment sets
 function midcast_custom(spell)
-    equipSet = {}
+	equipSet = {}
 
-    if spell.english == "Endark II" then
-        equipSet = sets.Midcast.EndarkII
-    elseif spell.english == "Impact" then
-        equipSet = sets.Midcast.Impact
-    end
-
-    return equipSet
+	return equipSet
 end
 -- Augment basic equipment sets
 function aftercast_custom(spell)
@@ -461,22 +408,25 @@ function check_buff_JA()
 end
 
 function check_buff_SP()
-    buff = 'None'
-    --local sp_recasts = windower.ffxi.get_spell_recasts()
-    return buff
+	buff = 'None'
+	--local sp_recasts = windower.ffxi.get_spell_recasts()
+	return buff
 end
 
-function pet_change_custom(pet, gain)
-    equipSet = {}
-    return equipSet
+function pet_change_custom(pet,gain)
+	equipSet = {}
+	
+	return equipSet
 end
 
 function pet_aftercast_custom(spell)
-    equipSet = {}
-    return equipSet
+	equipSet = {}
+
+	return equipSet
 end
 
 function pet_midcast_custom(spell)
-    equipSet = {}
-    return equipSet
+	equipSet = {}
+
+	return equipSet
 end
