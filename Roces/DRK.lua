@@ -182,7 +182,7 @@ function get_sets()
 	sets.Midcast.Enfeebling.Drain = set_combine(sets.Midcast.Enfeebling, {})
 	sets.Midcast.Enfeebling.Aspir = set_combine(sets.Midcast.Enfeebling, {})
 	sets.Midcast.Aspir = {
-		head="Ig. Burgeonet +2",
+		head="Ig. Burgeonet +3",
 		body="Heath. Cuirass +3",
 		hands="Fall. Fin. Gaunt. +1",
 		legs="Heath. Flanchard +3",
@@ -194,7 +194,7 @@ function get_sets()
 		waist="Austerity Belt +1",
 	}
 	sets.Midcast.Drain = {
-		head="Ig. Burgeonet +2",
+		head="Ig. Burgeonet +3",
         body="Heath. Cuirass +3",
         hands="Fall. Fin. Gaunt. +1",
         legs="Heath. Flanchard +3",
@@ -209,10 +209,10 @@ function get_sets()
 	sets.Midcast.Dark = set_combine(sets.Midcast.Enfeebling, {})
 	sets.Midcast.Dark.MACC = set_combine(sets.Midcast.Enfeebling.MACC, {})
 	sets.Midcast.Dark.Absorb = set_combine(sets.Midcast.Drain, {})
-	sets.Midcast.Dark.Enhancing = set_combine(sets.Midcast.Enhancing, {head="Ig. Burgeonet +2",body="Heath. Cuirass +3",hands="Fall. Fin. Gaunt. +1", legs="Heath. Flanchard +3", feet="Ratri Sollerets",right_ring="Stikini Ring +1",
+	sets.Midcast.Dark.Enhancing = set_combine(sets.Midcast.Enhancing, {head="Ig. Burgeonet +3",body="Heath. Cuirass +3",hands="Fall. Fin. Gaunt. +1", legs="Heath. Flanchard +3", feet="Ratri Sollerets",right_ring="Stikini Ring +1",
 		left_ring="Evanescence Ring",neck ="Incanter's Torque"})
 	sets.Midcast.EndarkII = {
-        head="Ig. Burgeonet +2",
+        head="Ig. Burgeonet +3",
         body="Heath. Cuirass +3",
         hands="Fall. Fin. Gaunt. +1",
         legs="Heath. Flanchard +3",
@@ -225,14 +225,14 @@ function get_sets()
     }
 	sets.Midcast.Impact = {
         head=empty, -- Impact requiere dejar la cabeza vacía
-        body="Twilight Cloak",
+        body="Crepuscular Cloak",
         hands="Fall. Fin. Gaunt. +1",
         legs="Heath. Flanchard +3",
         feet="Ratri Sollerets",
         neck="Erra Pendant",
         left_ring="Evanescence Ring",
         right_ring="Stikini Ring +1",
-        back="Niht Mantle",
+        back="",
         waist="Austerity Belt +1",
     }
 		--Job Abilities
@@ -241,9 +241,9 @@ function get_sets()
 	sets.JA["Blood Weapon"] = {body="Fall. Cuirass +1"}
 	sets.JA["Souleater"] = {legs="Fallen's Flanchard +3"}
 	sets.JA["Arcane Circle"] = {}
-	sets.JA["Weapon Bash"] = {}
+	sets.JA["Weapon Bash"] = {hands="Fall. Fin. Gaunt. +1"}
 	sets.JA["Nether Void"] = {legs="Heath. Flanchard +3"}
-	sets.JA["Arcane Crest"] = {}
+	sets.JA["Arcane Crest"] = {feet="Fall. Sollerets +1"}
 	sets.JA["Scarlet Delirium"] = {}
 	sets.JA["Soul Enslavement"] = {}
 	sets.JA["Consume Mana"] = {}
