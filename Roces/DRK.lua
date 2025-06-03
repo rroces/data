@@ -208,7 +208,7 @@ function get_sets()
 
 	sets.Midcast.Dark = set_combine(sets.Midcast.Enfeebling, {})
 	sets.Midcast.Dark.MACC = set_combine(sets.Midcast.Enfeebling.MACC, {})
-	sets.Midcast.Dark.Absorb = set_combine(sets.Midcast.Drain, {})
+	sets.Midcast.Dark.Absorb = set_combine(sets.Midcast.Drain, {hands="Heath. Gauntlets +3", right_ring="Kishar Ring",})
 	sets.Midcast.Dark.Enhancing = set_combine(sets.Midcast.Enhancing, {head="Ig. Burgeonet +3",body="Heath. Cuirass +3",hands="Fall. Fin. Gaunt. +1", legs="Heath. Flanchard +3", feet="Ratri Sollerets",right_ring="Stikini Ring +1",
 		left_ring="Evanescence Ring",neck ="Incanter's Torque"})
 	sets.Midcast.EndarkII = {
@@ -240,10 +240,10 @@ function get_sets()
 	sets.JA["Provoke"] = sets.Precast.Enmity
 	sets.JA["Blood Weapon"] = {body="Fall. Cuirass +1"}
 	sets.JA["Souleater"] = {legs="Fallen's Flanchard +3"}
-	sets.JA["Arcane Circle"] = {}
-	sets.JA["Weapon Bash"] = {hands="Fall. Fin. Gaunt. +1"}
+	sets.JA["Arcane Circle"] = {feet="Ignominy sollerets +2"}
+	sets.JA["Weapon Bash"] = {hands="Ignominy gauntlets +2"}
 	sets.JA["Nether Void"] = {legs="Heath. Flanchard +3"}
-	sets.JA["Arcane Crest"] = {feet="Fall. Sollerets +1"}
+	sets.JA["Arcane Crest"] = {feet="Fall. Sollerets +3"}
 	sets.JA["Scarlet Delirium"] = {}
 	sets.JA["Soul Enslavement"] = {}
 	sets.JA["Consume Mana"] = {}
