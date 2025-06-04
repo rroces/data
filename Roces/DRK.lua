@@ -208,7 +208,7 @@ function get_sets()
 
 	sets.Midcast.Dark = set_combine(sets.Midcast.Enfeebling, {})
 	sets.Midcast.Dark.MACC = set_combine(sets.Midcast.Enfeebling.MACC, {})
-	sets.Midcast.Dark.Absorb = set_combine(sets.Midcast.Drain, {hands="Heath. Gauntlets +3", right_ring="Kishar Ring",})
+	sets.Midcast.Dark.Absorb = set_combine(sets.Midcast.Drain, {hands="Heath. Gauntlets +3", right_ring="Kishar Ring",back="Chuparrosa Mantle"})
 	sets.Midcast.Dark.Enhancing = set_combine(sets.Midcast.Enhancing, {head="Ig. Burgeonet +3",body="Heath. Cuirass +3",hands="Fall. Fin. Gaunt. +1", legs="Heath. Flanchard +3", feet="Ratri Sollerets",right_ring="Stikini Ring +1",
 		left_ring="Evanescence Ring",neck ="Incanter's Torque"})
 	sets.Midcast.EndarkII = {
