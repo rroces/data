@@ -184,7 +184,7 @@ function get_sets()
 	sets.Midcast.Aspir = {
 		head="Ig. Burgeonet +3",
 		body="Heath. Cuirass +3",
-		hands="Fall. Fin. Gaunt. +1",
+		hands="Fall. Fin. Gaunt. +3",
 		legs="Heath. Flanchard +3",
 		feet="Ratri Sollerets",
 		neck="Erra Pendant",
@@ -196,7 +196,7 @@ function get_sets()
 	sets.Midcast.Drain = {
 		head="Ig. Burgeonet +3",
         body="Heath. Cuirass +3",
-        hands="Fall. Fin. Gaunt. +1",
+        hands="Fall. Fin. Gaunt. +3",
         legs="Heath. Flanchard +3",
         feet="Ratri Sollerets",
         neck="Erra Pendant",
@@ -209,12 +209,12 @@ function get_sets()
 	sets.Midcast.Dark = set_combine(sets.Midcast.Enfeebling, {})
 	sets.Midcast.Dark.MACC = set_combine(sets.Midcast.Enfeebling.MACC, {})
 	sets.Midcast.Dark.Absorb = set_combine(sets.Midcast.Drain, {hands="Heath. Gauntlets +3", right_ring="Kishar Ring",back="Chuparrosa Mantle"})
-	sets.Midcast.Dark.Enhancing = set_combine(sets.Midcast.Enhancing, {head="Ig. Burgeonet +3",body="Heath. Cuirass +3",hands="Fall. Fin. Gaunt. +1", legs="Heath. Flanchard +3", feet="Ratri Sollerets",right_ring="Stikini Ring +1",
+	sets.Midcast.Dark.Enhancing = set_combine(sets.Midcast.Enhancing, {head="Ig. Burgeonet +3",body="Heath. Cuirass +3",hands="Fall. Fin. Gaunt. +3", legs="Heath. Flanchard +3", feet="Ratri Sollerets",right_ring="Stikini Ring +1",
 		left_ring="Evanescence Ring",neck ="Incanter's Torque"})
 	sets.Midcast.EndarkII = {
         head="Ig. Burgeonet +3",
         body="Heath. Cuirass +3",
-        hands="Fall. Fin. Gaunt. +1",
+        hands="Fall. Fin. Gaunt. +3",
         legs="Heath. Flanchard +3",
         feet="Ratri Sollerets",
         neck="Incanter's Torque",
@@ -226,7 +226,7 @@ function get_sets()
 	sets.Midcast.Impact = {
         head=empty, -- Impact requiere dejar la cabeza vacía
         body="Crepuscular Cloak",
-        hands="Fall. Fin. Gaunt. +1",
+        hands="Fall. Fin. Gaunt. +3",
         legs="Heath. Flanchard +3",
         feet="Ratri Sollerets",
         neck="Erra Pendant",
@@ -238,7 +238,7 @@ function get_sets()
 		--Job Abilities
 	sets.JA = {}
 	sets.JA["Provoke"] = sets.Precast.Enmity
-	sets.JA["Blood Weapon"] = {body="Fall. Cuirass +1"}
+	sets.JA["Blood Weapon"] = {body="Fall. Cuirass +3"}
 	sets.JA["Souleater"] = {legs="Fallen's Flanchard +3"}
 	sets.JA["Arcane Circle"] = {feet="Ignominy sollerets +2"}
 	sets.JA["Weapon Bash"] = {hands="Ignominy gauntlets +2"}
@@ -247,7 +247,7 @@ function get_sets()
 	sets.JA["Scarlet Delirium"] = {}
 	sets.JA["Soul Enslavement"] = {}
 	sets.JA["Consume Mana"] = {}
-	sets.JA["Diabolic Eye"] = {hands="Fall. Fin. Gaunt. +1"}
+	sets.JA["Diabolic Eye"] = {hands="Fall. Fin. Gaunt. +3"}
 	sets.JA["Last Resort"] = {feet="Fallen's Sollerets +3"}
 
 	--WS Sets
