@@ -112,7 +112,7 @@ function init_gear_sets()
 		neck="Moonbeam Necklace",
 		waist={name="Plat. Mog. Belt", priority=3},
 		left_ear={ name="Tuisto Earring", priority=2},
-		right_ear={ name="Erilaz Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+15','Mag. Acc.+15','Damage taken-5%',}},
+		right_ear=""Erilaz Earring +2",
 		left_ring="Defending Ring",
 		right_ring={ name="Gelatinous Ring +1", priority=1},
 		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}},}	
@@ -613,7 +613,7 @@ function init_gear_sets()
 		neck={ name="Futhark Torque +2", augments={'Path: A',}},
 		waist={name="Plat. Mog. Belt", priority=3},
 		left_ear="Etiolation Earring",
-		right_ear="Erilaz Earring +1",
+		right_ear="Erilaz Earring +2",
 		left_ring={ name="Gelatinous Ring +1", priority=2},
 		right_ring={name="Moonlight Ring", priority=1},
 		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}},}		
@@ -625,7 +625,7 @@ function init_gear_sets()
 		legs="Futhark Trousers +3", 
 		neck="Sacro Gorget",
 		waist="Sroda Belt",
-		right_ear="Erilaz Earring +1",})
+		right_ear="Erilaz Earring +2",})
     
 	sets.midcast['Stoneskin'] = set_combine(sets.idle.VITDefense, {
 		head="Runeist Bandeau +2", 
@@ -857,7 +857,7 @@ function init_gear_sets()
 		neck={ name="Futhark Torque +2", augments={'Path: A',}},
 		waist="Engraved Belt",
 		left_ear="Etiolation Earring",
-		right_ear="Erilaz Earring +1",
+		right_ear="Erilaz Earring +2",
 		left_ring="Gurebu's Ring",
 		back={name="Moonlight Cape", priority=1},
 		right_ring={name="Moonlight Ring", priority=2},}
@@ -872,7 +872,7 @@ function init_gear_sets()
 		neck="Futhark Torque +2",
 		waist={name="Fucho-no-Obi", priority=1},
 		left_ear="Hearty Earring",
-		right_ear="Erilaz Earring +1",
+		right_ear="Erilaz Earring +2",
 		left_ring="Gurebu's Ring",
 		right_ring="Stikini Ring +1",
 		back={name="Moonlight Cape", priority=4},}
@@ -902,7 +902,7 @@ function init_gear_sets()
 		neck={ name="Futhark Torque +2", augments={'Path: A',}},
 		waist={name="Plat. Mog. Belt", priority=3},
 		left_ear="Etiolation Earring",
-		right_ear="Erilaz Earring +1",
+		right_ear="Erilaz Earring +2",
 		left_ring={ name="Gelatinous Ring +1", priority=2},
 		right_ring={name="Moonlight Ring", priority=1},
 		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}},}		
@@ -1003,7 +1003,7 @@ function init_gear_sets()
 		--waist={name="Plat. Mog. Belt", priority=2},
 		waist="Engraved Belt",
 		left_ear={name="Tuisto Earring", priority=4},
-		right_ear="Erilaz Earring +1",
+		right_ear="Erilaz Earring +2",
 		left_ring="Gurebu's Ring",
 		right_ring={name="Moonlight Ring", priority=3},
 		back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}},}
