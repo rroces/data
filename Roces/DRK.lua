@@ -240,8 +240,8 @@ function get_sets()
 	sets.JA["Provoke"] = sets.Precast.Enmity
 	sets.JA["Blood Weapon"] = {body="Fall. Cuirass +3"}
 	sets.JA["Souleater"] = {legs="Fallen's Flanchard +3"}
-	sets.JA["Arcane Circle"] = {feet="Ignominy sollerets +2"}
-	sets.JA["Weapon Bash"] = {hands="Ignominy gauntlets +2"}
+	sets.JA["Arcane Circle"] = {feet="Ignominy sollerets +3"}
+	sets.JA["Weapon Bash"] = {hands="Ignominy gauntlets +3"}
 	sets.JA["Nether Void"] = {legs="Heath. Flanchard +3"}
 	sets.JA["Arcane Crest"] = {feet="Fall. Sollerets +3"}
 	sets.JA["Scarlet Delirium"] = {}
