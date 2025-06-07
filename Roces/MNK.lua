@@ -275,7 +275,7 @@ send_command('input /macro book 17')
 		neck = "Sanctity Necklace",
 		ear2 = "Friomisi earring",
 		ear1 = "Hecate's Earring",
-		body = "Samnuha Coat",
+		body = "Nyame Mail",
 		hands = "Leyline Gloves",
 		ring1 = "",
 		ring2 = "",
