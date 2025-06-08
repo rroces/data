@@ -233,7 +233,7 @@ function get_sets()
 		body="Hashishin Mintan +3",
 		hands="Telchine Gloves",
 		legs="Hashishin Tayt +3",
-		feet="Medium's Sabots",
+		feet="",
 		neck="Incanter's Torque",
 		waist="Gishdubar Sash",
 		left_ear="Mendi. Earring",

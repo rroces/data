@@ -347,6 +347,7 @@ function init_gear_sets()
         head="Mummu Bonnet +2",
         hands="Meghanada Gloves +2",
         legs=AdhemarLegs.TP,
+        body="Passion Jacket",
     }
 
     sets.Organizer = {

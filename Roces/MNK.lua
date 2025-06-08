@@ -342,7 +342,7 @@ send_command('input /macro book 17')
 
 	sets.JA.ChiBlast = {waist = "Chaac Belt", Hands = "", Legs =""}
 	
-	sets.JA.Chakra = {waist = "Chaac Belt", Hands = "", Legs =""}
+	sets.JA.Chakra = {waist = "Chaac Belt", Hands = "Hesychast's Gloves +3", Body ="Anchorite's Cyclas +2"}
 
 	--Precast Sets--
 	sets.precast = {}

@@ -112,7 +112,7 @@ function init_gear_sets()
 		neck="Moonbeam Necklace",
 		waist={name="Plat. Mog. Belt", priority=3},
 		left_ear={ name="Tuisto Earring", priority=2},
-		right_ear=""Erilaz Earring +2",
+		right_ear="Erilaz Earring +2",
 		left_ring="Defending Ring",
 		right_ring={ name="Gelatinous Ring +1", priority=1},
 		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+10','Enmity+10','Phys. dmg. taken-10%',}},}	
