@@ -1,157 +1,144 @@
+
+--Turin
+
+-- Load and initialize the include file.
+include('Mirdain-Include')
+
+--Set to ingame lockstyle and Macro Book/Set
+LockStylePallet = "3"
+MacroBook = "17"
+MacroSet = "1"
+
+-- Use "gs c food" to use the specified food item 
+Food = "Sublime Sushi"
+
+--Uses Items Automatically
+AutoItem = false
+
+--Upon Job change will use a random lockstyleset
+Random_Lockstyle = false
+
+--Lockstyle sets to randomly equip
+Lockstyle_List = {1,2,6,12}
+
+-- 'TP','ACC','DT' are standard Default modes.  You may add more and assigne equipsets for them ( Idle.X and OffenseMode.X )
+state.OffenseMode:options('TP','ACC','DT','PDL','SB','MEVA','Counter','Hybrid') -- ACC effects WS and TP modes
+
+--Set Mode to Damage Taken as Default
+state.OffenseMode:set('Hybrid')
+
+--Modes for weapons.  You must define the set in sets.Weapons['X']
+state.WeaponMode:options('Verethragna','Karambit','Spharai','Pole','Club')
+state.WeaponMode:set('Verethragna')
+
+-- Initialize Player
+jobsetup (LockStylePallet,MacroBook,MacroSet)
+
 function get_sets()
-	send_command("bind f9 gs c toggle TP set")
-	send_command("bind f10 gs c toggle Idle set")
-	send_command("bind ^f9 gs c equip TP set")
-	send_command("bind ^f10 gs c equip DT set")
 
-send_command('wait 6;input /lockstyleset 104')
-send_command('input /macro book 17')
-	
-	function file_unload()
-		send_command("unbind ^f9")
-		send_command("unbind ^f10")
-		send_command("unbind ^f11")
-		send_command("unbind ^f12")
-		send_command("unbind ^`")
+	-- Weapon sets
+	sets.Weapons['Verethragna'] = {
+		main={ name="Verethragna", augments={'Path: A',}},
+	}
+	sets.Weapons['Karambit'] = {
+		main="Karambit",
+	}
+	sets.Weapons['Spharai'] = {
+		main="Spharai",
+	}
+	sets.Weapons['Pole'] = {
+		main="Malignance Pole",
+		sub="Alber Strap",
+	}
+	sets.Weapons['Club'] = {
+		main="Blurred Rod +1",
+		sub="Dullahan Shield",
+	}
+	sets.Weapons.Shield = {}
+	sets.Weapons.Sleep = {}
 
-		send_command("unbind !f9")
-		send_command("unbind !f10")
-		send_command("unbind !f11")
-		send_command("unbind !f12")
-
-		send_command("unbind f9")
-		send_command("unbind f10")
-		send_command("unbind f11")
-		send_command("unbind f12")
-	end
-
-	--Idle Sets--
-	sets.Idle = {}
-
-	sets.Idle.index = {"Standard", "DT"}
-	Idle_ind = 1
-	
-
-	sets.Idle.Standard = {
-		ammo ="Aurgelmir Orb +1",
-		head="Malignance Chapeau",
-		neck = "Sanctity Necklace",
-		ear1 = "Eabani Earring",
-		ear2 = "Infused Earring",
-		body = "Ashera Harness",
-		hands="Malignance Gloves",
-		ring1 = "Defending ring",
-		ring2 = "",
+	-- Idle sets
+	sets.Idle = {
+		ammo="Staunch Tathlum +1",
+		head="Null Masque",
+		body="Adamantite Armor",
+		hands={ name="Mpaca's Gloves", augments={'Path: A',}},
+		legs={ name="Mpaca's Hose", augments={'Path: A',}},
+		feet="Hermes' Sandals",
+		neck={ name="Warder's Charm +1", augments={'Path: A',}},
+		waist="Null Belt",
+		left_ear="Sanare Earring",
+		right_ear="Bhikku Earring +2",
+		left_ring="Purity Ring",
+		right_ring="Shadow Ring",
 		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
-		waist = "Moonbow Belt +1",
-		legs="Malignance Tights",
-		feet = "Herald's Gaiters"
-	}
-
-	sets.Idle.DT = {
-		ammo = "Staunch Tathlum +1",
-		head="Malignance Chapeau",
-		neck = "Loricate Torque +1",
-		ear1 = "Eabani Earring",
-		ear2 = "Infused Earring",
-		body = "Ashera Harness",
-		hands="Malignance Gloves",
-		ring1 = "Defending ring",
-		ring2 = "",
-		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
-		waist = "Moonbow Belt +1",
-		legs="Malignance Tights",
-		feet = "Malignance Boots"
-	}
-	--TP Sets--
-	sets.TP = {}
-
-	sets.TP.index = {"Standard", "AccuracyFull", "DT", "DTAccuracy", "Hybrid", "Counter"}
-	--1=Standard, 2==AccuracyFull, 3=DT, 4=DTAccuracy,5=Hybrid, 6=Counter
-
-	TP_ind = 1
-	sets.TP.Standard = {
-		ammo ="Aurgelmir Orb +1",
-		head ="Adhemar Bonnet +1",
-		body ="Ken. Samue +1",
-		hands = "Adhemar Wristbands +1",
-		legs = "Bhikku Hose +3",
-		feet="Anchorite's Gaiters +3",
-		neck = "Mnk. Nodowa +2",
-		waist = "Moonbow Belt +1",
-		left_ear = "Sherida Earring",
-		right_ear = "Schere Earring",
-		left_ring = "Gere Ring",
-		right_ring = "Niqmaddu Ring",
-		back="Null Shawl",z
-	}
-
-
-	sets.TP.AccuracyFull = {
-		ammo ="Aurgelmir Orb +1",
-		head = "Ken. Jinpachi +1",
-		body = "Bhikku Cyclas +3",
-		hands = "Adhemar Wristbands +1",
-		legs = "Bhikku Hose +3",
-		feet = "Anchorite's Gaiters +3",
-		neck = "Mnk. Nodowa +2",
-		waist = "Moonbow Belt +1",
-		left_ear = "Sherida Earring",
-		rright_ear = "Schere Earring",
-		left_ring = "Regal Ring",
-		right_ring = "Niqmaddu Ring",
-		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
-	}
-
-	sets.TP.DT = {
-		ammo = "Aurgelmir Orb +1",
-		head="Nyame Helm",
-		body="Nyame Mail",
-		hands="Nyame Gauntlets",
-		legs="Bhikku Hose +3",
-		feet="Bhikku Gaiters +3",
+    }
+	sets.Idle.TP = set_combine(sets.Idle, {})
+	sets.Idle.ACC = set_combine(sets.Idle, {})
+	sets.Idle.DT = set_combine(sets.Idle, {})
+	sets.Idle.PDL = set_combine(sets.Idle, {})
+	sets.Idle.SB = set_combine(sets.Idle, {})
+	sets.Idle.MEVA = set_combine(sets.Idle, {
 		neck="Warder's Charm +1",
+		waist="Carrier's Sash",
+	})
+	sets.Idle.Counter = set_combine(sets.Idle, {})
+	sets.Idle.Hybrid = set_combine(sets.Idle, {})
+	-- Engaged Sets
+	sets.OffenseMode = {}
+	sets.OffenseMode.TP = {
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+		body="Ken. Samue +1",
+		hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
+		legs={ name="Hes. Hose +3", augments={'Enhances "Hundred Fists" effect',}},
+		feet="Anch. Gaiters +3",
+		neck={ name="Mnk. Nodowa +2", augments={'Path: A',}},
 		waist="Moonbow Belt +1",
-		left_ear = "Sherida Earring",
-		right_ear = "Bhikku Earring +2",
+		left_ear="Sherida Earring",
+		right_ear={ name="Schere Earring", augments={'Path: A',}},
 		left_ring="Gere Ring",
-		right_ring="Niqmaddu Ring",
+		right_ring="Gere Ring",
 		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 
-	sets.TP.DTAccuracy = {
-	ammo ="Aurgelmir Orb +1",
-    head="Malignance Chapeau",
-    body="Malignance Tabard",
-    hands="Malignance Gloves",
-    legs="Malignance Tights",
-    feet="Malignance Boots",
-    neck={ name="Mnk. Nodowa +2", augments={'Path: A',}},
-    waist="Moonbow Belt +1",
-	left_ear = "Sherida Earring",
-	right_ear = "Schere Earring",
-    left_ring="Gere Ring",
-    right_ring="Niqmaddu Ring",
-    back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
-	}
-	
-	sets.TP.Hybrid ={
-		ammo ="Aurgelmir Orb +1",
-		head="Bhikku Crown +3",
-		body = "Bhikku Cyclas +3",
-		hands="Nyame Gauntlets",
-		legs = "Bhikku Hose +3",
-		feet = "Nyame Sollerets",
-		neck = "Mnk. Nodowa +2",
-		waist = "Moonbow Belt +1",
-		left_ear = "Sherida Earring",
-		right_ear = "Schere Earring",
-		left_ring = "Gere Ring",
-		right_ring = "Niqmaddu Ring",
-		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
-	
-	}
-	sets.TP.Counter ={
+	sets.OffenseMode.ACC = set_combine(sets.OffenseMode.TP,{
+	    head="Ken. Jinpachi +1",
+		body="Ken. Samue +1",
+		hands="Ken. Tekko +1",
+		legs="Ken. Hakama +1",
+		feet="Malignance Boots",
+	})
+
+	sets.OffenseMode.DT = set_combine(sets.OffenseMode.TP,{
+		head={ name="Mpaca's Cap", augments={'Path: A',}},
+		body={ name="Mpaca's Doublet", augments={'Path: A',}},
+		hands={ name="Mpaca's Gloves", augments={'Path: A',}},
+		legs="Bhikku Hose +3",
+		feet={ name="Mpaca's Boots", augments={'Path: A',}},
+	})
+
+	sets.OffenseMode.PDL = set_combine(sets.OffenseMode.DT,{
+	    ammo="Crepuscular Pebble",
+		legs={ name="Mpaca's Hose", augments={'Path: A',}},
+	})
+
+	--This set is used when OffenseMode is SB and Enaged (Augments the TP base set)
+	-- MNK gets 35 Native Subtle Blow
+	-- Cap is 75% - 50% caps either I or II
+	sets.OffenseMode.SB = set_combine(sets.OffenseMode[state.OffenseMode.value], {
+		waist="Moonbow Belt +1", -- SB II 15
+		left_ear="Sherida Earring", -- SB II 5
+		left_ring="Niqmaddu Ring", -- SB II 5
+		right_ring="Chirich Ring +1", -- SB 10
+		ammo="Coiste Bodhar", -- SB 3
+		right_ear={ name="Schere Earring", augments={'Path: A',}}, -- SB 3
+	}) -- 35 + 16% SB I + %25 SB II = 76 one under
+
+	sets.OffenseMode.MEVA = set_combine(sets.OffenseMode.DT,{
+		neck={ name="Warder's Charm +1", augments={'Path: A',}},
+	})
+sets.OffenseMode.Counter = set_combine(sets.OffenseMode[state.OffenseMode.value], {
 		ammo ="Coiste Bodhar",
 		head="Bhikku Crown +3",
 		body = "Mpaca's Doublet",
@@ -165,323 +152,348 @@ send_command('input /macro book 17')
 		left_ring = "Defending Ring",
 		right_ring = "Niqmaddu Ring",
 		back={ name="Segomo's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Crit.hit rate+10','System: 1 ID: 640 Val: 4',}},
+	}) -- 35 + 16% SB I + %25 SB II = 76 one under
+	sets.OffenseMode.Hybrid = set_combine(sets.OffenseMode[state.OffenseMode.value], {
+		ammo ="Aurgelmir Orb +1",
+		head="Bhikku Crown +3",
+		body = "Bhikku Cyclas +3",
+		hands="Nyame Gauntlets",
+		legs = "Bhikku Hose +3",
+		feet = "Nyame Sollerets",
+		neck = "Mnk. Nodowa +2",
+		waist = "Moonbow Belt +1",
+		left_ear = "Sherida Earring",
+		right_ear = "Schere Earring",
+		left_ring = "Gere Ring",
+		right_ring = "Niqmaddu Ring",
+		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
+	}) -- 35 + 16% SB I + %25 SB II = 76 one under
 	
+
+	-- Augments the OffenseMode when in DT stance
+	sets.Foot_Work = { feet="Anch. Gaiters +3", }
+
+	--Used to swap into movement gear when the player is detected movement when not engaged
+	sets.Movement = {
+		feet="Hermes' Sandals",
 	}
 
-	--Weaponskill Sets--
-	sets.WS = {}
-
-	sets.WS.VS = {
-		ammo = "Coiste Bodhar",
-		head = "Adhemar Bonnet +1",
-		body = "Ken. Samue +1",
-		hands = "Ryuo Tekko +1",
-		legs = "Mpaca's Hose",
-		feet="Mpaca's Boots",
-		neck = "Fotia Gorget",
-		waist = "Moonbow Belt +1",
-		left_ear = "Sherida Earring",
-		right_ear = "Odr Earring",
-		left_ring = "Gere Ring",
-		right_ring = "Niqmaddu Ring",
-		back={ name="Segomo's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}},
+	--Impetus set has priority over any other modes
+	sets.Impetus = {
+		body="Bhikku Cyclas +3",
 	}
 
-	sets.WS.SS = {
-		ammo = "Crepuscular Pebble",
-		head = "Nyame Helm",
-		body = "Mpaca's Doublet",
-		hands = "Ryuo Tekko +1",
-		legs = "Ken. Hakama +1",
-		feet="Nyame Sollerets",
-		neck = "Mnk. Nodowa +2",
-		waist = "Moonbow Belt +1",
-		left_ear = "Sherida Earring",
-		right_ear = {name = "Moonshade Earring", augments = {"Attack+4", "TP Bonus +250"}},
-		left_ring = "Gere Ring",
-		right_ring = "Niqmaddu Ring",
-		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}}
+	sets.Boost = {
+		waist="Ask Sash",
 	}
 
-	sets.WS.AF = {
-		ammp = "Coiste Bodhar",
-		head = "Nyame Helm",
-		neck = "Mnk. Nodowa +2",
-		ear1 = {name = "Moonshade Earring", augments = {"Attack+4", "TP Bonus +250"}},
-		ear2 = "Telos Earring",
-		body = "Mpaca's Doublet",
-		hands = "Adhemar Wristbands +1",
-		left_ring = "Gere Ring",
-		right_ring = "Niqmaddu Ring",
-		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
-		waist = "Sailfi Belt +1",
-		legs = "Samnuha Tights",
-		feet = "Nyame Sollerets"
+	-- Set to be used if you get cursed
+	sets.Cursna_Received = {
+	    neck="Nicander's Necklace",
+	    left_ring={ name="Eshmun's Ring", bag="wardrobe1", priority=2},
+		right_ring={ name="Eshmun's Ring", bag="wardrobe2", priority=1},
+		waist="Gishdubar Sash",
 	}
 
-	sets.WS.RF = {
-		ammo = "Crepuscular Pebble",
-		head = "Nyame Helm",
-		Body = "Nyame Mail",
-		hands = "Adhemar Wristbands +1",
-		legs = "Ken. Hakama +1",
-		feet="Nyame Sollerets",
-		neck = "Mnk. Nodowa +2",
-		waist = "Moonbow Belt +1",
-		left_ear = "Sherida Earring",
-		right_ear = {name = "Moonshade Earring", augments = {"Attack+4", "TP Bonus +250"}},
-		left_ring = "Gere Ring",
-		right_ring = "Niqmaddu Ring",
-		back={ name="Segomo's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
-	}
+	sets.Enmity = {
+	    ammo="Sapience Orb", -- 2
+		head="Null Masque",
+		neck="Moonlight Necklace", -- 15
+		body="Emet Harness +1", -- 10
+		hands="Kurys Gloves", -- 9
+		legs="Bhikku Hose +3",
+		feet="Hermes' Sandals", -- 7
+		waist="Plat. Mog. Belt",
+	    left_ear="Cryptic Earring", -- 4
+		right_ear="Trux Earring", -- 5
+		left_ring="Eihwaz Ring", -- 5
+		right_ring="Petrov Ring", -- 4
+	} -- 61
 
-	sets.WS.HF = {
-		ammo = "Knobkierrie",
-		head = "Adhemar Bonnet +1",
-		body = "Ken. Samue +1",
-		hands = "Adhemar Wristbands +1",
-		legs = "Ken. Hakama +1",
-		feet="Nyame Sollerets",
-		neck = "Mnk. Nodowa +2",
-		waist = "Moonbow Belt +1",
-		left_ear = "Sherida Earring",
-		right_ear = {name = "Moonshade Earring", augments = {"Attack+4", "TP Bonus +250"}},
-		left_ring = "Regal Ring",
-		right_ring = "Niqmaddu Ring",
-		back={ name="Segomo's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
-	}
+	-- Used for Magic Spells
+	sets.Precast = {}
+	sets.Precast.FastCast = {
+		ammo="Sapience Orb", -- 2
+		head={ name="Herculean Helm", augments={'"Fast Cast"+5','INT+7','Mag. Acc.+13',}}, --13
+		body="Dread Jupon", --7
+		hands="Leyline Gloves", --7
+		legs="", --6
+		feet="", --6
+		neck="Orunmila's Torque", --5
+		waist={ name="Plat. Mog. Belt", priority=2},
+		left_ear="Etiolation Earring", --1
+		right_ear="Loquac. Earring", --2
+		left_ring="Prolix Ring", --3
+		right_ring="Rahab Ring", -- 2
 
-	sets.WS.TK = {
-		ammo = "Knobkierrie",
-		head = "Nyame Helm",
-		body = "Ken. Samue +1",
-		hands = "Adhemar Wristbands +1",
-		legs = "Ken. Hakama +1",
-		feet = "Anchorite's Gaiters +3",
-		neck = "Mnk. Nodowa +2",
-		waist = "Moonbow Belt +1",
-		left_ear = "Sherida Earring",
-		right_ear = {name = "Moonshade Earring", augments = {"Attack+4", "TP Bonus +250"}},
-		left_ring = "Regal Ring",
-		right_ring = "Niqmaddu Ring",
-		back={ name="Segomo's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%',}}
-	}
+	} -- FC 66
 
-	--Ninja Magic Sets--
-	sets.NINMagic = {}
-
-	sets.NINMagic.Nuke = {
-		head = "",
-		neck = "Sanctity Necklace",
-		ear2 = "Friomisi earring",
-		ear1 = "Hecate's Earring",
-		body = "Nyame Mail",
-		hands = "Leyline Gloves",
-		ring1 = "",
-		ring2 = "",
-		waist = "Eschan Stone",
-		back = "",
-		legs = "",
-		feet = ""
-	}
-
-	sets.NINMagic.Utsusemi = {
-		head = "",
-		neck = "Loricate Torque +1",
-		ar1 = "Brutal Earring",
-		ear2 = "Sherida Earring",
-		body = "Ashera Harness",
-		hands = "",
-		ring1 = "Chirich Ring +1",
-		ring2 = "Niqmaddu Ring",
-		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
-		waist = "Carrier's Sash",
-		legs = "",
-		Feet = "Nyame Sollerets",
-	}
-
-	--Utility Sets--
-	sets.Utility = {}
-
-	sets.Utility.Sleeping = {neck = "Opo-Opo Necklace"}
-
-	--sets.Utility.Weather = {waist = "Hachirin-no-obi", back = ""}
-
-	--sets.Utility.MB = {
-		--head = "",
-		--body = "",
-		--ear1 = "",
-		--ring1 = "Locus Ring",
-		--ring2 = "Mujin Band"
-	--}
-	sets.Utility.Steps = {
-		ammo = "Falcon Eye",
-		head = "Adhemar Bonnet +1",
-		body = "Mpaca's Doublet",
-		hands = "",
-		legs == "Samnuha Tights",
-		feet="Nyame Sollerets",
-		neck = "",
-		waist = "Chaac Belt",
-		left_ear = "Brutal Earring",
-		right_ear = "Dignitary's Earring",
-		left_ring = "Yacuruna Ring",
-		right_ring = "Epona's Ring",
-		back = ""
-	}
-
-	sets.Utility.Doomed = {waist = "Gishdubar Sash", ring1 = "Eshmun's Ring"}
-
-	--Job Ability Sets--
+	--Base set for midcast - if not defined will notify and use your idle set for surviability
+	sets.Midcast = set_combine(sets.Idle, {
+	
+	})
 
 	sets.JA = {}
+	sets.JA["Hundred Fists"] = {legs={ name="Hes. Hose +3", augments={'Enhances "Hundred Fists" effect',}}}
+	sets.JA["Berserk"] = {}
+	sets.JA["Warcry"] = {}
+	sets.JA["Defender"] = {}
+	sets.JA["Aggressor"] = {}
+	sets.JA["Provoke"] = sets.Enmity
+	sets.JA["Focus"] = {head="Anchorite's Crown +2"}
+	sets.JA["Dodge"] = {feet="Anchorite's Gaiters +3"}
+	sets.JA["Chakra"] = {
+		ammo="",
+		head="Null Masque",
+		body="Anch. Cyclas +2",
+		hands={ name="Hes. Gloves +3", augments={'Enhances "Invigorate" effect',}},
+		legs={ name="Nyame Flanchard", augments={'Path: B',}},
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		neck={ name="Unmoving Collar +1", augments={'Path: A',}},
+		waist="Plat. Mog. Belt",
+		left_ear="Tuisto Earring",
+		right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+		left_ring="Regal Ring",
+		right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
+	}
+	sets.JA["Boost"] = {hands="Anchorite's Gloves +2"}
+	sets.JA["Counterstance"] = {feet="Hesychast's Gaiters +3"}
+	sets.JA["Chi Blast"] = {
+		head={ name="Hes. Crown +2", augments={'Enhances "Penance" effect',}},
+	}
+	sets.JA["Mantra"] = {feet="Hesychast's Gaiters +3"}
+	sets.JA["Footwork"] = {feet="Bhikku Gaiters +3"}
+	sets.JA["Perfect Counter"] = {head="Bhikku Crown +3"}
+	sets.JA["Impetus"] = {}
+	sets.JA["Inner Strength"] = {}
 
-	sets.JA.Footwork = { feet ="Bhikku Gaiters +3"}
+	--Default WS set base
+	sets.WS = { -- VS Base with Impetus Down
+		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+		head="Mpaca's Cap",
+		body="Mpaca's Doublet",
+		hands="Mpaca's Gloves",
+		legs="Mpaca's Hose",
+		feet="Mpaca's Boots",
+		neck="Fotia Gorget",
+		waist="Moonbow Belt +1",
+		left_ear="Sherida Earring",
+		right_ear={ name="Schere Earring", augments={'Path: A',}},
+		left_ring="Niqmaddu Ring",
+		right_ring="Gere Ring",
+		back={ name="Segomo's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Crit.hit rate+10','System: 1 ID: 640 Val: 4',}},
+	}
 
-	sets.JA.Counterstance = {feet = "Hesychast's Gaiters +3"}
+	-- 35% SB I for MNK
+	-- Belt SB II 15%
+	-- Mpaca Legs -- SB II 5%
+	-- Earring / Ring SB II 10%
+	-- Need 4% SB
+	sets.WS.SB = set_combine( sets.WS, { -- This maximize SB
+		waist="Moonbow Belt +1", -- SB II 15
+		left_ear="Sherida Earring", -- SB II 5
+		left_ring="Niqmaddu Ring", -- SB II 5
+		legs="Mpaca's Hose", -- SB II 5
+		ammo="Coiste Bodhar", -- SB 3
+		right_ear={ name="Schere Earring", augments={'Path: A',}}, -- SB 3
+	})
 
-	sets.JA.ChiBlast = {waist = "Chaac Belt", Hands = "", Legs =""}
-	
-	sets.JA.Chakra = {waist = "Chaac Belt", Hands = "Hesychast's Gloves +3", Body ="Anchorite's Cyclas +2"}
+	sets.WS.MEVA = set_combine( sets.WS, { -- This maximize SB
+		neck={ name="Warder's Charm +1", augments={'Path: A',}},
+		left_ring="Defending Ring",
+	})
 
-	--Precast Sets--
-	sets.precast = {}
+	--This set is used when OffenseMode is ACC and a WS is used (Augments the WS base set)
+	sets.WS.ACC = set_combine(sets.WS,{})
 
-	sets.precast.FC = {}
+	sets.WS.PDL = set_combine(sets.WS,{})
 
-	sets.precast.FC.Standard = {
-		ammo = "Sapience Orb",
-		head = "",
-		body = {name = "Adhemar Jacket +1", augments = {"HP+105", '"Fast Cast"+10', "Magic dmg. taken -4"}},
-		hands = {name = "Leyline Gloves", augments = {"Accuracy+14", "Mag. Acc.+13", '"Mag.Atk.Bns."+13', '"Fast Cast"+2'}},
-		legs = "",
-		feet = "",
-		neck = "Orunmila's Torque",
-		waist = "Moonbow Belt +1",
-		left_ear = "Etiolation Earring",
-		right_ear = "Loquac. Earring",
-		left_ring = "Rahab Ring",
-		right_ring = "Defending Ring",
-		back = ""
+	sets.WS.Kicks = {
+		ammo="Crepuscular Pebble",
+		head="Mpaca's Cap",
+		body="Ken. Samue +1",
+		hands={ name="Ryuo Tekko +1", augments={'STR+12','DEX+12','Accuracy+20',}},
+		legs={ name="Hes. Hose +3", augments={'Enhances "Hundred Fists" effect',}},
+		feet="Anch. Gaiters +3",
+		neck={ name="Mnk. Nodowa +2", augments={'Path: A',}},
+		waist="Moonbow Belt +1",
+		left_ear="Sherida Earring",
+		right_ear="Odr Earring",
+		--left_ring="Niqmaddu Ring",
+		right_ring="Gere Ring",
+		back={ name="Segomo's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Crit.hit rate+10','System: 1 ID: 640 Val: 4',}},
+	}
+
+	--WS Sets
+	sets.WS["Combo"] = set_combine(sets.WS,{})
+	sets.WS["Shoulder Tackle"] = set_combine(sets.WS,{})
+	sets.WS["One Inch Punch"] = set_combine(sets.WS,{})
+	sets.WS["Backhand Blow"] = set_combine(sets.WS,{})
+	sets.WS["Raging Fists"] = set_combine(sets.WS,{
+		neck="Mnk. Nodowa +2",
+		feet="", --Ken. Sune-Ate +1
+	})
+	sets.WS["Spinning Attack"] = set_combine(sets.WS,{})
+	sets.WS["Howling Fist"] = set_combine(sets.WS,{
+		neck="Mnk. Nodowa +2",
+		feet="", --Ken. Sune-Ate +1
+	})
+	sets.WS["Dragon Kick"] = sets.WS.Kicks
+	sets.WS["Asuran Fists"] = set_combine(sets.WS,{})
+	sets.WS["Tornado Kick"] = sets.WS.Kicks
+	sets.WS["Victory Smite"] = set_combine(sets.WS,{})
+	sets.WS["Shijin Spiral"] = set_combine(sets.WS,{
+		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
+	})
+
+	sets.TreasureHunter = {
+		ammo="Per. Lucky Egg",
+		body="Volte Jupon",
+		waist="Chaac Belt",
 	}
 end
 
-function precast(spell)
-	
-	if spell.english =="Dodge" then
-		equip({feet="Anchorite's Gaiters +3"})
-	end
-	if spell.english =="Boost" then
-		equip({hands="Anchorite's Gloves +1"})
-	end
-	if spell.english =="Focus" then
-		equip({head="Anchorite's Crown +1"})
-	end
-	if spell.action_type =="Magic" then
-		equip(sets.precast.FC.Standard)
-	elseif spell.english == "Footwork" then
-		equip(sets.JA.Footwork)
-	elseif spell.english == "Counterstance" then
-		equip(sets.JA.Counterstance)
-	elseif spell.english == "Chi Blast" then
-		equip(sets.JA.ChiBlast)
-	elseif spell.english == "Victory Smite" then
-		equip(sets.WS.VS)
-		if buffactive["Impetus"] then
-			equip({Body = "Bhikku Cyclas +3", right_ear ="Brutal Earring"})
-		end
-	elseif spell.english == "Chakra" then
-		equip(sets.JA.Chakra)
-	elseif spell.english == "Shijin Spiral" then
-		equip(sets.WS.SS)
-	elseif spell.english == "Asuran Fists" then
-		equip(sets.WS.AF)
-	elseif spell.english == "Raging Fists" then
-		equip(sets.WS.RF)
-	elseif spell.english == "Howling Fist" then
-		equip(sets.WS.HF)
-	elseif spell.english == "Tornado Kick" then
-		equip(sets.WS.TK)
-	elseif spell.english == "Box Step" then
-		equip(sets.Utility.Steps)
-	elseif spell.type == "WeaponSkill" then
-		equip(sets.WS.HF)
-	end
+-------------------------------------------------------------------------------------------------------------------
+-- DO NOT EDIT BELOW THIS LINE UNLESS YOU NEED TO MAKE JOB SPECIFIC RULES
+-------------------------------------------------------------------------------------------------------------------
+
+-- Called when the player's subjob changes.
+function sub_job_change_custom(new, old)
+	-- Typically used for Macro pallet changing
 end
 
-function midcast(spell, act)
-	if spell.english == "Utsusemi: Ichi" then
-		equip(sets.NINMagic.Utsusemi)
-		if buffactive["Copy Image (3)"] then
-			send_command("@wait 0.3; input //cancel Copy Image*")
-		end
-		if buffactive["Copy Image (2)"] then
-			send_command("@wait 0.3; input //cancel Copy Image*")
-		end
-		if buffactive["Copy Image (1)"] then
-			send_command("@wait 0.3; input //cancel Copy Image*")
-		end
-		if buffactive["Copy Image"] then
-			send_command("@wait 0.3; input //cancel Copy Image*")
-		end
+--Adjust custom precast actions
+function pretarget_custom(spell,action)
+
+end
+-- Augment basic equipment sets
+function precast_custom(spell)
+	local equipSet = {}
+	if spell.type == 'WeaponSkill' then
+		if buffactive.Impetus then
+			equipSet = sets.Impetus
+		end	
 	end
-	if spell.english == "Utsusemi: Ni" or spell.english == "Utsusemi: San" then
-		equip(sets.NINMagic.Utsusemi)
-	end
+	return equipSet
+end
+-- Augment basic equipment sets
+function midcast_custom(spell)
+	local equipSet = {}
+
+	return equipSet
+end
+-- Augment basic equipment sets
+function aftercast_custom(spell)
+	local equipSet = {}
+
+	return choose_gear()
 end
 
-function aftercast(spell)
+-- Called when the pet dies or is summoned
+function pet_change_custom(pet,gain)
+	local equipSet = {}
+
+	return equipSet
+end
+
+-- Called during a pet midcast
+function pet_midcast_custom(spell)
+	local equipSet = {}
+
+	return equipSet
+end
+
+-- Called after the performs an action
+function pet_aftercast_custom(spell)
+	local equipSet = {}
+
+	return equipSet
+end
+
+--Function is called when the player gains or loses a buff
+function buff_change_custom(name,gain)
+	local equipSet = {}
+
+	return choose_gear()
+end
+
+--This function is called when a update request the correct equipment set
+function choose_set_custom()
+	local equipSet = {}
+
+	return choose_gear()
+end
+
+--Function is called when the player changes states
+function status_change_custom(new,old)
+	local equipSet = {}
+
+	return choose_gear()
+end
+
+--Function is called when a self command is issued
+function self_command_custom(command)
+
+end
+
+--Custom Function
+function choose_gear()
+	local equipSet = {}
 	if player.status == "Engaged" then
-		equip(sets.TP[sets.TP.index[TP_ind]])
-		if buffactive["Impetus"] then
-			equip({Body = "Bhikku Cyclas +3"})
-		end
-	else
-		equip(sets.Idle[sets.Idle.index[Idle_ind]])
+		if buffactive['Impetus'] then
+			equipSet = sets.Impetus
+		end	
+		if buffactive['Footwork'] then
+			equipSet = set_combine(equipSet, sets.Foot_Work)
+		end	
 	end
-	if buffactive["doom"] or buffactive["curse"] then
-		equip(sets.Utility.Doomed)
+	if buffactive['Boost'] then
+		equipSet = set_combine(equipSet, sets.Boost)
 	end
-	if buffactive["terror"] or buffactive["stun"] or buffactive["sleep"] then
-		equip(sets.TP.DT)
-	end
+	return equipSet
 end
 
-function status_change(new, old)
-	if player.status == "Engaged" then
-		equip(sets.TP[sets.TP.index[TP_ind]])
-		if buffactive["Impetus"] then
-			equip({Body = "Bhikku Cyclas +3"})
-		elseif buffactive["Footwork"] then
-			equip({Feet = "Bhikku Gaiters +3"})
+function check_buff_JA()
+	local buff = 'None'
+	local ja_recasts = windower.ffxi.get_ability_recasts()
+
+	-- Sub job has least priority
+	if player.sub_job == 'WAR' then
+		if not buffactive['Berserk'] and ja_recasts[1] == 0 then
+			buff = "Berserk"
+		elseif not buffactive['Aggressor'] and ja_recasts[4] == 0 then
+			buff = "Aggressor"
+		elseif not buffactive['Warcry'] and ja_recasts[2] == 0 then
+			buff = "Warcry"
 		end
-		
-	else
-		equip(sets.Idle[sets.Idle.index[Idle_ind]])
 	end
+
+	-- Mantra Max priority
+	if player.hpp < 51 and ja_recasts[15] == 0 then
+		buff = "Chakra"
+	elseif not buffactive.Impetus and ja_recasts[31] == 0 then
+		buff = "Impetus"
+	elseif not buffactive.Footwork and ja_recasts[21] == 0 then
+		buff = "Footwork"
+	elseif not buffactive.Mantra and ja_recasts[19] == 0 then
+		buff = "Mantra"
+	elseif not buffactive.Dodge and ja_recasts[14] == 0 then
+		buff = "Dodge"
+	elseif not buffactive.Focus and ja_recasts[13] == 0 then
+		buff = "Focus"
+	end
+
+	return buff
 end
 
-function self_command(command)
-	if command == "toggle TP set" then
-		TP_ind = TP_ind + 1
-		if TP_ind > #sets.TP.index then
-			TP_ind = 1
-		end
-		send_command("@input /echo <----- TP Set changed to " .. sets.TP.index[TP_ind] .. " ----->")
-		equip(sets.TP[sets.TP.index[TP_ind]])
-	elseif command == "toggle Idle set" then
-		Idle_ind = Idle_ind + 1
-		if Idle_ind > #sets.Idle.index then
-			Idle_ind = 1
-		end
-		send_command("@input /echo <----- Idle Set changed to " .. sets.Idle.index[Idle_ind] .. " ----->")
-		equip(sets.Idle[sets.Idle.index[Idle_ind]])
-	elseif command == "equip TP set" then
-		equip(sets.TP[sets.TP.index[TP_ind]])
-	elseif command =="equip DT set" then
-		equip (sets.TP.DT)
-	elseif command == "equip Idle set" then
-		equip(sets.Idle[sets.Idle.index[Idle_ind]])
-	end
+function check_buff_SP()
+	local buff = 'None'
+	--local sp_recasts = windower.ffxi.get_spell_recasts()
+	return buff
 end
 
+-- This function is called when the job file is unloaded
+function user_file_unload()
+
+end

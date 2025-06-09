@@ -1,0 +1,15 @@
+sets.exported={
+    main={ name="Verethragna", augments={'Path: A',}},
+    ammo="Sapience Orb",
+    head={ name="Herculean Helm", augments={'"Fast Cast"+5','INT+7','Mag. Acc.+13',}},
+    body="Dread Jupon",
+    hands={ name="Leyline Gloves", augments={'Accuracy+14','Mag. Acc.+13','"Mag.Atk.Bns."+13','"Fast Cast"+2',}},
+    legs={ name="Mpaca's Hose", augments={'Path: A',}},
+    feet={ name="Mpaca's Boots", augments={'Path: A',}},
+    neck="Orunmila's Torque",
+    waist="Plat. Mog. Belt",
+    left_ear="Etiolation Earring",
+    right_ear="Loquac. Earring",
+    left_ring="Prolix Ring",
+    right_ring="Rahab Ring",
+}

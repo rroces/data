@@ -1,0 +1,15 @@
+sets.exported={
+    ammo="Staunch Tathlum +1",
+    head="Null Masque",
+    body="Adamantite Armor",
+    hands={ name="Mpaca's Gloves", augments={'Path: A',}},
+    legs={ name="Mpaca's Hose", augments={'Path: A',}},
+    feet={ name="Mpaca's Boots", augments={'Path: A',}},
+    neck={ name="Warder's Charm +1", augments={'Path: A',}},
+    waist="Null Belt",
+    left_ear="Sanare Earring",
+    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    left_ring="Purity Ring",
+    right_ring="Shadow Ring",
+    back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
+}

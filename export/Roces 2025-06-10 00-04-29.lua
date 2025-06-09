@@ -1,0 +1,15 @@
+sets.exported={
+    ammo={ name="Coiste Bodhar", augments={'Path: A',}},
+    head={ name="Mpaca's Cap", augments={'Path: A',}},
+    body={ name="Mpaca's Doublet", augments={'Path: A',}},
+    hands={ name="Mpaca's Gloves", augments={'Path: A',}},
+    legs={ name="Mpaca's Hose", augments={'Path: A',}},
+    feet={ name="Mpaca's Boots", augments={'Path: A',}},
+    neck="Fotia Gorget",
+    waist="Moonbow Belt +1",
+    left_ear="Sherida Earring",
+    right_ear={ name="Schere Earring", augments={'Path: A',}},
+    left_ring="Niqmaddu Ring",
+    right_ring="Gere Ring",
+    back={ name="Segomo's Mantle", augments={'STR+20','Accuracy+20 Attack+20','Crit.hit rate+10','System: 1 ID: 640 Val: 4',}},
+}
