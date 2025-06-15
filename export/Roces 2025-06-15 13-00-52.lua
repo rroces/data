@@ -1,0 +1,17 @@
+sets.exported={
+    main="Tauret",
+    sub={ name="Aeneas", augments={'Path: A',}},
+    ammo="Staunch Tathlum +1",
+    head="Null Masque",
+    body="Adamantite Armor",
+    hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
+    legs={ name="Gleti's Breeches", augments={'Path: A',}},
+    feet={ name="Gleti's Boots", augments={'Path: A',}},
+    neck={ name="Warder's Charm +1", augments={'Path: A',}},
+    waist="Null Belt",
+    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    right_ear="Sanare Earring",
+    left_ring="Moonlight Ring",
+    right_ring="Gere Ring",
+    back="Null Shawl",
+}

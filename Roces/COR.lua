@@ -159,7 +159,7 @@ function init_gear_sets()
     
     sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +3"}
     sets.precast.JA['Snake Eye'] = {legs="Lanun Trews +3"}
-    sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +3"}
+    sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +4"}
     sets.precast.JA['Random Deal'] = {body="Lanun Frac +3"}
     sets.precast.JA['Fold'] = {hands="Lanun Gants +3"} 
     sets.CapacityMantle = {back="Mecisto. Mantle"}
@@ -204,7 +204,7 @@ function init_gear_sets()
         ring1="Dark Ring",
         ring2="Defending Ring",
         back=Camulus.STP,
-        feet="Lanun Bottes +3",
+        feet="Lanun Bottes +4",
 		legs="Desultor Tassets",
 		range="Compensator"
 		
@@ -398,10 +398,10 @@ function init_gear_sets()
         feet="Meghanada Jambeaux +2" -- 10 
     }
     sets.precast.RA.F1 = set_combine(sets.precast.RA, {
-        body="Laksamana's Frac +3",
+        body="Laksa. Frac +4",
     })
     sets.precast.RA.F2 = set_combine(sets.precast.RA.F1, {
-        body="Laksamana's Frac +3",
+        body="Laksa. Frac +4",
         hands="Carmine Finger Gauntlets +1", -- 8 / 11 rapid
         waist="Yemaya Belt",
         -- feet="Pursuer's Gaiters"
@@ -415,14 +415,14 @@ function init_gear_sets()
         neck="Commodore Charm +2",
         ear1="Ishvara Earring",
         ear2="Moonshade Earring",
-        body="Laksamana's Frac +3",
+        body="Laksa. Frac +4",
         hands="Meghanada Gloves +2",
         ring1="Regal Ring",
         ring2="Ilabrat Ring",
         back=Camulus.WSD,
         waist="K. Kachina Belt +1",
         legs="Meghanada Chausses +2",
-        feet="Lanun Bottes +3"
+        feet="Lanun Bottes +4"
     }
 	sets.precast.WS['Terminus'] = set_combine(sets.precast.WS, {
         head="Nyame helm",
@@ -434,7 +434,7 @@ function init_gear_sets()
         ring1="Cornelia's Ring",
         ring2="Regal Ring",
         waist="Kentarch Belt +1",
-        feet="Lanun Bottes +3",
+        feet="Lanun Bottes +4",
 	    legs="Nyame Flanchard",
 		back=Camulus.WSD
 		
@@ -468,7 +468,7 @@ function init_gear_sets()
         ring2="Ilabrat Ring",
         waist="Fotia Belt",
         legs="Meghanada Chausses +2",
-        feet="Lanun Bottes +3"
+        feet="Lanun Bottes +4"
     })
 
     sets.precast.WS['Exenterator'] = set_combine(sets.precast.WS, {
@@ -505,11 +505,11 @@ function init_gear_sets()
         neck="Fotia Gorget",
         ear1="Ishvara Earring",
         ear2="Moonshade Earring",
-        body="Laksamana's Frac +3",
+        body="Laksa. Frac +4",
         ring1="Epaminondas's Ring",
         ring2="Dingir Ring",
         waist="Fotia Belt",
-        feet="Lanun Bottes +3",
+        feet="Lanun Bottes +4",
 		legs="Nyame Flanchard",
 		hands="Chasseur's Gants +3"
     })
@@ -520,7 +520,7 @@ function init_gear_sets()
         ear2="Moonshade Earring",
         back=Camulus.WSD,
         legs="Meghanada Chausses +2",
-        feet="Lanun Bottes +3"
+        feet="Lanun Bottes +4"
     })
 
     sets.precast.WS['Wildfire'] = {
@@ -536,7 +536,7 @@ function init_gear_sets()
         back=Camulus.MAB,
         waist="Skrymir Cord +1",
         legs="Nyame Flanchard",
-        feet="Lanun Bottes +3"
+        feet="Lanun Bottes +4"
     }
     sets.precast.WS['Wildfire'].Acc = set_combine(sets.precast.WS['Wildfire'], {
         head="Nyame Helm",
@@ -557,18 +557,18 @@ function init_gear_sets()
         back=Camulus.MAB,
         waist="Orpheus's Sash",
         legs="Nyame Flanchard",
-        feet="Lanun Bottes +3"
+        feet="Lanun Bottes +4"
     }
     sets.precast.WS['Leaden Salute'].Mid = set_combine(sets.precast.WS['Leaden Salute'], { 
         body="Lanun Frac +3",
         hands="Nyame Gauntlets",
-        feet="Lanun Bottes +3"
+        feet="Lanun Bottes +4"
     })
     sets.precast.WS['Leaden Salute'].Acc = set_combine(sets.precast.WS['Leaden Salute'], { 
         body="Lanun Frac +3",
         ear1="Crepuscular Earring",
         hands="Nyame Gauntlets",
-        feet="Lanun Bottes +3"
+        feet="Lanun Bottes +4"
     })
     sets.precast.WS['Hot Shot'] = set_combine(sets.precast.WS['Wildfire'], {
         ear2="Moonshade Earring"
@@ -768,14 +768,14 @@ function init_gear_sets()
         neck="Commodore Charm +2",
         ear1="Telos Earring",
         ear2="Crepuscular Earring",
-        body="Lanun Frac +3",
+        body="Laksa. Frac +4",
         hands="Lanun Gants +3",
         ring1="Ilabrat Ring",
         ring2="Regal Ring",
         back=Camulus.STP,
         waist="Sailfi Belt +1",
         legs="Carmine Cuisses +1",
-        feet="Lanun Bottes +3"
+        feet="Lanun Bottes +4"
     }
     sets.idle.PDT = set_combine(sets.idle.Town, sets.Nyame)
     

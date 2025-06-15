@@ -1,0 +1,18 @@
+sets.exported={
+    main="Naegling",
+    sub="Crepuscular Knife",
+    range={ name="Ataktos", augments={'Delay:+60','TP Bonus +1000',}},
+    ammo="Living Bullet",
+    head={ name="Lanun Tricorne +3", augments={'Enhances "Winning Streak" effect',}},
+    body="Laksa. Frac +4",
+    hands={ name="Lanun Gants +3", augments={'Enhances "Fold" effect',}},
+    legs={ name="Carmine Cuisses +1", augments={'HP+80','STR+12','INT+12',}},
+    feet={ name="Lanun Bottes +4", augments={'Enhances "Wild Card" effect',}},
+    neck={ name="Comm. Charm +2", augments={'Path: A',}},
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear="Telos Earring",
+    right_ear="Crep. Earring",
+    left_ring="Ilabrat Ring",
+    right_ring="Regal Ring",
+    back={ name="Camulus's Mantle", augments={'AGI+20','Rng.Acc.+20 Rng.Atk.+20','AGI+10','"Store TP"+10','Phys. dmg. taken-10%',}},
+}

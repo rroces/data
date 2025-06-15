@@ -276,22 +276,11 @@ function get_sets()
 		legs={ name="Futhark Trousers +3", augments={'Enhances "Inspire" effect',}}, -- 7  (15 - 8) 
 		waist="Siegel Sash", -- 8
 	}) -- 80+ FC
-	sets.Precast.Cure = {set_combine(sets.Precast.FastCast, {
-		waist="Sroda Belt",
-	})
-
-	}
-
 
 	--Base set for midcast - if not defined will notify and use your idle set for surviability
 	sets.Midcast = set_combine(sets.Idle, sets.Enmity, sets.SIRD, {
 	
 	})
-	sets.Midcast.Cure = {set_combine(sets.SIRD, {
-		waist="Sroda Belt",
-	})
-
-	}
 
 	-- Enhancing Skill
 	sets.Midcast.Enhancing = {
@@ -371,7 +360,7 @@ function get_sets()
 		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Damage taken-5%',}}, -- 5/5
         legs="Futhark Trousers +3"
     })
-    sets.JA["Pflug"] = set_combine(sets.Enmity, { feet="Runeist Bottes +2" })
+    sets.JA["Pflug"] = set_combine(sets.Enmity, { feet="Runeist Bottes +1" })
     sets.JA["Battuta"] = set_combine(sets.Enmity, { head="Futhark Bandeau +3" })
     sets.JA["Vivacious Pulse"] = set_combine(sets.Precast.Divine, { head="Erilaz Galea +3" })
     sets.JA["Embolden"] = set_combine(sets.Enmity, { back={ name="Evasionist's Cape", augments={'Enmity+5','"Embolden"+12','"Dbl.Atk."+1','Damage taken-1%',}},})

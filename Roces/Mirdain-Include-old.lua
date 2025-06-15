@@ -1,5 +1,5 @@
 -- Globals Variables
-Mirdain_GS = '1.5.1'
+Mirdain_GS = '1.4.1'
 
 -- Modes is the include file for a mode-tracking variable class.  Used for state vars, below.
 include('Modes')
@@ -231,6 +231,9 @@ state.RAMode:set('Bullet')
 --State for Ammunition check
 state.warned = M(false)
 
+--Unlock any previously locked gear
+enable('main','sub','range','ammo','head','neck','lear','rear','body','hands','lring','rring','waist','legs','feet')
+
 --Ammunition
 Ammo = {}
 Ammo.Bullet = {}
@@ -279,8 +282,8 @@ Enfeebling_Song = S{ 'Foe Requiem','Foe Requiem II','Foe Requiem III','Foe Requi
 	'Ice Threnody II', 'Wind Threnody II', 'Earth Threnody II', 'Ltng. Threnody II', 'Water Threnody II', 'Light Threnody II','Dark Threnody II','Magic Finale', 'Pining Nocturne'}
 
 Enfeeble_Acc = S{'Dispel','Aspir','Aspir II','Aspir III','Drain','Drain II','Drain III','Frazzle','Frazzle II','Stun','Poison','Poison II','Poisonga'}
-Enfeeble_Potency = S{'Paralyze','Paralyze II','Slow','Slow II','Addle','Addle II','Distract','Distract II','Distract III','Frazzle III','Blind','Blind II','Gravity','Gravity II'}
-Enfeeble_Duration = S{'Sleep','Sleep II','Sleepga','Sleepga II','Diaga','Dia','Dia II','Dia III','Bio','Bio II','Bio III','Silence','Inundation','Break','Breakaga','Bind','Bind II'}
+Enfeeble_Potency = S{'Paralyze','Paralyze II','Slow','Slow II','Addle','Addle II','Distract','Distract II','Distract III','Frazzle III','Blind','Blind II'}
+Enfeeble_Duration = S{'Sleep','Sleep II','Sleepga','Sleepga II','Diaga','Dia','Dia II','Dia III','Bio','Bio II','Bio III','Silence','Gravity','Gravity II','Inundation','Break','Breakaga','Bind','Bind II'}
 
 Dark_Acc = S{'Death','Kaustra','Stun'}
 Dark_Absorb = S{'Absorb-ACC','Absorb-AGI','Absorb-Attri','Absorb-CHR','Absorb-DEX','Absorb-INT','Absorb-MND','Absorb-STR','Absorb-TP','Absorb-VIT','Aspir','Aspir II','Aspir III','Drain','Drain II','Drain III'}
@@ -471,9 +474,6 @@ do
 		[768] = {id=768,english='Umbra',elements={'Dark','Ice','Water','Earth'}},
 		[769] = {id=769,english='Radiance',elements={'Light','Lightning','Wind','Fire'}},
 		[770] = {id=770,english='Umbra',elements={'Dark','Ice','Water','Earth'}},}
-
-	--Unlock any previously locked gear
-	enable('main','sub','range','ammo','head','neck','lear','rear','body','hands','lring','rring','waist','legs','feet')
 
 	-------------------------------------------------------------------------------------------------------------------
 	-- This function is called from the default GearSwap Function "pretarget" to validate the user action
@@ -812,7 +812,7 @@ do
 					if spell.name == 'Bestial Loyalty' or spell.name == 'Call Beast' then
 						if sets.Jugs[state.JobMode.value] then
 							built_set = set_combine(built_set, sets.Jugs[state.JobMode.value])
-						else warn('sets.Jugs.'..state.JobMode.value..' not found!') end
+						else warn('sets.Jugs['..state.JobMode.value..'] not found!') end
 					end
 					info('['..spell.english..'] Set')
 				else info('JA not set for ['..spell.english..']') end
@@ -993,7 +993,7 @@ do
 								built_set = set_combine(built_set, sets.Weapons.Shield)
 							else warn('sets.Weapons.Shield not found!') end
 						end
-					else warn('sets.Weapons.'..state.WeaponMode.value..' not found!') end
+					else warn('sets.Weapons['..state.WeaponMode.value..'] not found!') end
 				else warn('sets.Weapons not found!') end
 			end
 		end
@@ -1029,22 +1029,11 @@ do
 	-------------------------------------------------------------------------------------------------------------------
 
 	function midcastequip(spell)
-
-		if spell.type == 'WeaponSkill' then log('abort midcast') return
-		elseif spell.type == 'JobAbility' then log('abort midcast') return
-		elseif spell.type == 'Item' then log('abort midcast') return
-		elseif spell.type == 'Scholar' then log('abort midcast') return
-		elseif spell.type == 'Ward' then log('abort midcast') return
-		elseif spell.type == 'Rune' then log('abort midcast') return
-		elseif spell.type == 'Effusion' then log('abort midcast') return
-		elseif spell.type == 'CorsairRoll' then log('abort midcast') return
-		elseif spell.type == 'CorsairShot' then log('abort midcast') return
-		elseif spell.type == 'Waltz' then log('abort midcast') return
-		elseif spell.type == 'Jig' then log('abort midcast') return
-		elseif spell.type == 'Samba' then log('abort midcast') return
-		elseif spell.type == 'Step' then log('abort midcast') return
-		elseif spell.type == 'Flourish1' or spell.type == 'Flourish2' or spell.type == 'Flourish3' then log('abort midcast') return end
-		
+		-- WeaponSkill
+		if spell.type == 'WeaponSkill' then return end
+		if spell.type == 'Item' then return end
+		if spell.type == 'JobAbility' then return end
+		if spell.type == 'CorsairRoll' then log('abort midcast') return end
 		if pet.isvalid and pet_midaction() then return end
 		--Default gearset
 		local built_set = {}
@@ -1411,6 +1400,8 @@ do
 					built_set = set_combine(built_set, {range=Instrument.Count})
 				-- Potency / Instruments
 				else
+					-- Augment the specific Song
+					built_set = set_combine(built_set, equip_song_gear(spell))
 					-- Defined Gear Set
 					if sets.Midcast[spell.english] then
 						built_set = set_combine(built_set, sets.Midcast[spell.english])
@@ -1442,8 +1433,6 @@ do
 						info( '['..spell.english..'] Set (Potency)')
 						built_set = set_combine(built_set, {range=Instrument.Potency})
 					end
-					-- Augment the specific Song if set
-					built_set = set_combine(built_set, equip_song_gear(spell))
 				end
 			-- BlueMagic
 			elseif spell.type == 'BlueMagic' then
@@ -1586,7 +1575,7 @@ do
 				if sets.Weapons then
 					if sets.Weapons[state.WeaponMode.value] then
 						built_set = set_combine(built_set, sets.Weapons[state.WeaponMode.value])
-					else warn('sets.Weapons.'..state.WeaponMode.value..' not found!') end
+					else warn('sets.Weapons['..state.WeaponMode.value..'] not found!') end
 					if not TwoHand and not DualWield then
 						if sets.Weapons.Shield then
 							built_set = set_combine(built_set, sets.Weapons.Shield)
@@ -1608,21 +1597,12 @@ do
 					end
 				else warn('sets.Weapons.Songs.Midcast not found!') end
 			else warn('sets.Weapons.Songs not found!') end
-			
+			--Check for pianissimo Weapon
 			if spell.target.type ~= 'SELF' and spell.name ~= "Honor March" and spell.name ~= "Aria of Passion" and not SongCount:contains(spell.name) then
 				if Instrument then
-					--Check for pianissimo Weapons
 					if Instrument.Pianissimo then
 						built_set = set_combine(built_set, {range=Instrument.Pianissimo})
 					else warn('Instrument.Pianissimo not found!') end
-					--Check for Ballad Weapon
-					if spell.name:contains('Ballad') then
-						if Instrument then
-							if Instrument.Ballad then
-								built_set = set_combine(built_set, {range=Instrument.Ballad})
-							else warn('Instrument.Ballad not found!') end
-						else warn('Instrument not found!') end
-					end
 				else warn('Instrument not found!') end
 			end
 		end
@@ -2145,7 +2125,6 @@ do
 						end
 						info('Weapon Mode: ['..state.WeaponMode.value..']')
 						display_box_update()
-						if self_command_custom then self_command_custom(command) end
 						coroutine.schedule(equip_set, .25)
 						coroutine.schedule(two_hand_check, .25)
 						return
@@ -2157,7 +2136,6 @@ do
 				state.WeaponMode:set(mode[2])
 				info('Weapon Mode: ['..state.WeaponMode.value..']')
 				display_box_update()
-				if self_command_custom then self_command_custom(command) end
 				coroutine.schedule(equip_set, .25)
 				coroutine.schedule(two_hand_check, .25)
 				return
@@ -2173,7 +2151,6 @@ do
 						end
 						info(UI_Name2..': ['..state.JobMode2.value..']')
 						display_box_update()
-						if self_command_custom then self_command_custom(command) end
 						coroutine.schedule(equip_set, .25)
 						return
 					end
@@ -2184,7 +2161,6 @@ do
 				state.JobMode2:set(mode[2])
 				info(UI_Name2..': ['..state.JobMode2.value..']')
 				display_box_update()
-				if self_command_custom then self_command_custom(command) end
 				coroutine.schedule(equip_set, .25)
 				return
 			end
@@ -3030,7 +3006,7 @@ do
 						if sets.Weapons then
 							if sets.Weapons[state.WeaponMode.value] then
 								built_set = set_combine(built_set, sets.Weapons[state.WeaponMode.value])
-							else warn('sets.Weapons.'..state.WeaponMode.value..' not found!') end
+							else warn('sets.Weapons['..state.WeaponMode.value..'] not found!') end
 						else warn('sets.Weapons not found!') end
 						-- Equip sub weapon based off mode
 						if not DualWield and not TwoHand then
@@ -3080,7 +3056,7 @@ do
 							end
 						else warn('sets.TreasureHunter not found!') end
 					end
-				else warn('sets.OffenseMode.'..state.OffenseMode.value..' not found!') end
+				else warn('sets.OffenseMode['..state.OffenseMode.value..'] not found!') end
 			else warn('sets.OffenseMode not found!') end
 		-- Idle sets
 		else
@@ -3089,7 +3065,7 @@ do
 				-- Idle state
 				if sets.Idle[state.OffenseMode.value] then
 					built_set = set_combine(built_set, sets.Idle[state.OffenseMode.value])
-				else warn('sets.Idle.'..state.OffenseMode.value..' not found!') end		
+				else warn('sets.Idle['..state.OffenseMode.value..'] not found!') end		
 				-- Resting condition
 				if player.status == "Resting" then
 					if sets.Idle.Resting then
@@ -3105,7 +3081,7 @@ do
 						if sets.Weapons then
 							if sets.Weapons[state.WeaponMode.value] then
 								built_set = set_combine(built_set, sets.Weapons[state.WeaponMode.value])
-							else warn('sets.Weapons.'..state.WeaponMode.value..' not found!') end
+							else warn('sets.Weapons['..state.WeaponMode.value..'] not found!') end
 							-- Check for sub weapon
 							if not TwoHand and not DualWield then
 								if sets.Weapons.Shield then

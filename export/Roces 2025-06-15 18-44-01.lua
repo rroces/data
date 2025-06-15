@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Twashtar", augments={'Path: A',}},
+    sub={ name="Fusetto +2", augments={'TP Bonus +1000',}},
+    ammo="Staunch Tathlum +1",
+    head="Null Masque",
+    body="Adamantite Armor",
+    hands={ name="Leyline Gloves", augments={'Accuracy+14','Mag. Acc.+13','"Mag.Atk.Bns."+13','"Fast Cast"+2',}},
+    legs={ name="Gleti's Breeches", augments={'Path: A',}},
+    feet={ name="Gleti's Boots", augments={'Path: A',}},
+    neck={ name="Warder's Charm +1", augments={'Path: A',}},
+    waist="Null Belt",
+    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    right_ear="Sanare Earring",
+    left_ring="Moonlight Ring",
+    right_ring="Gere Ring",
+    back="Null Shawl",
+}

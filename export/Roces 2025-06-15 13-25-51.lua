@@ -1,0 +1,16 @@
+sets.exported={
+    main={ name="Verethragna", augments={'Path: A',}},
+    ammo="Staunch Tathlum +1",
+    head={ name="Herculean Helm", augments={'"Fast Cast"+5','INT+7','Mag. Acc.+13',}},
+    body="Adamantite Armor",
+    hands={ name="Mpaca's Gloves", augments={'Path: A',}},
+    legs={ name="Mpaca's Hose", augments={'Path: A',}},
+    feet="Hermes' Sandals",
+    neck={ name="Warder's Charm +1", augments={'Path: A',}},
+    waist="Null Belt",
+    left_ear="Sanare Earring",
+    right_ear={ name="Bhikku Earring +2", augments={'System: 1 ID: 1676 Val: 0','Accuracy+20','Mag. Acc.+20','"Store TP"+8','STR+15 DEX+15',}},
+    left_ring="Purity Ring",
+    right_ring="Shadow Ring",
+    back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
+}

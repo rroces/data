@@ -260,7 +260,7 @@ sets.OffenseMode.Counter = set_combine(sets.OffenseMode[state.OffenseMode.value]
 	sets.JA["Boost"] = {hands="Anchorite's Gloves +2"}
 	sets.JA["Counterstance"] = {feet="Hesychast's Gaiters +3"}
 	sets.JA["Chi Blast"] = {
-		head={ name="Hes. Crown +2", augments={'Enhances "Penance" effect',}},
+		head={ name="Hes. Crown +3", augments={'Enhances "Penance" effect',}},
 	}
 	sets.JA["Mantra"] = {feet="Hesychast's Gaiters +3"}
 	sets.JA["Footwork"] = {feet="Bhikku Gaiters +3"}

@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Epeolatry", augments={'Path: A',}},
+    sub="Utu Grip",
+    ammo="Homiliary",
+    head={ name="Nyame Helm", augments={'Path: B',}},
+    body="Erilaz Surcoat +3",
+    hands="Erilaz Gauntlets +3",
+    legs="Eri. Leg Guards +3",
+    feet="Erilaz Greaves +3",
+    neck={ name="Futhark Torque +2", augments={'Path: A',}},
+    waist="Plat. Mog. Belt",
+    left_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    right_ear="Sanare Earring",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
+    back={ name="Evasionist's Cape", augments={'Enmity+5','"Embolden"+12','"Dbl.Atk."+1','Damage taken-1%',}},
+}

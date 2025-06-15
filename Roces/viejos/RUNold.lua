@@ -113,7 +113,7 @@ function get_sets()
 		right_ear="Sanare Earring", -- Upgrade to +1/+2 Earring
 		left_ring={name="Moonlight Ring", bag="wardrobe3", priority=4},
 		right_ring={name="Moonlight Ring", bag="wardrobe4", priority=5},
-		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Damage taken-5%',}}, -- 5/5
+		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Damage taken-5%',}}, -- 5/5
     } -- 75 PDT / 58 MDT		3571 HP/ 1149 MP
 
 	sets.Idle.PDT = set_combine( sets.Idle, {
@@ -151,8 +151,8 @@ function get_sets()
 		legs="Eri. Leg Guards +3", -- 13/13
 		feet="Erilaz Greaves +3", -- 11/11
 		waist="Plat. Mog. Belt",
-		left_ring={name="Moonlight Ring", bag="wardrobe3", priority=4},
-		right_ring={name="Moonlight Ring", bag="wardrobe4", priority=5},
+		left_ring={name="Moonlight Ring", bag="wardrobe1", priority=4},
+		right_ring={name="Moonlight Ring", bag="wardrobe2", priority=5},
 		left_ear={ name="Odnowa Earring +1", augments={'Path: A',}, priority=1}, -- 3/5
 	}
 
@@ -169,8 +169,8 @@ function get_sets()
 	-- Set to be used if you get 
 	sets.Cursna_Received = {
 	    neck="Nicander's Necklace",
-	    left_ring={ name="Saida Ring", bag="wardrobe1", priority=2},
-		right_ring={ name="Saida Ring", bag="wardrobe2", priority=1},
+	    left_ring={ name="Saida Ring", bag="wardrobe3", priority=2},
+		right_ring={ name="Saida Ring", bag="wardrobe4", priority=1},
 		waist="Gishdubar Sash",
 	}
 
@@ -239,7 +239,7 @@ function get_sets()
 		right_ear={ name="Cryptic Earring", priority=5}, -- 4
 		left_ring={ name="Eihwaz Ring", priority=6}, -- 5
 		right_ring={name="Moonlight Ring", bag="wardrobe4", priority=2},
-		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Damage taken-5%',}}, -- 10
+		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Damage taken-5%',}}, -- 10
 	} -- 99 Enmity 2884 HP / 840 MP
 
 	--This set is used as base as is overwrote by specific gear changes (Spell Interruption Rate Down)
@@ -250,7 +250,7 @@ function get_sets()
 		legs={ name="Carmine Cuisses +1", augments={'HP+80','STR+12','INT+12',}}, -- 20
 		neck="Moonlight Necklace", -- 15
 		waist="Audumbla Sash", -- 10
-		back={ name="Ogma's cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Spell interruption rate down-10%',}}, -- 10
+		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Spell interruption rate down-10%',}}, -- 10
 	})	-- 104 With Merits
 
 	sets.Precast = {}
@@ -268,7 +268,7 @@ function get_sets()
 		right_ear={ name="Etiolation Earring", priority=3},
 		left_ear={ name="Tuisto Earring", priority=4},
 		left_ring="Kishar Ring", -- 4
-		right_ring="Weather. Ring +1",
+		right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}, priority=5},
 		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','"Fast Cast"+10','Spell interruption rate down-10%',}}, -- 10
 	} --65 FC
 
@@ -276,22 +276,11 @@ function get_sets()
 		legs={ name="Futhark Trousers +3", augments={'Enhances "Inspire" effect',}}, -- 7  (15 - 8) 
 		waist="Siegel Sash", -- 8
 	}) -- 80+ FC
-	sets.Precast.Cure = {set_combine(sets.Precast.FastCast, {
-		waist="Sroda Belt",
-	})
-
-	}
-
 
 	--Base set for midcast - if not defined will notify and use your idle set for surviability
 	sets.Midcast = set_combine(sets.Idle, sets.Enmity, sets.SIRD, {
 	
 	})
-	sets.Midcast.Cure = {set_combine(sets.SIRD, {
-		waist="Sroda Belt",
-	})
-
-	}
 
 	-- Enhancing Skill
 	sets.Midcast.Enhancing = {
@@ -307,7 +296,7 @@ function get_sets()
 		right_ear="Mimir Earring",
 		left_ring={name="Moonlight Ring", bag="wardrobe3", priority=4},
 		right_ring={name="Moonlight Ring", bag="wardrobe4", priority=5},
-		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Damage taken-5%',}}, -- 5/5
+		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Damage taken-5%',}}, -- 5/5
 	}
 	-- High MACC for landing spells
 	sets.Midcast.Enfeebling = {}
@@ -363,22 +352,22 @@ function get_sets()
     sets.JA["One For All"] = sets.Idle
     sets.JA["Valiance"] = set_combine(sets.Enmity, {
         body="Runeist Coat +3",
-		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Damage taken-5%',}}, -- 5/5
+		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Damage taken-5%',}}, -- 5/5
         legs="Futhark Trousers +3"
     })
     sets.JA["Vallation"] = set_combine(sets.Enmity, {
         body="Runeist Coat +3",
-		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Mag. Evasion+5','Enmity+10','Damage taken-5%',}}, -- 5/5
+		back={ name="Ogma's Cape", augments={'HP+60','Eva.+20 /Mag. Eva.+20','Enmity+10','Damage taken-5%',}}, -- 5/5
         legs="Futhark Trousers +3"
     })
-    sets.JA["Pflug"] = set_combine(sets.Enmity, { feet="Runeist Bottes +2" })
+    sets.JA["Pflug"] = set_combine(sets.Enmity, { feet="Runeist Bottes +1" })
     sets.JA["Battuta"] = set_combine(sets.Enmity, { head="Futhark Bandeau +3" })
     sets.JA["Vivacious Pulse"] = set_combine(sets.Precast.Divine, { head="Erilaz Galea +3" })
-    sets.JA["Embolden"] = set_combine(sets.Enmity, { back={ name="Evasionist's Cape", augments={'Enmity+5','"Embolden"+12','"Dbl.Atk."+1','Damage taken-1%',}},})
+    sets.JA["Embolden"] = set_combine(sets.Enmity, { back="Evasionist's Cape",})
     sets.JA["Swordplay"] = set_combine(sets.Enmity, { hands="Futhark Mitons +3" })
 	sets.JA["Provoke"] = sets.Enmity
 
-	sets.Embolden = { back={ name="Evasionist's Cape", augments={'Enmity+5','"Embolden"+12','"Dbl.Atk."+1','Damage taken-1%',}},}
+	sets.Embolden = { back="Evasionist's Cape",}
 
 	--Default WS set base
 	sets.WS = {
