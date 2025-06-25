@@ -160,7 +160,7 @@ function init_gear_sets()
     sets.precast.JA['Triple Shot'] = {body="Chasseur's Frac +3"}
     sets.precast.JA['Snake Eye'] = {legs="Lanun Trews +3"}
     sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +4"}
-    sets.precast.JA['Random Deal'] = {body="Lanun Frac +3"}
+    sets.precast.JA['Random Deal'] = {body="Lanun Frac +4"}
     sets.precast.JA['Fold'] = {hands="Lanun Gants +3"} 
     sets.CapacityMantle = {back="Mecisto. Mantle"}
     
@@ -529,7 +529,7 @@ function init_gear_sets()
         neck="Commodore Charm +2",
         ear1="Friomisi Earring",
         ear2="Crematio Earring",
-        body="Lanun Frac +3",
+        body="Lanun Frac +4",
         hands="Nyame Gauntlets",
         ring1="Epaminondas's Ring",
         ring2="Dingir Ring",
@@ -540,7 +540,7 @@ function init_gear_sets()
     }
     sets.precast.WS['Wildfire'].Acc = set_combine(sets.precast.WS['Wildfire'], {
         head="Nyame Helm",
-        body="Lanun Frac +3",
+        body="Lanun Frac +4",
         hands="Nyame Gauntlets"
     })
 
@@ -550,7 +550,7 @@ function init_gear_sets()
         neck="Commodore Charm +2",
         ear1="Friomisi Earring",
         ear2="Moonshade Earring",
-        body="Lanun Frac +3",
+        body="Lanun Frac +4",
         hands="Nyame Gauntlets",
         ring1="Archon Ring",
         ring2="Dingir Ring",
@@ -560,12 +560,12 @@ function init_gear_sets()
         feet="Lanun Bottes +4"
     }
     sets.precast.WS['Leaden Salute'].Mid = set_combine(sets.precast.WS['Leaden Salute'], { 
-        body="Lanun Frac +3",
+        body="Lanun Frac +4",
         hands="Nyame Gauntlets",
         feet="Lanun Bottes +4"
     })
     sets.precast.WS['Leaden Salute'].Acc = set_combine(sets.precast.WS['Leaden Salute'], { 
-        body="Lanun Frac +3",
+        body="Lanun Frac +4",
         ear1="Crepuscular Earring",
         hands="Nyame Gauntlets",
         feet="Lanun Bottes +4"
@@ -615,7 +615,7 @@ function init_gear_sets()
         neck="Commodore Charm +2",
         ear1="Friomisi Earring",
         ear2="Crematio Earring",
-        body="Lanun Frac +3",
+        body="Lanun Frac +4",
         hands="Carmine Finger Gauntlets +1",
         ring1="Fenrir Ring +1", 
         ring2="Dingir Ring",
@@ -626,7 +626,7 @@ function init_gear_sets()
     }
 
     sets.midcast.CorsairShot.Acc = set_combine(sets.midcast.CorsairShot, {
-        body="Lanun Frac +3",
+        body="Lanun Frac +4",
         head="Laksa. Tricorne +4",
         ear1="Crepuscular Earring",
         feet="Malignance Boots"
