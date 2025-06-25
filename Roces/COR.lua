@@ -340,7 +340,7 @@ function init_gear_sets()
     -- sets.Default.engaged = sets.Default
     -- sets.Default.engaged.PDT = sets.Default
 
-    sets.precast.CorsairShot = { head="Laksamana's Tricorne +3" }
+    sets.precast.CorsairShot = { head="Laksa. Tricorne +4" }
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {
@@ -627,7 +627,7 @@ function init_gear_sets()
 
     sets.midcast.CorsairShot.Acc = set_combine(sets.midcast.CorsairShot, {
         body="Lanun Frac +3",
-        head="Laksamana's Tricorne +3",
+        head="Laksa. Tricorne +4",
         ear1="Crepuscular Earring",
         feet="Malignance Boots"
     })

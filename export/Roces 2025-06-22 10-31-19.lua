@@ -1,0 +1,17 @@
+sets.exported={
+    main={ name="Kannagi", augments={'Path: A',}},
+    sub="Yagyu Darkblade",
+    ammo="Staunch Tathlum +1",
+    head={ name="Herculean Helm", augments={'"Fast Cast"+5','INT+7','Mag. Acc.+13',}},
+    body={ name="Nyame Mail", augments={'Path: B',}},
+    hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+    legs={ name="Nyame Flanchard", augments={'Path: B',}},
+    feet={ name="Nyame Sollerets", augments={'Path: B',}},
+    neck={ name="Loricate Torque +1", augments={'Path: A',}},
+    waist="Carrier's Sash",
+    left_ear="Etiolation Earring",
+    right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
+    left_ring="Eihwaz Ring",
+    right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
+    back="Null Shawl",
+}
