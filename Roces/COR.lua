@@ -505,7 +505,7 @@ function init_gear_sets()
         neck="Fotia Gorget",
         ear1="Ishvara Earring",
         ear2="Moonshade Earring",
-        body="Laksa. Frac +4",
+        body="Ikenga's Vest",
         ring1="Epaminondas's Ring",
         ring2="Dingir Ring",
         waist="Fotia Belt",
