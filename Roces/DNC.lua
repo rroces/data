@@ -24,8 +24,8 @@ Food = "Sublime Sushi"
 state.OffenseMode:options('TP','ACC','DT','PDL','SB','MEVA')
 state.OffenseMode:set('DT')
 
-state.WeaponMode:options('Aeneas','Karambit')
-state.WeaponMode:set('Aeneas')
+state.WeaponMode:options('Aeneas','Twashtar','Karambit')
+state.WeaponMode:set('Twashtar')
 
 -- Initialize Player
 jobsetup (LockStylePallet,MacroBook,MacroSet)
@@ -34,7 +34,7 @@ function get_sets()
 
 	sets.Weapons = {}
 	sets.Weapons['Terpsichore'] = {}
-	sets.Weapons['Twashtar'] = {}
+	sets.Weapons['Twashtar'] = {main="Twashtar", sub="Gleti's Knife",}
 	sets.Weapons['Aeneas'] = {main="Aeneas", sub="Gleti's Knife",}
 	sets.Weapons['Karambit'] = {main="Karambit",}
 	sets.Weapons.Shield = {}
@@ -64,7 +64,7 @@ function get_sets()
 	sets.Idle.Resting = set_combine(sets.Idle, {})
 
 	sets.Movement = {
-	
+	feet="Skd. Jambeaux +1",
 	}
 
 	-- Set to be used if you get cursna casted on you
