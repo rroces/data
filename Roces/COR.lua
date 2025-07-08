@@ -161,7 +161,7 @@ function init_gear_sets()
     sets.precast.JA['Snake Eye'] = {legs="Lanun Trews +3"}
     sets.precast.JA['Wild Card'] = {feet="Lanun Bottes +4"}
     sets.precast.JA['Random Deal'] = {body="Lanun Frac +4"}
-    sets.precast.JA['Fold'] = {hands="Lanun Gants +3"} 
+    sets.precast.JA['Fold'] = {hands="Lanun Gants +4"} 
     sets.CapacityMantle = {back="Mecisto. Mantle"}
     
     TaeonHead = {}
@@ -239,7 +239,7 @@ function init_gear_sets()
     
     sets.precast.LuzafRing = {ring1="Luzaf's Ring"}
     sets.precast.Compensator = {range="Compensator"}
-    sets.precast.FoldDoubleBust = {hands="Lanun Gants +3"}
+    sets.precast.FoldDoubleBust = {hands="Lanun Gants +4"}
 
     sets.Melee = {
         --main={name="Rostam", bag="Wardrobe 4", priority=2},
@@ -389,7 +389,7 @@ function init_gear_sets()
        
         head="Chasseur's Tricorne +3",
         neck="Commodore Charm +2", -- 4
-        hands="Lanun Gants +3", -- 13
+        hands="Lanun Gants +4", -- 13
         back=Camulus.Snap, -- 10 
         body="Oshosi Vest +1", -- 14
         ring1="Crepuscular Ring", -- 3
@@ -715,7 +715,7 @@ function init_gear_sets()
     sets.midcast.RA.TripleShot.Mid = set_combine(sets.midcast.RA.Mid, {
         head="Oshosi Mask",
         body="Oshosi Vest +1",
-        hands="Lanun Gants +3",
+        hands="Lanun Gants +4",
         ring1="Regal Ring",
         legs="Oshosi Trousers",
         feet="Oshosi Leggings"
@@ -724,7 +724,7 @@ function init_gear_sets()
         ammo=gear.Accbullet,
         head="Malignance Chapeau",
         body="Oshosi Vest +1",
-        hands="Lanun Gants +3",
+        hands="Lanun Gants +4",
         ring1="Regal Ring",
         feet="Malignance Boots"
     })
@@ -769,7 +769,7 @@ function init_gear_sets()
         ear1="Telos Earring",
         ear2="Crepuscular Earring",
         body="Laksa. Frac +4",
-        hands="Lanun Gants +3",
+        hands="Lanun Gants +4",
         ring1="Ilabrat Ring",
         ring2="Regal Ring",
         back=Camulus.STP,
