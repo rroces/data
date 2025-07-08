@@ -196,7 +196,7 @@ function init_gear_sets()
     AdhemarLegs.TP = { name="Adhemar Kecks +1", augments={'AGI+12','Rng.Acc.+20','Rng.Atk.+20',}}
 
     sets.roll = { 
-        head="Lanun Tricorne +3",
+        head="Lanun Tricorne +4",
         hands="Chasseur's Gants +3",
         ear2="Etiolation Earring",
         neck="Regal Necklace",
@@ -501,7 +501,7 @@ function init_gear_sets()
 
     sets.precast.WS['Last Stand'] = set_combine(sets.precast.WS, {
         ammo=gear.WSbullet,
-        head="Lanun Tricorne +3",
+        head="Lanun Tricorne +4",
         neck="Fotia Gorget",
         ear1="Ishvara Earring",
         ear2="Moonshade Earring",
@@ -515,7 +515,7 @@ function init_gear_sets()
     })
     sets.precast.WS['Last Stand'].Acc = set_combine(sets.precast.WS['Last Stand'], {
         ammo=gear.WSbullet,
-        head="Lanun Tricorne +3",
+        head="Lanun Tricorne +4",
         ear1="Beyla Earring",
         ear2="Moonshade Earring",
         back=Camulus.WSD,
@@ -764,7 +764,7 @@ function init_gear_sets()
 
     sets.idle.Town = {
         ammo=gear.MAbullet,
-        head="Lanun Tricorne +3",
+        head="Lanun Tricorne +4",
         neck="Commodore Charm +2",
         ear1="Telos Earring",
         ear2="Crepuscular Earring",
