@@ -514,13 +514,17 @@ function init_gear_sets()
 		hands="Chasseur's Gants +3"
     })
     sets.precast.WS['Last Stand'].Acc = set_combine(sets.precast.WS['Last Stand'], {
-        ammo=gear.WSbullet,
-        head="Lanun Tricorne +4",
+        ammo=gear.Accbullet,
+        head="Laksa. Tricorne +4",
+        body="Laksa. Frac +4",
+        hands="Lak. Gants +4",
+        legs="Chas. Culottes +3",
+        feet="Laksa. Bottes +4",
+        ring1="Cacoethic Ring +1",
+        ring2="Regal Ring",
         ear1="Beyla Earring",
-        ear2="Moonshade Earring",
+        ear2="Crep. Earring",
         back=Camulus.WSD,
-        legs="Meghanada Chausses +2",
-        feet="Lanun Bottes +4"
     })
 
     sets.precast.WS['Wildfire'] = {
@@ -698,11 +702,12 @@ function init_gear_sets()
         ring2="Ilabrat Ring",
         back=Camulus.STP,
         waist="Yemaya Belt",
-		head="Chasseur's Tricorne +3",
-		body="Chasseur's Frac +3",
-		hands="Chasseur's Gants +3",
-		legs="Chas. Culottes +3",
-		feet="Chass. Bottes +3"
+		ammo=gear.Accbullet,
+        head="Laksa. Tricorne +4",
+        body="Laksa. Frac +4",
+        hands="Lak. Gants +4",
+        legs="Chas. Culottes +3",
+        feet="Laksa. Bottes +4",
     })
     sets.midcast.RA.Acc.AME = set_combine(sets.midcast.RA.Acc, {
         head="Meghanada Visor +2",
