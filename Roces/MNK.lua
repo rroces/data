@@ -240,12 +240,12 @@ sets.OffenseMode.Counter = set_combine(sets.OffenseMode[state.OffenseMode.value]
 	sets.JA["Defender"] = {}
 	sets.JA["Aggressor"] = {}
 	sets.JA["Provoke"] = sets.Enmity
-	sets.JA["Focus"] = {head="Anchorite's Crown +2"}
+	sets.JA["Focus"] = {head="Anchorite's Crown +3"}
 	sets.JA["Dodge"] = {feet="Anchorite's Gaiters +3"}
 	sets.JA["Chakra"] = {
 		ammo="",
 		head="Null Masque",
-		body="Anch. Cyclas +2",
+		body="Anch. Cyclas +3",
 		hands={ name="Hes. Gloves +3", augments={'Enhances "Invigorate" effect',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -257,7 +257,7 @@ sets.OffenseMode.Counter = set_combine(sets.OffenseMode[state.OffenseMode.value]
 		right_ring={ name="Gelatinous Ring +1", augments={'Path: A',}},
 		back={ name="Segomo's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
-	sets.JA["Boost"] = {hands="Anchorite's Gloves +2"}
+	sets.JA["Boost"] = {hands="Anchorite's Gloves +3"}
 	sets.JA["Counterstance"] = {feet="Hesychast's Gaiters +3"}
 	sets.JA["Chi Blast"] = {
 		head={ name="Hes. Crown +3", augments={'Enhances "Penance" effect',}},

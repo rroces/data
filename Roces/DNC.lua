@@ -85,7 +85,7 @@ function get_sets()
 		hands="Malignance Gloves",
 		legs="Malignance Tights",
 		feet="Malignance Boots",
-		neck="Anu Torque",
+		neck="Etoile Gorget +2",
 		waist="Reiki Yotai",
 		left_ear="Sherida Earring",
 		right_ear="Telos Earring",
@@ -99,9 +99,9 @@ function get_sets()
     	head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
     	body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
     	hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
-    	legs={ name="Samnuha Tights", augments={'STR+8','DEX+9','"Dbl.Atk."+3','"Triple Atk."+2',}},
+    	legs="Samnuha Tights",
     	feet="Malignance Boots",
-    	neck="Anu Torque",
+    	neck="Etoile Gorget +2",
     	waist={ name="Sailfi Belt +1", augments={'Path: A',}},
     	left_ear="Sherida Earring",
     	right_ear="Telos Earring",
@@ -119,7 +119,7 @@ function get_sets()
     	hands="Malignance Gloves",
     	legs="Malignance Tights",
     	feet="Malignance Boots",
-    	neck="Anu Torque",
+    	neck="Etoile Gorget +2",
     	waist="Reiki Yotai",
     	left_ear="Sherida Earring", -- SBII+5
     	right_ear="Telos Earring",
@@ -143,7 +143,7 @@ function get_sets()
 		left_ear="Sherida Earring",
 		right_ear={ name="Odnowa Earring +1", augments={'Path: A',}},
 		left_ring="Moonlight Ring",
-		right_ring="Lehko's Ring",
+		right_ring="Moonlight Ring",
 		back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
 	}
 
@@ -157,8 +157,8 @@ function get_sets()
 
 	sets.Precast.FastCast = {
 		ammo="Sapience Orb",
-		head={ name="Herculean Helm", augments={'"Subtle Blow"+1','STR+3','"Treasure Hunter"+2','Mag. Acc.+10 "Mag.Atk.Bns."+10',}},
-    	hands={ name="Leyline Gloves", augments={'Accuracy+15','Mag. Acc.+15','"Mag.Atk.Bns."+15','"Fast Cast"+3',}},
+		head="Herculean Helm",
+    	hands="Leyline Gloves",
     	neck="Baetyl Pendant",
     	waist="Hachirin-no-Obi",
     	left_ear="Etiolation Earring",
@@ -211,14 +211,14 @@ function get_sets()
     	head={ name="Horos Tiara +1", augments={'Enhances "Trance" effect',}},
     	body="Maxixi Casaque",
     	hands={ name="Horos Bangles +1", augments={'Enhances "Fan Dance" effect',}},
-    	legs="Dashing Subligar",
+    	legs="", --Dashing Subligar
     	feet="Maxixi Toe Shoes",
     	neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     	waist="Chaac Belt",
     	left_ear="Enchntr. Earring +1",
     	right_ear="Cryptic Earring",
     	left_ring="Metamorph Ring",
-    	right_ring="Carb. Ring +1",
+    	right_ring="Metamorph Ring +1",
     	back="Moonlight Cape",
 	}
 	sets.Waltz["Curing Waltz"] = sets.Waltz
@@ -261,7 +261,7 @@ function get_sets()
     	hands="Malignance Gloves",
     	legs="Malignance Tights",
     	feet="Malignance Boots",
-    	neck="Etoile Gorget +1",
+    	neck="Etoile Gorget +2",
     	waist="Reiki Yotai",
     	left_ear="Odr Earring",
     	right_ear="Telos Earring",

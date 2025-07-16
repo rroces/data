@@ -218,7 +218,7 @@ function init_gear_sets()
 
     sets.precast.FC.BardSong = set_combine(sets.precast.FC, {
         head="Fili Calot", --14
-        body="Brioso Justau. +3", --15
+        body="Brioso Justau. +4", --15
         feet="Bihu Slippers +3", --9
         neck="Loricate Torque +1",
         ear1="Odnowa Earring +1",
@@ -367,7 +367,7 @@ function init_gear_sets()
         body="Fili Hongreline +1",
         hands="Fili Manchettes",
         legs="Inyanga Shalwar +2",
-        feet="Brioso Slippers +3",
+        feet="Brioso Slippers +4",
         neck="Mnbw. Whistle +1",
         ear1="Odnowa Earring +1",
         ear2="Etiolation Earring",
@@ -383,10 +383,10 @@ function init_gear_sets()
         sub="Ammurapi Shield",
         range="Gjallarhorn",
         head="Brioso Roundlet +3",
-        body="Brioso Justau. +3",
+        body="Brioso Justau. +4",
         hands="Brioso Cuffs +3",
         legs="Brioso Cannions +3",
-        feet="Brioso Slippers +3",
+        feet="Brioso Slippers +4",
         neck="Mnbw. Whistle +1",
         ear1="Digni. Earring",
         ear2="Regal Earring",
@@ -488,7 +488,7 @@ function init_gear_sets()
         body="Cohort Cloak +1",
         hands="Brioso Cuffs +3",
         legs="Brioso Cannions +3",
-        feet="Brioso Slippers +3",
+        feet="Brioso Slippers +4",
         neck="Mnbw. Whistle +1",
         ear1="Digni. Earring",
         ear2="Vor Earring",
@@ -1056,7 +1056,7 @@ function get_lullaby_duration(spell)
     if player.equipment.feet == "Brioso Slippers" then mult = mult + 0.1 end
     if player.equipment.feet == "Brioso Slippers +1" then mult = mult + 0.11 end
     if player.equipment.feet == "Brioso Slippers +2" then mult = mult + 0.13 end
-    if player.equipment.feet == "Brioso Slippers +3" then mult = mult + 0.15 end
+    if player.equipment.feet == "Brioso Slippers +4" then mult = mult + 0.15 end
     if player.equipment.hands == 'Brioso Cuffs +1' then mult = mult + 0.1 end
     if player.equipment.hands == 'Brioso Cuffs +2' then mult = mult + 0.1 end
     if player.equipment.hands == 'Brioso Cuffs +3' then mult = mult + 0.2 end
