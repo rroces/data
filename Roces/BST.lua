@@ -62,10 +62,10 @@ function get_sets()
 		sub="Ikenga's Axe",
 	}
 
-	--sets.Weapons['Pangu'] = {
-	--	main="Pangu",
-	--	sub="Ikenga's Axe",
-	--}
+	sets.Weapons['Pangu'] = {
+	main="Pangu",
+	sub="Ikenga's Axe",
+	}
 
 	sets.Weapons.Shield = {
 		sub="Sacro Bulwark"
@@ -79,7 +79,7 @@ function get_sets()
 		body={ name="Nyame Mail", augments={'Path: B',}},
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
-		feet={ name="Nyame Sollerets", augments={'Path: B',}},
+		feet="Skd. Jambeaux +1",
 		neck="Warder's Charm +1",
 		waist="Carrier's Sash",
 		left_ear="Etiolation Earring",
@@ -92,7 +92,7 @@ function get_sets()
 	sets.Idle.Pet = set_combine(sets.Idle,{
 		hands={ name="Gleti's Gauntlets", augments={'Path: A',}},
 		feet={ name="Gleti's Boots", augments={'Path: A',}},
-	    right_ear="Nukumi Earring +1",
+	    right_ear="Nukumi Earring +2",
 		right_ring="C. Palug Ring",
 		back={ name="Artio's Mantle", augments={'Pet: M.Acc.+20 Pet: M.Dmg.+20','Eva.+20 /Mag. Eva.+20','Pet: Mag. Acc.+10','Pet: "Regen"+10','Pet: Damage taken -5%',}},
 	})
@@ -182,7 +182,7 @@ function get_sets()
 		neck={ name="Bst. Collar +2", augments={'Path: A',}},
 		waist="Incarnation Sash",
 		left_ear="Ferine Earring",
-		right_ear="Nukumi Earring +1",
+		right_ear="Nukumi Earring +2",
 		right_ring="C. Palug Ring",
 		back={ name="Artio's Mantle", augments={'Pet: Acc.+20 Pet: R.Acc.+20 Pet: Atk.+20 Pet: R.Atk.+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
 	}
@@ -209,7 +209,7 @@ function get_sets()
 
 	-- Ready JA command
 	sets.Ready = {
-		hands="Nukumi Manoplas +1",
+		hands="Nukumi Manoplas +3",
 		legs={ name="Gleti's Breeches", augments={'Path: A',}},
 	}
 
@@ -226,12 +226,12 @@ function get_sets()
 	sets.JA['Gauge'] = set_combine(sets.Idle, {})
 	sets.JA['Tame'] = set_combine(sets.Idle, 
 	{
-		head="Totemic Helm +3",
+		head="Totemic Helm +2",
 	})
 	sets.JA['Reward'] = set_combine(sets.Idle, 
 	{ 
 		head="Bison Warbonnet",
-		body="Tot. Jackcoat +3",
+		body="Tot. Jackcoat +2",
 		legs={ name="Ankusa Trousers +3", augments={'Enhances "Familiar" effect',}},
 		feet={ name="Ankusa Gaiters +3", augments={'Enhances "Beast Healer" effect',}},
 		left_ear="Ferine Earring",
@@ -264,7 +264,7 @@ function get_sets()
 	sets.JA['Ready'] = set_combine(sets.Idle, {}) -- This is not called for a Ready Move
 	sets.JA['Spur'] = set_combine(sets.Idle, 
 	{
-		feet="Nukumi Ocreae +1"
+		feet="Nukumi Ocreae +3"
 	})
 	sets.JA['Run Wild'] = set_combine(sets.Idle, {})	
 
@@ -279,7 +279,7 @@ function get_sets()
 		neck="Bst. Collar +2",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Sherida Earring",
-		right_ear="Nukumi Earring +1",
+		right_ear="Nukumi Earring +2",
 		left_ring="Gere Ring",
 		right_ring="Epona's Ring",
 		back={ name="Artio's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},

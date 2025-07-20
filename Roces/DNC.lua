@@ -88,7 +88,7 @@ function get_sets()
 		neck="Etoile Gorget +2",
 		waist="Reiki Yotai",
 		left_ear="Sherida Earring",
-		right_ear="Telos Earring",
+		right_ear="Macu. Earring +2",
 		left_ring="Moonlight Ring",
 		right_ring="Moonlight Ring",
 		back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
@@ -209,10 +209,10 @@ function get_sets()
 	sets.Waltz = {    
 		ammo="Yamarang",
     	head={ name="Horos Tiara +1", augments={'Enhances "Trance" effect',}},
-    	body="Maxixi Casaque",
+    	body="Maxixi Casaque +2",
     	hands={ name="Horos Bangles +1", augments={'Enhances "Fan Dance" effect',}},
     	legs="", --Dashing Subligar
-    	feet="Maxixi Toe Shoes",
+    	feet="Maxixi Toe Shoes +2",
     	neck={ name="Unmoving Collar +1", augments={'Path: A',}},
     	waist="Chaac Belt",
     	left_ear="Enchntr. Earring +1",
@@ -232,7 +232,7 @@ function get_sets()
 	-------------------------------------------------------------------------------
 	---------- Samba duration can be increased using various equipment. -----------
 	-------------------------------------------------------------------------------
-	sets.Samba = set_combine(sets.Idle.DT, {head="Maxixi Tiara",}) --  Missing Ambu Cape for +15
+	sets.Samba = set_combine(sets.Idle.DT, {head="Maxixi Tiara +3",}) --  Missing Ambu Cape for +15
 	
 	sets.Samba["Haste Samba"] = {}
 	sets.Samba["Aspir Samba"] = {}
@@ -243,7 +243,7 @@ function get_sets()
 	-------------------------------------------------------------------------------
 	----------- Jigs duration can be increased using various equipment. ----------- 
 	-------------------------------------------------------------------------------
-	sets.Jig = set_combine(sets.Idle.DT, {feet="Maxixi Toe Shoes",}) -- Horos Tights +3 and Maxixi Toe Shoes +3
+	sets.Jig = set_combine(sets.Idle.DT, {feet="Maxixi Toe Shoes +2",}) -- Horos Tights +3 and Maxixi Toe Shoes +3
 
 	sets.Jig["Spectral Jig"] = sets.Jig
 	sets.Jig["Chocobo Jig"] = sets.Jig
@@ -256,7 +256,7 @@ function get_sets()
 	-------------------------------------------------------------------------------
 	sets.Step = {
 		ammo="Yamarang",
-    	head="Malignance Chapeau",
+    	head="Maxixi Tiara +3",
     	body="Malignance Tabard",
     	hands="Malignance Gloves",
     	legs="Malignance Tights",
