@@ -209,7 +209,7 @@ function get_sets()
 	sets.Waltz = {    
 		ammo="Yamarang",
     	head={ name="Horos Tiara +1", augments={'Enhances "Trance" effect',}},
-    	body="Maxixi Casaque +2",
+    	body="Maxixi Casaque +3",
     	hands={ name="Horos Bangles +1", augments={'Enhances "Fan Dance" effect',}},
     	legs="", --Dashing Subligar
     	feet="Maxixi Toe Shoes +2",

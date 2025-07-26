@@ -344,13 +344,13 @@ function init_gear_sets()
     sets.midcast.Carol = {hands="Mousai Gages"}
     sets.midcast.Etude = {head="Mousai Turban"}
     sets.midcast.HonorMarch = {range="Marsyas", hands="Fili Manchettes"}
-    sets.midcast.Lullaby = {body="Fili Hongreline +1", hands="Brioso Cuffs +3"}
+    sets.midcast.Lullaby = {body="Fili Hongreline +1", hands="Brioso cuffs +4"}
     sets.midcast.Madrigal = {head="Fili Calot"}
     sets.midcast.Mambo = {feet="Mousai Crackows"}
     sets.midcast.March = {hands="Fili s"}
     sets.midcast.Minne = {legs="Mou. Seraweels"}
     sets.midcast.Minuet = {body="Fili Hongreline +1"}
-    sets.midcast.Paeon = {head="Brioso Roundlet +3"}
+    sets.midcast.Paeon = {head="Brioso Roundlet +4"}
     sets.midcast.Threnody = {body="Mousai Manteel"}
     sets.midcast['Adventurer\'s Dirge'] = {range="Marsyas", hands="Bihu Cuffs +3"}
     sets.midcast['Foe Sirvente'] = {head="Bihu Roundlet +3"}
@@ -382,9 +382,9 @@ function init_gear_sets()
         main="Carnwenhan",
         sub="Ammurapi Shield",
         range="Gjallarhorn",
-        head="Brioso Roundlet +3",
+        head="Brioso Roundlet +4",
         body="Brioso Justau. +4",
-        hands="Brioso Cuffs +3",
+        hands="Brioso cuffs +4",
         legs="Brioso Cannions +3",
         feet="Brioso Slippers +4",
         neck="Mnbw. Whistle +1",
@@ -486,7 +486,7 @@ function init_gear_sets()
         sub="Ammurapi Shield",
         head=empty;
         body="Cohort Cloak +1",
-        hands="Brioso Cuffs +3",
+        hands="Brioso cuffs +4",
         legs="Brioso Cannions +3",
         feet="Brioso Slippers +4",
         neck="Mnbw. Whistle +1",
@@ -1059,7 +1059,7 @@ function get_lullaby_duration(spell)
     if player.equipment.feet == "Brioso Slippers +4" then mult = mult + 0.15 end
     if player.equipment.hands == 'Brioso Cuffs +1' then mult = mult + 0.1 end
     if player.equipment.hands == 'Brioso Cuffs +2' then mult = mult + 0.1 end
-    if player.equipment.hands == 'Brioso Cuffs +3' then mult = mult + 0.2 end
+    if player.equipment.hands == 'Brioso cuffs +4' then mult = mult + 0.2 end
 
     --JP Duration Gift
     if self.job_points.brd.jp_spent >= 1200 then

@@ -121,7 +121,7 @@ function get_sets()
 		hands="Malignance Gloves",
 		legs={ name="Gleti's Breeches", augments={'Path: A',}},
 		feet="Malignance Boots",
-		neck="Anu Torque",
+		neck="Bst. Collar +2",
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Crep. Earring",
 		right_ear="Sherida Earring",
