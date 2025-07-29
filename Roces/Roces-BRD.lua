@@ -232,7 +232,7 @@ function init_gear_sets()
 		main="Carnwenhan",
 		sub="Genmei Shield",
         head="Fili Calot +3", --14
-        feet="Bihu Slippers +3", --9
+        feet="Bihu Slippers +4", --9
         neck="Loricate Torque +1",
         ear1="Odnowa Earring +1",
         ring2="Defending Ring",
@@ -244,7 +244,7 @@ function init_gear_sets()
 
     -- Precast sets to enhance JAs
 
-    sets.precast.JA.Nightingale = {feet="Bihu Slippers +3"}
+    sets.precast.JA.Nightingale = {feet="Bihu Slippers +4"}
     sets.precast.JA.Troubadour = {body="Bihu Jstcorps. +3"}
     sets.precast.JA['Soul Voice'] = {legs="Bihu Cannions +3"}
 
@@ -306,7 +306,7 @@ function init_gear_sets()
         --body="Bihu Jstcorps. +3",
        -- hands="Bihu Cuffs +3",
         --legs="Bihu Cannions +3",
-        --feet="Bihu Slippers +3",
+        --feet="Bihu Slippers +4",
         --ear1="Regal Earring",
         --right_ring={ name="Metamor. Ring +1", augments={'Path: A',}},
         --waist="Kentarch Belt +1",
@@ -368,13 +368,13 @@ function init_gear_sets()
     sets.midcast.Etude = {head="Mousai Turban +1"}
     sets.midcast.HonorMarch = {range="Marsyas", hands="Fili Manchettes +3"}
 	sets.midcast['Aria of Passion'] = {range="Loughnashade", hands="Fili manchettes +3", legs ="Inyanga Shalwar +2"}
-    sets.midcast.Lullaby = {body="Fili Hongreline +3", hands="Brioso Cuffs +3"}
+    sets.midcast.Lullaby = {body="Fili Hongreline +3", hands="Brioso Cuffs +4"}
     sets.midcast.Madrigal = {head="Fili Calot +3", feet="Fili Cothurnes +3"}
     sets.midcast.Mambo = {feet="Mou. Crackows +1"}
     sets.midcast.March = {hands="Fili Manchettes +3"}
     sets.midcast.Minne = {legs="Mou. Seraweels +1"}
     sets.midcast.Minuet = {neck="Moonbow Whistle +1", feet="Fili Cothurnes +3"} --Fili Hongreline +3
-    sets.midcast.Paeon = {head="Brioso Roundlet +3"}
+    sets.midcast.Paeon = {head="Brioso Roundlet +4"}
     sets.midcast.Prelude = {feet="Fili Cothurnes +3"}
     sets.midcast.Threnody = {body="Mou. Manteel +1"}
     sets.midcast['Adventurer\'s Dirge'] = {range="Marsyas", hands="Bihu Cuffs +3"}
@@ -391,7 +391,7 @@ function init_gear_sets()
         body="Fili Hongreline +3",
         hands="Fili Manchettes +3",
         legs="Inyanga Shalwar +2",
-        feet="Brioso Slippers +3",
+        feet="Brioso Slippers +4",
         neck="Mnbw. Whistle +1",
         ear1="Odnowa Earring +1",
         ear2="Etiolation Earring",
@@ -406,11 +406,11 @@ function init_gear_sets()
         main="Carnwenhan",
         sub="Ammurapi Shield",
         range="Loughnashade", --Gjallarhorn
-        head="Brioso Roundlet +3",
-        body="Brioso Justau. +3",
-        hands="Brioso Cuffs +3",
+        head="Brioso Roundlet +4",
+        body="Brioso justaucorps +4",
+        hands="Brioso Cuffs +4",
         legs="Inyanga Shalwar +2",
-        feet="Brioso Slippers +3",
+        feet="Brioso Slippers +4",
         neck="Mnbw. Whistle +1",
         ear1="Regal Earring",
         ear2="Fili Earring +2",
@@ -510,9 +510,9 @@ function init_gear_sets()
         sub="Ammurapi Shield",
         head=empty;
         body="Cohort Cloak +1",
-        hands="Brioso Cuffs +3",
+        hands="Brioso Cuffs +4",
         legs="Brioso Cannions +3",
-        feet="Brioso Slippers +3",
+        feet="Brioso Slippers +4",
         neck="Mnbw. Whistle +1",
         ear1="Regal Earring",
         ear2="Fili Earring +2",
@@ -611,7 +611,7 @@ function init_gear_sets()
     sets.engaged.Acc = set_combine(sets.engaged, {
         head="Aya. Zucchetto +2",
         hands="Gazu Bracelets +1",
-        feet="Bihu Slippers +3",
+        feet="Bihu Slippers +4",
         waist="Kentarch Belt +1",
         })
 
@@ -637,7 +637,7 @@ function init_gear_sets()
 
     sets.engaged.DW.Acc = set_combine(sets.engaged.DW, {
         head="Aya. Zucchetto +2",
-        feet="Bihu Slippers +3",
+        feet="Bihu Slippers +4",
         })
 
     -- 15% Magic Haste (67% DW to cap)
@@ -671,7 +671,7 @@ function init_gear_sets()
 
     sets.engaged.DW.MaxHaste.Acc = set_combine(sets.engaged.DW.MaxHaste, {
         head="Aya. Zucchetto +2",
-        feet="Bihu Slippers +3",
+        feet="Bihu Slippers +4",
         ear1="Cessance Earring",
         back=gear.BRD_DW_Cape,
         waist="Kentarch Belt +1",
@@ -1073,11 +1073,11 @@ function get_lullaby_duration(spell)
     if player.equipment.legs == "Inyanga Shalwar +2" then mult = mult + 0.17 end
     if player.equipment.feet == "Brioso Slippers" then mult = mult + 0.1 end
     if player.equipment.feet == "Brioso Slippers +1" then mult = mult + 0.11 end
-    if player.equipment.feet == "Brioso Slippers +3" then mult = mult + 0.13 end
-    if player.equipment.feet == "Brioso Slippers +3" then mult = mult + 0.15 end
-    if player.equipment.hands == 'Brioso Cuffs +3' then mult = mult + 0.1 end
-    if player.equipment.hands == 'Brioso Cuffs +3' then mult = mult + 0.1 end
-    if player.equipment.hands == 'Brioso Cuffs +3' then mult = mult + 0.2 end
+    if player.equipment.feet == "Brioso Slippers +4" then mult = mult + 0.13 end
+    if player.equipment.feet == "Brioso Slippers +4" then mult = mult + 0.15 end
+    if player.equipment.hands == 'Brioso Cuffs +1' then mult = mult + 0.1 end
+    if player.equipment.hands == 'Brioso Cuffs +2' then mult = mult + 0.1 end
+    if player.equipment.hands == 'Brioso Cuffs +4' then mult = mult + 0.2 end
 
     --JP Duration Gift
     if self.job_points.brd.jp_spent >= 1200 then
