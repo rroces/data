@@ -245,7 +245,7 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
 
     sets.precast.JA.Nightingale = {feet="Bihu Slippers +4"}
-    sets.precast.JA.Troubadour = {body="Bihu Jstcorps. +3"}
+    sets.precast.JA.Troubadour = {body="Bihu Justaucorps +4"}
     sets.precast.JA['Soul Voice'] = {legs="Bihu Cannions +3"}
 
     -- Waltz set (chr and vit)
@@ -378,7 +378,7 @@ function init_gear_sets()
     sets.midcast.Prelude = {feet="Fili Cothurnes +3"}
     sets.midcast.Threnody = {body="Mou. Manteel +1"}
     sets.midcast['Adventurer\'s Dirge'] = {range="Marsyas", hands="Bihu Cuffs +3"}
-    sets.midcast['Foe Sirvente'] = {head="Bihu Roundlet +3"}
+    sets.midcast['Foe Sirvente'] = {head="Bihu Roundlet +4"}
     sets.midcast['Magic Finale'] = {legs="Fili Rhingrave +3"}
     sets.midcast["Sentinel's Scherzo"] = {feet="Fili Cothurnes +3"}
     sets.midcast["Chocobo Mazurka"] = {range="Marsyas"}
@@ -421,7 +421,7 @@ function init_gear_sets()
         }
 
     -- For song defbuffs (accuracy primary, duration secondary)
-    sets.midcast.SongEnfeebleAcc = set_combine(sets.midcast.SongEnfeeble, {legs="Brioso Cannions +3"})
+    sets.midcast.SongEnfeebleAcc = set_combine(sets.midcast.SongEnfeeble, {legs="Brioso Cannions +4"})
 
     -- For Horde Lullaby maxiumum AOE range.
     sets.midcast.SongStringSkill = {
@@ -511,7 +511,7 @@ function init_gear_sets()
         head=empty;
         body="Cohort Cloak +1",
         hands="Brioso Cuffs +4",
-        legs="Brioso Cannions +3",
+        legs="Brioso Cannions +4",
         feet="Brioso Slippers +4",
         neck="Mnbw. Whistle +1",
         ear1="Regal Earring",
