@@ -95,18 +95,19 @@ function get_sets()
 	}
 	--Base TP set to build off
 	sets.OffenseMode.TP = {
-		ammo={ name="Coiste Bodhar", augments={'Path: A',}},
-    	head={ name="Adhemar Bonnet +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
-    	body={ name="Adhemar Jacket +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
-    	hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
-    	legs="Samnuha Tights",
-    	feet="Malignance Boots",
+		ammo="Coiste Bodhar",
+    	head="Maculele Tiara +3",
     	neck="Etoile Gorget +2",
-    	waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-    	left_ear="Sherida Earring",
-    	right_ear="Telos Earring",
-    	left_ring="Gere Ring",
-    	right_ring="Epona's Ring",
+    	ear1="Sherida Earring",
+    	ear2="Macu. Earring +2",
+    	body="Malignance Tabard",
+    	hands="Malignance Gloves",
+    	back="Senuna's Mantle",
+    	waist="Sailfi Belt +1",
+    	legs="Gleti's Breeches",
+    	feet="Macu. Toe Sh. +3",
+		left_ring="Moonlight Ring",
+		right_ring="Moonlight Ring",
 		back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Store TP"+10','Damage taken-5%',}},
 	}
 	-- Subtle Blow Cap at 50 and II at 25 for a Total of 75.
@@ -180,11 +181,11 @@ function get_sets()
 	-------------------------------------------------------------------------------
 	sets.JA = {}
 
-	sets.JA["Trance"] = {}
+	sets.JA["Trance"] = {head="Horos Tiara +3",}
 	sets.JA["Contradance"] = {}
 	sets.JA["Saber Dance"] = {legs="Horos Tights +3",} -- Horos Tights +3
-	sets.JA["Fan Dance"] = {}
-	sets.JA["No Foot Rise"] = {}
+	sets.JA["Fan Dance"] = {hands="Horos Bangles +3",} -- Horos Bangles +3
+	sets.JA["No Foot Rise"] = {body="Horos Casaque +3",} -- Horos Casaque +3
 	sets.JA["Presto"] = {}
 	sets.JA["Grand Pas"] = {}
 	-------------------------------------------------------------------------------
@@ -194,14 +195,14 @@ function get_sets()
 																					-- Flourishes I : Monster Control
 	sets.Flourish["Animated Flourish"] = set_combine(sets.Flourish, sets.Enmity) 	-- Volatile Enmity spike like Provoke
 	sets.Flourish["Desperate Flourish"] = {} 										-- Gravity effect 
-	sets.Flourish["Violent Flourish"] = {} 											-- Stun effect 
+	sets.Flourish["Violent Flourish"] = {body="Horos Casaque +3"} 											-- Stun effect 
 																					-- Flourishes II : Skillchain Enhancers
-	sets.Flourish["Reverse Flourish"] = {} 											-- Returns TP in exchange for Finishing Moves
+	sets.Flourish["Reverse Flourish"] = {hands="Maculele Bangles +3"} 											-- Returns TP in exchange for Finishing Moves
 	sets.Flourish["Building Flourish"] = {head="Nyame Helm",}						-- Increases the strength of the next Weapon Skill
 	sets.Flourish["Wild Flourish"] = {}												-- Readies target for Skillchain
 																					-- Flourishes III : Weapon Skill Buffs
-	sets.Flourish["Climactic Flourish"] = {}										-- Forces Critical Hit(s) on the next attack(s) 
-	sets.Flourish["Striking Flourish"] = {head="Nyame Helm",}						-- Forces a Double Attack on the next swing 
+	sets.Flourish["Climactic Flourish"] = {head="Maculele Tiara +3"}										-- Forces Critical Hit(s) on the next attack(s) 
+	sets.Flourish["Striking Flourish"] = {head="Nyame Helm", body="Maculele casaque +3"}						-- Forces a Double Attack on the next swing 
 	sets.Flourish["Ternary Flourish"] = {}											-- Forces a Triple Attack on the next swing
 	-------------------------------------------------------------------------------
 	-- Waltz Potency gear caps at 50%, while Waltz received potency caps at 30%. -- 
@@ -210,7 +211,7 @@ function get_sets()
 		ammo="Yamarang",
     	head={ name="Horos Tiara +3", augments={'Enhances "Trance" effect',}},
     	body="Maxixi Casaque +3",
-    	hands={ name="Horos Bangles +1", augments={'Enhances "Fan Dance" effect',}},
+    	hands={ name="Horos Bangles +3", augments={'Enhances "Fan Dance" effect',}},
     	legs="", --Dashing Subligar
     	feet="Maxixi Toe Shoes +3",
     	neck={ name="Unmoving Collar +1", augments={'Path: A',}},
@@ -258,9 +259,9 @@ function get_sets()
 		ammo="Yamarang",
     	head="Maxixi Tiara +3",
     	body="Malignance Tabard",
-    	hands="Malignance Gloves",
+    	hands="Maxixi Bangles +4",
     	legs="Malignance Tights",
-    	feet="Malignance Boots",
+    	feet="Horos T. Shoes +2",
     	neck="Etoile Gorget +2",
     	waist="Reiki Yotai",
     	left_ear="Odr Earring",
@@ -273,7 +274,7 @@ function get_sets()
 	sets.JA["Quickstep"] = sets.Step
 	sets.JA["Box Step"] = sets.Step
 	sets.JA["Stutter Step"] = sets.Step
-	sets.JA["Feather Step"] = set_combine(sets.Idle.DT, {})
+	sets.JA["Feather Step"] = set_combine(sets.Idle.DT, {feet="Maculele Toe Shoes +3"})
 
 	--Default WS set base
 	sets.WS = {
@@ -307,7 +308,20 @@ function get_sets()
 	sets.WS["Shark Bite"] = {}
 	sets.WS["Evisceration"] = {}
 	sets.WS["Aeolian Edge"] = {}
-	sets.WS["Rudra's Storm"] = {}
+	sets.WS["Rudra's Storm"] = {
+		ammo="Coiste Bodhar",
+    head="Maculele Tiara +3",
+    neck="Etoile Gorget +2",
+    ear1="Moonshade Earring",
+    ear2="Macu. Earring +2",
+    body="Nyame Mail",
+    hands="Maxixi Bangles +4",
+    ring1="Cornelia's Ring",
+    ring2="Regal Ring",
+    waist="Kentarch Belt +1",
+    legs="Nyame Flanchard",
+    feet="Nyame Sollerets"
+	}
 
 	-- Hand to Hand WS
 	sets.WS["Combo"] = {}
